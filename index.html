@@ -1,0 +1,2013 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Nilüfer Beyza Akcan, instructional designer and learning &amp; development specialist. Portfolio, case studies and CV.">
+<meta name="theme-color" content="#0A1424">
+<title>Nilüfer Akcan Portfolio</title>
+<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: one personal reading column; each project gets its own shape (a playable module, a research poster, a workshop plan), with a few handwritten margin notes */
+/* Layout: full-width bands alternating deep navy and light, a gridded hero, big tight headings with one accented word */
+:root {
+  --bg: #0A1424;
+  --tint: #0F1E33;
+  --surface: #10233A;
+  --ink: #EAF1F5;
+  --text: #C2D1DB;
+  --muted: #8FA7B7;
+  --line: #27425B;
+  --accent: #FF9FC9;
+  --accent-soft: #3A2238;
+  --teal: #7FE0CF;
+  --teal-soft: #123A3A;
+  --gold: #F3C46F;
+  --gold-soft: #382D17;
+  --lilac: #B5ABFF;
+  --lilac-soft: #24264C;
+  --btn: #FF9FC9;
+  --btn-text: #26101D;
+  --bad: #FF9A9A;
+  --f-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --f-label: "Manrope", "Segoe UI", system-ui, sans-serif;
+  --f-body: "Manrope", "Segoe UI", system-ui, sans-serif;
+  --f-hand: "Caveat", "Segoe Print", "Bradley Hand", cursive;
+  --f-mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+  color-scheme: dark;
+}
+.light {
+  --bg: #ECF1F4;
+  --tint: #E0E8ED;
+  --surface: #F8FAFB;
+  --ink: #12293A;
+  --text: #3A5262;
+  --muted: #5D7686;
+  --line: #C3D2DB;
+  --accent: #B23C77;
+  --accent-soft: #F8E2ED;
+  --teal: #1D7B6F;
+  --teal-soft: #D5EDE9;
+  --gold: #8C6214;
+  --gold-soft: #F5EAD2;
+  --lilac: #5A4FBD;
+  --lilac-soft: #E3E0F7;
+  --btn: #12293A;
+  --btn-text: #F8FAFB;
+  color-scheme: light;
+}
+.alt { --bg: #0F2238; --tint: #142A44; --surface: #132A45; --line: #2D4B66; }
+.deep { --bg: #071020; }
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: var(--f-body); font-size: 1.03rem; line-height: 1.62; }
+.wrap { max-width: 1020px; margin: 0 auto; padding-inline: 20px; padding-block: 0 80px; }
+h1, h2, h3, h4 { font-family: var(--f-display); color: var(--ink); text-wrap: balance; line-height: 1.15; margin: 0; }
+h2 { font-size: clamp(1.7rem, 3.6vw, 2.3rem); font-weight: 700; letter-spacing: -0.01em; }
+h3 { font-size: 1.22rem; font-weight: 700; }
+h4 { font-size: 1.02rem; font-weight: 700; }
+p { margin: 0; max-width: 66ch; }
+a { color: var(--accent); }
+a:focus-visible, button:focus-visible, textarea:focus-visible, input:focus-visible { outline: 3px solid var(--lilac); outline-offset: 2px; border-radius: 6px; }
+.kicker { font-size: .9rem; color: var(--accent); font-weight: 700; }
+.small { font-size: .93rem; color: var(--muted); }
+.hand { font-family: var(--f-hand); color: var(--accent); font-size: 1.35rem; line-height: 1.15; font-weight: 500; }
+
+nav.top { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: color-mix(in srgb, var(--bg) 90%, transparent); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
+nav.top .in { max-width: 1020px; margin: 0 auto; padding-inline: 20px; padding-block: 12px; display: flex; gap: 16px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+nav.top .brand { font-family: var(--f-display); font-weight: 800; color: var(--ink); text-decoration: none; }
+nav.top ul { list-style: none; display: flex; gap: 18px; margin: 0; padding: 0; flex-wrap: wrap; }
+nav.top ul a { color: var(--muted); text-decoration: none; font-size: .93rem; }
+nav.top ul a:hover { color: var(--ink); }
+
+.hero { display: grid; grid-template-columns: auto 1fr; gap: 34px; align-items: start; padding-block: 44px 34px; }
+.portrait-wrap { position: relative; }
+.portrait { width: 168px; height: 168px; border-radius: 50%; object-fit: cover; display: block; border: 6px solid var(--surface); box-shadow: 0 0 0 1px var(--line); }
+.portrait-wrap .hand { position: absolute; right: -26px; bottom: -6px; transform: rotate(-6deg); white-space: nowrap; }
+.hero h1 { font-size: clamp(2.4rem, 6vw, 3.6rem); font-weight: 800; letter-spacing: -0.02em; }
+.hero p { margin-top: 14px; font-size: 1.1rem; }
+.hero .facts-line { margin-top: 16px; color: var(--muted); font-size: .95rem; display: flex; flex-wrap: wrap; gap: 4px 18px; }
+
+.how { background: var(--tint); border-radius: 18px; padding: 24px 26px; display: grid; grid-template-columns: 1.1fr 1fr; gap: 24px; align-items: start; }
+.how ul { margin: 0; padding-left: 18px; }
+.how li + li { margin-top: 6px; }
+
+.index { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 16px; }
+.pcard { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: inherit; min-width: 0; }
+.pcard:hover { border-color: var(--accent); }
+.pcard .type { font-size: .85rem; color: var(--muted); }
+.pcard h3 { font-size: 1.1rem; }
+
+section.proj { margin-top: 84px; }
+.proj-head { display: grid; gap: 10px; }
+.proj-head .meta { display: flex; flex-wrap: wrap; gap: 6px 18px; color: var(--muted); font-size: .93rem; }
+.proj-head .meta b { color: var(--ink); font-weight: 700; }
+.notice { margin-top: 16px; background: var(--gold-soft); border-radius: 12px; padding: 12px 16px; font-size: .94rem; }
+.notice b { color: var(--ink); }
+
+.row2 { margin-top: 30px; display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+.row2 > div { min-width: 0; display: grid; gap: 10px; align-content: start; }
+.stack { margin-top: 30px; display: grid; gap: 14px; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; min-width: 0; }
+.panel ul { margin: 0; padding-left: 18px; }
+.panel li + li { margin-top: 5px; }
+.objs { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+.objs em { font-style: normal; color: var(--teal); font-weight: 700; }
+
+.icap { display: inline-block; font-size: .78rem; font-weight: 700; padding: 2px 9px; border-radius: 999px; white-space: nowrap; }
+.icap.P { background: var(--tint); color: var(--muted); }
+.icap.A { background: var(--gold-soft); color: var(--gold); }
+.icap.C { background: var(--teal-soft); color: var(--teal); }
+.icap.I { background: var(--accent-soft); color: var(--accent); }
+
+/* e-learning player */
+.player { margin-top: 26px; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); overflow: hidden; box-shadow: 0 16px 40px -34px var(--lilac); }
+.player-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 12px 18px; background: var(--tint); border-bottom: 1px solid var(--line); flex-wrap: wrap; }
+.player-bar .ttl { font-family: var(--f-display); font-weight: 700; color: var(--ink); }
+.progress { display: flex; gap: 6px; align-items: center; }
+.progress i { width: 26px; height: 6px; border-radius: 3px; background: var(--line); display: block; }
+.progress i.on { background: var(--accent); }
+.screen { padding: 26px 28px 28px; min-height: 360px; display: grid; gap: 16px; align-content: start; }
+.scene-tag { font-size: .85rem; color: var(--muted); }
+.screen h3 { font-size: 1.45rem; }
+.screen h3:focus { outline: none; }
+.situation { display: grid; grid-template-columns: auto 1fr; gap: 14px; align-items: start; background: var(--tint); border-radius: 14px; padding: 14px 16px; }
+.avatar { width: 42px; height: 42px; border-radius: 50%; background: var(--lilac-soft); color: var(--lilac); display: grid; place-items: center; font-family: var(--f-display); font-weight: 800; }
+.situation .who { font-size: .85rem; color: var(--muted); }
+.aibox { border: 1px dashed var(--lilac); border-radius: 12px; padding: 12px 14px; background: var(--lilac-soft); font-size: .96rem; }
+.aibox b { color: var(--lilac); font-size: .82rem; display: block; }
+.choices { display: grid; gap: 10px; }
+.choices button { font: inherit; text-align: left; padding: 13px 16px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--surface); color: var(--text); cursor: pointer; display: grid; grid-template-columns: 26px 1fr; gap: 10px; align-items: start; }
+.choices button:hover { border-color: var(--accent); background: var(--accent-soft); }
+.choices .k { font-family: var(--f-display); font-weight: 800; color: var(--accent); }
+.consequence { border-radius: 14px; padding: 16px 18px; background: var(--bg); border: 1px solid var(--line); display: grid; gap: 10px; }
+.consequence .lens { display: flex; flex-wrap: wrap; gap: 8px 14px; align-items: center; font-size: .9rem; color: var(--muted); }
+.btns { display: flex; gap: 10px; flex-wrap: wrap; }
+.btn { font: inherit; font-weight: 700; padding: 10px 18px; border-radius: 999px; border: 0; background: var(--btn); color: var(--btn-text); cursor: pointer; }
+.btn.ghost { background: transparent; color: var(--ink); border: 1.5px solid var(--line); }
+.meters { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.meter { border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; min-width: 0; }
+.meter .lbl { font-size: .9rem; color: var(--muted); }
+.dots { display: flex; gap: 5px; margin-top: 6px; }
+.dots i { width: 22px; height: 8px; border-radius: 4px; background: var(--line); display: block; }
+.dots i.on { background: var(--teal); }
+.path { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin-top: 4px; }
+.manager { background: var(--teal-soft); border-radius: 14px; padding: 14px 16px; }
+textarea { width: 100%; min-height: 96px; font: inherit; padding: 12px 14px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--bg); color: var(--text); resize: vertical; }
+.checks { display: grid; gap: 8px; }
+.checks label { display: grid; grid-template-columns: 22px 1fr; gap: 8px; align-items: start; cursor: pointer; }
+.checks input { width: 18px; height: 18px; margin-top: 3px; accent-color: var(--teal); }
+.model { border-left: 3px solid var(--teal); padding-left: 14px; font-size: .96rem; }
+.margin-note { display: flex; gap: 10px; align-items: flex-start; }
+.margin-note svg { flex: none; margin-top: 4px; }
+
+.tbl { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 600px; font-size: .93rem; }
+th, td { text-align: left; vertical-align: top; padding: 11px 14px; border-top: 1px solid var(--line); }
+thead th { border-top: 0; font-size: .85rem; color: var(--muted); font-weight: 700; background: var(--tint); }
+tbody th { color: var(--ink); font-weight: 700; width: 24%; }
+
+/* thesis */
+.poster { margin-top: 26px; background: var(--tint); border-radius: 18px; padding: 24px; display: grid; gap: 20px; }
+.model-svg { width: 100%; min-width: 620px; height: auto; display: block; }
+.figures { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.fig { background: var(--surface); border-radius: 12px; padding: 14px 16px; border: 1px solid var(--line); min-width: 0; }
+.fig .n { font-family: var(--f-display); font-weight: 800; font-size: 1.9rem; color: var(--ink); line-height: 1; font-variant-numeric: tabular-nums; }
+.rqs { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
+.rqs li { display: grid; grid-template-columns: 52px 1fr; gap: 10px; align-items: baseline; }
+.rqs .rq { font-family: var(--f-display); font-weight: 800; color: var(--lilac); }
+.ladder-controls { display: flex; flex-wrap: wrap; gap: 8px; }
+.ladder-controls button { font: inherit; font-size: .92rem; padding: 7px 14px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--surface); color: var(--text); cursor: pointer; }
+.ladder-controls button[aria-pressed="true"] { background: var(--btn); color: var(--btn-text); border-color: var(--btn); }
+.ladder { display: grid; gap: 8px; }
+.rung { display: grid; grid-template-columns: 120px 1fr; gap: 14px; align-items: start; background: var(--bg); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
+.rung:nth-child(2) { margin-left: 4%; } .rung:nth-child(3) { margin-left: 8%; } .rung:nth-child(4) { margin-left: 12%; }
+.status { display: inline-flex; gap: 8px; align-items: center; font-size: .92rem; color: var(--teal); font-weight: 700; }
+.status i { width: 9px; height: 9px; border-radius: 50%; background: var(--teal); display: block; flex: none; }
+
+/* workshop */
+.agenda { border: 1px solid var(--line); border-radius: 12px; background: var(--surface); overflow: hidden; }
+.agenda .r { display: grid; grid-template-columns: 70px 1fr auto; gap: 14px; padding: 12px 16px; border-top: 1px solid var(--line); align-items: start; }
+.agenda .r:first-child { border-top: 0; }
+.agenda .r.brk { background: var(--tint); color: var(--muted); }
+.agenda .t { font-family: var(--f-mono); font-variant-numeric: tabular-nums; color: var(--ink); font-size: .88rem; }
+.agenda .t small { display: block; color: var(--muted); font-size: .74rem; }
+.agenda .w { min-width: 0; }
+.agenda .w b { color: var(--ink); }
+.agenda .w p { font-size: .92rem; color: var(--muted); margin-top: 2px; }
+.slides { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.slide { aspect-ratio: 16 / 9; max-width: 100%; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); padding: 6% 7%; display: flex; flex-direction: column; justify-content: space-between; overflow: hidden; container-type: inline-size; }
+.slide .st { font-family: var(--f-display); font-weight: 800; color: var(--ink); font-size: 7.4cqi; line-height: 1.1; }
+.slide .foot { font-size: 3.3cqi; color: var(--muted); display: flex; justify-content: space-between; }
+.cups { display: flex; align-items: flex-end; justify-content: center; gap: 7cqi; }
+.cup { text-align: center; font-size: 3.7cqi; color: var(--ink); }
+.cup i { display: block; margin: 0 auto 2cqi; background: var(--accent-soft); border: 2px solid var(--accent); border-top: 0; border-radius: 0 0 22% 22%; }
+.slide.soft { background: var(--lilac-soft); border-color: var(--lilac-soft); }
+.mvf { display: grid; grid-template-columns: 1fr 1fr; gap: 4cqi; }
+.mvf div { border-radius: 2cqi; padding: 3cqi 4cqi; font-size: 3.7cqi; line-height: 1.3; background: var(--surface); color: var(--text); }
+.mvf .e { background: var(--accent); color: var(--surface); }
+.mvf b { display: block; font-size: 3.1cqi; opacity: .85; }
+.plan { display: grid; gap: 2.4cqi; }
+.plan div { border-bottom: 1.5px solid var(--line); font-size: 3.9cqi; color: var(--muted); padding-bottom: 1.4cqi; }
+.plan div b { color: var(--ink); }
+figure { margin: 0; display: grid; gap: 6px; min-width: 0; }
+figcaption { font-size: .86rem; color: var(--muted); }
+.cards8 { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.cards8 div { border: 1px dashed var(--line); border-radius: 8px; padding: 8px 10px; font-size: .86rem; background: var(--bg); min-width: 0; }
+.cards8 div b { display: block; font-size: .76rem; color: var(--muted); }
+
+footer.site { margin-top: 90px; background: var(--tint); border-radius: 18px; padding: 26px; display: flex; flex-wrap: wrap; gap: 16px 30px; justify-content: space-between; }
+.copy { font: inherit; font-size: .85rem; border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 8px; padding: 3px 10px; cursor: pointer; margin-left: 6px; }
+
+
+/* about me */
+.me { margin-top: 56px; display: grid; gap: 18px; }
+.traits { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.trait { border-top: 3px solid var(--lilac); background: var(--surface); padding: 16px 4px 4px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.trait:nth-child(2) { border-top-color: var(--teal); }
+.trait:nth-child(3) { border-top-color: var(--accent); }
+.trait ul { margin: 0; padding-left: 18px; font-size: .95rem; }
+.trait li + li { margin-top: 4px; }
+.journey { overflow-x: auto; }
+.journey ol { list-style: none; margin: 0; padding: 0 0 6px; display: grid; grid-template-columns: repeat(7, minmax(120px, 1fr)); gap: 0; min-width: 820px; position: relative; }
+.journey ol::before { content: ""; position: absolute; left: 6px; right: 6px; top: 7px; height: 2px; background: var(--line); }
+.journey li { position: relative; padding: 24px 12px 0 0; font-size: .9rem; }
+.journey li::before { content: ""; position: absolute; left: 0; top: 2px; width: 12px; height: 12px; border-radius: 50%; background: var(--surface); border: 2px solid var(--lilac); }
+.journey li:last-child::before { background: var(--lilac); }
+.journey .yr { font-family: var(--f-mono); font-size: .78rem; color: var(--muted); display: block; }
+.journey b { color: var(--ink); display: block; line-height: 1.3; }
+.journey span.where { color: var(--muted); }
+/* theory map */
+.theory { display: grid; gap: 10px; }
+.theory .th { display: grid; grid-template-columns: 220px 1fr; gap: 16px; padding: 12px 0; border-top: 1px solid var(--line); }
+.theory .th:first-child { border-top: 0; }
+.theory .th b { color: var(--ink); display: block; }
+.theory .th .ref { font-size: .85rem; color: var(--muted); }
+.kolb { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; }
+.kolb div { background: var(--tint); border-radius: 12px; padding: 12px 14px; position: relative; min-width: 0; }
+.kolb div b { color: var(--ink); display: block; }
+.kolb div span { font-size: .9rem; color: var(--muted); }
+.kolb div:not(:last-child)::after { content: "\2192"; position: absolute; right: -10px; top: 50%; transform: translateY(-50%); color: var(--lilac); font-weight: 700; }
+@media (max-width: 860px) {
+  .traits, .kolb { grid-template-columns: 1fr; }
+  .kolb div:not(:last-child)::after { content: "\2193"; right: 50%; top: auto; bottom: -16px; transform: none; }
+  .theory .th { grid-template-columns: 1fr; gap: 4px; }
+}
+
+.mono { font-family: var(--f-mono); font-variant-numeric: tabular-nums; }
+[hidden] { display: none !important; }
+section[id], footer[id], div[id] { scroll-margin-top: 96px; }
+/* hero extras */
+.creds { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 6px 10px; }
+.creds span { font-size: .88rem; background: var(--lilac-soft); color: var(--ink); border-radius: 999px; padding: 4px 12px; }
+.hero-cta { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 10px; }
+a.btn { text-decoration: none; display: inline-block; }
+.section-head { display: grid; gap: 8px; }
+.section-head .kicker { color: var(--lilac); }
+section.big { margin-top: 96px; }
+/* practice / management evidence */
+.pillars { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 22px; }
+.pillar { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+.pillar .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { font-size: .8rem; padding: 3px 10px; border-radius: 999px; background: var(--tint); color: var(--ink); }
+.pillar .ev { font-size: .92rem; border-top: 1px solid var(--line); padding-top: 10px; }
+.pillar .ev b { color: var(--teal); font-size: .82rem; display: block; margin-bottom: 2px; }
+.honest { margin-top: 16px; display: grid; grid-template-columns: 1fr 1fr; gap: 0; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
+.honest > div { padding: 16px 20px; min-width: 0; }
+.honest > div + div { border-left: 1px solid var(--line); background: var(--tint); }
+.honest ul { margin: 6px 0 0; padding-left: 18px; font-size: .95rem; }
+/* CV */
+.tabs { display: inline-flex; gap: 4px; padding: 4px; border-radius: 999px; background: var(--tint); margin-top: 20px; flex-wrap: wrap; }
+.tabs button { font: inherit; font-weight: 700; font-size: .95rem; border: 0; background: transparent; color: var(--muted); padding: 8px 18px; border-radius: 999px; cursor: pointer; }
+.tabs button[aria-selected="true"] { background: var(--surface); color: var(--ink); box-shadow: 0 1px 4px -2px var(--muted); }
+.cvpanel { margin-top: 18px; display: grid; gap: 18px; }
+.cvintro { display: grid; grid-template-columns: 1.3fr 1fr; gap: 20px; align-items: start; }
+.cvintro .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.tl { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 18px; align-items: start; }
+.tl-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.tl-list button { font: inherit; width: 100%; text-align: left; border: 1px solid var(--line); background: var(--surface); color: var(--text); border-radius: 12px; padding: 10px 14px; cursor: pointer; display: grid; gap: 2px; }
+.tl-list button:hover { border-color: var(--lilac); }
+.tl-list button[aria-pressed="true"] { border-color: var(--lilac); background: var(--lilac-soft); }
+.tl-list .d { font-family: var(--f-mono); font-size: .76rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+.tl-list .n { font-weight: 700; color: var(--ink); line-height: 1.3; }
+.tl-detail { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 20px 22px; display: grid; gap: 10px; min-width: 0; position: sticky; top: calc(env(safe-area-inset-top, 0px) + 70px); }
+.tl-detail .org { color: var(--muted); font-size: .95rem; }
+.tl-detail ul { margin: 0; padding-left: 18px; }
+.tl-detail li + li { margin-top: 5px; }
+.tl-detail .tagrow { display: flex; flex-wrap: wrap; gap: 6px; }
+.cvfoot { display: flex; flex-wrap: wrap; gap: 10px 18px; align-items: center; font-size: .95rem; color: var(--muted); }
+/* skills */
+.caps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 22px; }
+.cap { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+.cap .basis { font-size: .82rem; color: var(--teal); font-weight: 700; }
+.cap .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.certs { margin-top: 26px; border: 1px solid var(--line); border-radius: 14px; overflow: hidden; background: var(--surface); }
+.cert { display: grid; grid-template-columns: 70px 1fr auto; gap: 14px; padding: 12px 18px; border-top: 1px solid var(--line); align-items: baseline; }
+.cert:first-child { border-top: 0; }
+.cert .y { font-family: var(--f-mono); font-size: .82rem; color: var(--muted); }
+.cert b { color: var(--ink); }
+.cert .iss { font-size: .88rem; color: var(--muted); }
+.cert .tags { font-size: .82rem; color: var(--muted); text-align: right; }
+@media (max-width: 860px) {
+  .pillars, .caps, .honest, .cvintro, .tl { grid-template-columns: 1fr; }
+  .honest > div + div { border-left: 0; border-top: 1px solid var(--line); }
+  .tl-detail { position: static; }
+  .cert { grid-template-columns: 56px 1fr; }
+  .cert .tags { grid-column: 2; text-align: left; }
+}
+@media (max-width: 860px) {
+  .index, .figures, .slides { grid-template-columns: 1fr; }
+  .row2, .how { grid-template-columns: 1fr; }
+  .cards8 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .meters { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .hero { grid-template-columns: 1fr; padding-block: 34px 26px; }
+  .portrait { width: 120px; height: 120px; }
+  .portrait-wrap .hand { right: auto; left: 132px; bottom: 40px; }
+  .screen { padding: 20px 18px 22px; }
+  .rung { grid-template-columns: 1fr; gap: 4px; margin-left: 0 !important; }
+  .rqs li { grid-template-columns: 1fr; gap: 0; }
+  .agenda .r { grid-template-columns: 56px 1fr; }
+  .agenda .r .icap { grid-column: 2; justify-self: start; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .choices button, .pcard { transition: border-color .15s, background .15s; }
+}
+
+/* ===== restyle ===== */
+html, body { overflow-x: clip; }
+body { font-size: 1.04rem; line-height: 1.65; }
+h1, h2, h3, h4 { letter-spacing: -0.03em; font-weight: 600; }
+h2 { font-size: clamp(2.3rem, 5vw, 4rem); line-height: 1.04; letter-spacing: -0.055em; }
+h1 em, h2 em { font-style: normal; color: var(--accent); }
+.kicker, .section-head .kicker { font-family: var(--f-display); font-size: .78rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); }
+.wrap { max-width: 1160px; padding-inline: clamp(20px, 4vw, 48px); padding-block: 0; }
+.band { position: relative; padding-block: clamp(70px, 9vw, 120px); background: var(--bg); color: var(--text); box-shadow: 0 0 0 100vmax var(--bg); clip-path: inset(0 -100vmax); }
+.band > :first-child, .band section.proj, .band section.big, .band .me { margin-top: 0; }
+.band + .band { margin-top: 0; }
+.band .stack + .stack { margin-top: 40px; }
+
+nav.top { background: color-mix(in srgb, var(--bg) 82%, transparent); border-bottom-color: var(--line); }
+nav.top .in { max-width: 1160px; padding-inline: clamp(20px, 4vw, 48px); padding-block: 16px; }
+nav.top .brand { font-family: var(--f-display); font-size: .82rem; letter-spacing: .14em; text-transform: uppercase; display: inline-flex; gap: 12px; align-items: center; }
+nav.top .mono-mark { width: 40px; height: 40px; white-space: nowrap; font-size: .78rem !important; flex: none; border-radius: 50%; border: 1px solid var(--line); display: flex; align-items: center; justify-content: center; letter-spacing: 0; font-size: .9rem; color: var(--ink); }
+nav.top .mono-mark b { color: var(--accent); }
+nav.top ul a { color: var(--text); }
+nav.top ul a:hover { color: var(--accent); }
+
+/* hero */
+.hero-band { padding-block: clamp(56px, 8vw, 110px) clamp(60px, 8vw, 100px); isolation: isolate; }
+.hero-band::before { content: ""; position: absolute; top: 0; bottom: 0; left: 50%; width: 100vw; transform: translateX(-50%); z-index: -1;
+  background:
+    linear-gradient(color-mix(in srgb, var(--ink) 4%, transparent) 1px, transparent 1px) 0 0 / 64px 64px,
+    linear-gradient(90deg, color-mix(in srgb, var(--ink) 4%, transparent) 1px, transparent 1px) 0 0 / 64px 64px,
+    radial-gradient(circle at 72% 35%, #18395A 0, #0D2136 30%, var(--bg) 68%); }
+.hero { grid-template-columns: minmax(0, 1fr) auto; gap: clamp(28px, 5vw, 70px); align-items: center; padding-block: 0; }
+.hero > div:last-child { order: -1; }
+.overline { font-family: var(--f-display); font-size: .78rem; font-weight: 600; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); display: flex; align-items: center; gap: 12px; margin: 0 0 22px; }
+.pulse { width: 9px; height: 9px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 5px color-mix(in srgb, var(--accent) 18%, transparent), 0 0 20px var(--accent); flex: none; }
+@media (prefers-reduced-motion: no-preference) { .pulse { animation: pulse 2.6s ease-in-out infinite; } @keyframes pulse { 50% { box-shadow: 0 0 0 10px color-mix(in srgb, var(--accent) 4%, transparent), 0 0 32px var(--accent); } } }
+.hero h1 { font-size: clamp(3rem, 7vw, 5.6rem); line-height: .98; letter-spacing: -0.06em; font-weight: 600; }
+.hero p { color: var(--text); font-size: 1.12rem; max-width: 58ch; margin-top: 24px; }
+.portrait { width: clamp(180px, 22vw, 260px); height: clamp(180px, 22vw, 260px); border: 0; box-shadow: 0 0 0 10px color-mix(in srgb, var(--surface) 70%, transparent), 0 0 0 11px var(--line), 0 40px 80px -30px #000; }
+.portrait-wrap .hand { right: -10px; bottom: 6px; }
+.creds span { background: transparent; border: 1px solid var(--line); color: var(--text); }
+.btn { padding: 14px 22px; font-size: .95rem; transition: transform .2s, box-shadow .2s; }
+.btn:hover { transform: translateY(-2px); box-shadow: 0 12px 28px -12px var(--btn); }
+.btn.ghost { color: var(--ink); border: 1px solid var(--line); }
+.btn.ghost:hover { box-shadow: none; border-color: var(--accent); }
+.btn .arr { margin-left: 14px; }
+
+/* strip */
+.strip { background: var(--accent); box-shadow: 0 0 0 100vmax var(--accent); clip-path: inset(0 -100vmax); color: #26101D; }
+.strip .in { display: flex; justify-content: space-between; align-items: center; gap: 18px; flex-wrap: wrap; padding-block: 22px; font-family: var(--f-display); font-weight: 700; letter-spacing: .1em; text-transform: uppercase; font-size: clamp(.78rem, 1.3vw, 1.05rem); }
+.strip .x { font-weight: 400; font-size: 1.4rem; line-height: 1; }
+
+/* cards */
+.pcard, .panel, .pillar, .cap, .trait, .meter, .fig, .rung, .agenda, .tbl, .certs, .tl-detail, .player, .guide { border-color: var(--line); }
+.pcard { padding: 26px 26px 24px; border-radius: 16px; gap: 12px; }
+.pcard h3 { font-size: 1.6rem; letter-spacing: -0.045em; }
+.pcard:hover { border-color: var(--accent); transform: translateY(-3px); }
+.pcard .type { font-family: var(--f-display); font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; color: var(--teal); font-weight: 600; }
+.pcard .go { margin-top: auto; color: var(--accent); font-weight: 700; font-size: .92rem; }
+.proj-head h2 { margin-top: 2px; }
+.notice { background: var(--gold-soft); color: var(--text); }
+.chip { border: 1px solid var(--line); background: transparent; color: var(--text); }
+.trait { background: transparent; border-top-color: var(--accent); padding: 18px 0 0; }
+.trait:nth-child(2) { border-top-color: var(--teal); }
+.trait:nth-child(3) { border-top-color: var(--lilac); }
+.journey li::before { background: var(--bg); border-color: var(--accent); }
+.journey li:last-child::before { background: var(--accent); box-shadow: 0 0 12px var(--accent); }
+.how { background: var(--surface); border: 1px solid var(--line); }
+.honest > div + div { background: var(--tint); }
+.player { box-shadow: 0 30px 70px -40px #000; }
+.player-bar { background: var(--tint); }
+.situation, .kolb div { background: var(--tint); }
+.hand { color: var(--accent); }
+.light .hand { color: var(--accent); }
+
+/* CV in the style of an explorer */
+#cv .tabs { border-radius: 14px; padding: 0; gap: 0; background: var(--tint); border: 1px solid var(--line); overflow: hidden; display: flex; width: 100%; }
+#cv .tabs button { flex: 1; border-radius: 0; text-align: left; padding: 18px 24px; font-family: var(--f-display); font-size: 1.25rem; letter-spacing: -0.03em; }
+#cv .tabs button + button { border-left: 1px solid var(--line); }
+#cv .tabs button[aria-selected="true"] { background: var(--surface); color: var(--ink); box-shadow: inset 0 4px 0 var(--teal); }
+#cv .cvintro { background: #143A44; color: #E7F2F0; border-radius: 16px; padding: 26px 28px; }
+#cv .cvintro h3 { color: #FFFFFF; font-size: 1.7rem; letter-spacing: -0.045em; }
+#cv .cvintro p { color: #C2D9D6; }
+#cv .cvintro .chip { border-color: #5E8F89; color: #DCEFE7; }
+.tl-list button[aria-pressed="true"] { border-color: var(--teal); background: var(--teal-soft); }
+.tl-list .d { color: var(--teal); font-weight: 500; }
+
+/* contact */
+.contact-band h2 { font-size: clamp(2.6rem, 6vw, 4.8rem); }
+.contact-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(30px, 6vw, 80px); align-items: center; }
+.contact-grid p { margin-top: 18px; }
+.c-rows { display: grid; }
+.c-row { display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 20px 0; border-top: 1px solid var(--line); font-family: var(--f-display); font-weight: 600; font-size: 1.08rem; color: var(--ink); text-decoration: none; flex-wrap: wrap; }
+.c-row:last-child { border-bottom: 1px solid var(--line); }
+a.c-row:hover { color: var(--accent); }
+.c-row b { color: var(--accent); font-size: 1.3rem; }
+.c-row .copy { font-family: var(--f-body); font-weight: 700; background: transparent; color: var(--accent); border-color: var(--line); }
+.site-foot { margin-top: 70px; padding-top: 24px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; font-size: .85rem; color: var(--muted); }
+@media (max-width: 860px) { .contact-grid { grid-template-columns: 1fr; } #cv .tabs button { font-size: 1.05rem; padding: 14px 16px; } }
+@media (max-width: 560px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero > div:last-child { order: 0; }
+  .portrait { width: 140px; height: 140px; }
+  .portrait-wrap .hand { right: auto; left: 160px; bottom: 50px; }
+}
+
+
+/* ===== wide project cards ===== */
+.wcards { display: grid; gap: 26px; margin-top: 40px; }
+.wcard { display: grid; grid-template-columns: 1fr 1fr; min-height: 460px; border: 1px solid var(--line); border-radius: 22px; overflow: hidden; background: var(--surface); transition: border-color .3s, box-shadow .3s; }
+.wcard:hover { border-color: color-mix(in srgb, var(--teal) 60%, var(--line)); box-shadow: 0 30px 80px -40px #000; }
+.wvis { position: relative; display: grid; place-items: center; overflow: hidden; padding: 40px 30px; min-width: 0; }
+.v-ai { background: radial-gradient(circle at 75% 15%, #3E7A74 0, #1F4E57 38%, #163A4D 75%); }
+.v-research { background: radial-gradient(circle at 70% 20%, #5F55A8 0, #34306A 45%, #1D2448 85%); }
+.v-buy { background: radial-gradient(circle at 70% 20%, #A0647A 0, #5B3A5C 45%, #26294A 88%); }
+.cover { container-type: inline-size; width: min(82%, 420px); max-width: 100%; padding: clamp(18px, 2.2vw, 28px) clamp(20px, 2.5vw, 32px); display: flex; flex-direction: column; justify-content: space-between; gap: 3cqi; transform: rotate(-4deg); transition: transform .5s cubic-bezier(.2,.7,.2,1); }
+.wcard:hover .cover { transform: rotate(-2deg) translateY(-6px); }
+.v-ai .cover { background: #DCEAE1; color: #133D42; box-shadow: 24px 28px 0 #0E2C3C; }
+.v-research .cover { background: #ECE8FA; color: #2C2660; box-shadow: -24px 28px 0 #141A38; transform: rotate(4deg); }
+.wcard:hover .v-research .cover { transform: rotate(2deg) translateY(-6px); }
+.v-buy .cover { background: #F6E8E4; color: #4A2A45; box-shadow: 24px 28px 0 #1E1F3B; }
+.c-top, .c-foot { font-family: var(--f-display); font-weight: 700; font-size: 3.4cqi; letter-spacing: .13em; text-transform: uppercase; }
+.c-title { font-family: var(--f-display); font-weight: 600; font-size: 13cqi; line-height: .9; letter-spacing: -0.07em; }
+.c-arrow { margin-left: 3cqi; color: #2E8A70; font-weight: 500; }
+.chat { display: grid; gap: 1.8cqi; }
+.chat .b { font-size: 3.4cqi; padding: 1.6cqi 2.8cqi; border-radius: 2.4cqi; max-width: 80%; line-height: 1.25; }
+.chat .me { justify-self: end; background: #133D42; color: #DCEAE1; }
+.chat .ai { background: #FFFFFF; border: 1px dashed #5E52BF; color: #2C2660; }
+.chat .check { background: #2E8A70; color: #FFFFFF; font-weight: 700; }
+.ladder-g { display: grid; gap: 1.8cqi; }
+.ladder-g div { display: grid; grid-template-columns: 31cqi 1fr; align-items: center; gap: 2cqi; font-size: 3.3cqi; font-weight: 700; }
+.ladder-g i { display: block; height: 3.4cqi; border-radius: 2cqi; background: #5E52BF; }
+.ladder-g div:nth-child(1) i { background: #B3ACDD; } .ladder-g div:nth-child(2) i { background: #D9A43A; } .ladder-g div:nth-child(3) i { background: #2E8A70; } .ladder-g div:nth-child(4) i { background: #C2477F; }
+.cups-g { display: flex; align-items: flex-end; justify-content: space-around; height: 24cqi; }
+.cups-g div { display: flex; flex-direction: column; align-items: center; justify-content: flex-end; height: 100%; gap: 1.4cqi; font-family: var(--f-display); font-weight: 700; font-size: 3.4cqi; }
+.cups-g i { display: block; width: 13cqi; border: 2px solid #B23C77; border-top: 0; border-radius: 0 0 22% 22%; background: #F9D5E3; }
+.cups-g div:nth-child(2) span { text-decoration: line-through; opacity: .55; }
+.winfo { padding: clamp(26px, 4vw, 52px); display: flex; flex-direction: column; align-items: flex-start; gap: 18px; min-width: 0; background: var(--bg); }
+.wmeta { width: 100%; display: flex; justify-content: space-between; gap: 14px; flex-wrap: wrap; font-family: var(--f-display); font-weight: 600; font-size: .74rem; letter-spacing: .11em; text-transform: uppercase; color: var(--muted); }
+.winfo h3 { font-size: clamp(2rem, 3.6vw, 3.1rem); line-height: 1.04; letter-spacing: -0.055em; margin-top: 18px; }
+.winfo p { color: var(--text); max-width: 52ch; }
+.wtags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: auto; padding-top: 10px; }
+.wtags span { border: 1px solid var(--line); border-radius: 999px; padding: 6px 13px; font-size: .84rem; color: var(--text); }
+.wlinks { display: flex; flex-wrap: wrap; gap: 22px; }
+.wlinks a { color: var(--accent); font-weight: 700; text-decoration: none; padding-bottom: 5px; border-bottom: 1px solid color-mix(in srgb, var(--accent) 55%, transparent); font-size: .95rem; }
+.wlinks a.sec { color: var(--text); border-bottom-color: var(--line); }
+.wlinks a:hover { color: var(--ink); border-bottom-color: var(--ink); }
+@media (max-width: 860px) {
+  .wcard { grid-template-columns: 1fr; min-height: 0; }
+  .wvis { min-height: 300px; }
+}
+@media (prefers-reduced-motion: reduce) { .cover, .wcard:hover .cover { transition: none; } }
+/* ===== scroll + mouse effects ===== */
+html { scroll-behavior: smooth; }
+.scroll-progress { position: fixed; z-index: 60; top: env(safe-area-inset-top, 0px); left: 0; right: 0; height: 3px; pointer-events: none; }
+.scroll-progress span { display: block; height: 100%; background: var(--accent); transform-origin: left; transform: scaleX(0); box-shadow: 0 0 10px var(--accent); }
+.cursor-ring { position: fixed; z-index: 70; left: 0; top: 0; width: 34px; height: 34px; border: 1px solid color-mix(in srgb, var(--accent) 70%, transparent); border-radius: 50%; pointer-events: none; transform: translate(-100px, -100px); opacity: 0; transition: width .2s, height .2s, margin .2s, opacity .25s, border-color .25s, background .25s; margin: -17px 0 0 -17px; }
+.cursor-ring.on { opacity: 1; }
+.cursor-ring.hover { width: 58px; height: 58px; margin: -29px 0 0 -29px; border-color: var(--teal); background: color-mix(in srgb, var(--teal) 8%, transparent); }
+.cursor-dot { position: fixed; z-index: 71; left: 0; top: 0; width: 5px; height: 5px; margin: -2.5px 0 0 -2.5px; border-radius: 50%; background: var(--accent); pointer-events: none; opacity: 0; transform: translate(-100px, -100px); }
+.cursor-dot.on { opacity: 1; }
+@media (pointer: coarse) { .cursor-ring, .cursor-dot { display: none; } }
+.tracker { position: fixed; z-index: 40; right: 18px; top: 50%; transform: translateY(-50%); display: flex; flex-direction: column; align-items: flex-end; gap: 16px; }
+.tracker::before { content: ""; position: absolute; right: 3px; top: 6px; bottom: 34px; width: 1px; background: var(--line); }
+.tracker .fill { position: absolute; right: 3px; top: 6px; width: 1px; height: 0; background: var(--accent); }
+.tracker a { position: relative; display: flex; align-items: center; gap: 12px; text-decoration: none; font-family: var(--f-display); font-size: .66rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); transition: color .25s, transform .25s; }
+.tracker a .lbl { opacity: 0; transform: translateX(6px); transition: opacity .2s, transform .2s; background: color-mix(in srgb, var(--bg) 85%, transparent); padding: 2px 6px; border-radius: 4px; }
+.tracker a:hover .lbl, .tracker a:focus-visible .lbl, .tracker a.active .lbl { opacity: 1; transform: none; }
+.tracker a i { width: 7px; height: 7px; border-radius: 50%; border: 1px solid currentColor; background: var(--bg); flex: none; }
+.tracker a:hover, .tracker a.active { color: var(--accent); }
+.tracker a.active i { background: var(--accent); box-shadow: 0 0 10px var(--accent); }
+.tracker .pct { font-family: var(--f-display); font-weight: 600; font-size: .78rem; color: var(--accent); padding-right: 14px; margin-top: 6px; font-variant-numeric: tabular-nums; }
+@media (max-width: 1240px) { .tracker { display: none; } }
+@media (prefers-reduced-motion: no-preference) {
+  .rv { transform: translateY(26px); transition: transform .8s cubic-bezier(.2,.7,.2,1); }
+  .rv.in { transform: none; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .cursor-ring, .cursor-dot { display: none; } }
+
+/* ===== v8: own style ===== */
+body { font-size: 1.02rem; }
+h1, h2, h3 { font-family: var(--f-display); font-weight: 500; letter-spacing: -0.02em; }
+h4 { font-family: var(--f-label); font-weight: 700; letter-spacing: 0; }
+h2 { font-size: clamp(2.2rem, 4.6vw, 3.6rem); line-height: 1.08; letter-spacing: -0.025em; }
+h1 em, h2 em, h3 em { font-style: italic; font-weight: 400; color: var(--accent); }
+.kicker, .section-head .kicker, .overline { font-family: var(--f-label); font-weight: 800; font-size: .74rem; letter-spacing: .18em; }
+.kicker::before { content: ""; display: inline-block; width: 26px; height: 1px; background: currentColor; vertical-align: middle; margin-right: 10px; }
+nav.top .brand { font-family: var(--f-label); font-weight: 800; }
+nav.top .mono-mark { font-family: var(--f-display); font-style: italic; font-weight: 500; font-size: 1rem !important; border-radius: 12px; }
+.c-top, .c-foot, .wmeta, .pcard .type, .pt-label, .pc-meta { font-family: var(--f-label); }
+.c-title { font-family: var(--f-display); font-weight: 500; letter-spacing: -0.03em; line-height: .95; }
+#cv .tabs button { font-family: var(--f-display); font-weight: 500; letter-spacing: -0.01em; }
+.c-row { font-family: var(--f-label); }
+.fig .n, .rqs .rq { font-family: var(--f-display); }
+
+/* hero: aurora instead of grid, arched photo */
+.hero-band::before { background:
+  radial-gradient(40% 55% at 78% 30%, color-mix(in srgb, var(--accent) 22%, transparent) 0, transparent 70%),
+  radial-gradient(35% 50% at 60% 80%, color-mix(in srgb, var(--lilac) 20%, transparent) 0, transparent 70%),
+  radial-gradient(30% 40% at 10% 10%, color-mix(in srgb, var(--teal) 10%, transparent) 0, transparent 70%),
+  var(--bg); }
+.hero h1 { font-family: var(--f-display); font-weight: 400; letter-spacing: -0.035em; font-size: clamp(3rem, 7vw, 5.4rem); line-height: 1; }
+.portrait { width: clamp(190px, 21vw, 250px); height: clamp(240px, 27vw, 320px); border-radius: 999px 999px 26px 26px; object-fit: cover; box-shadow: 14px 14px 0 color-mix(in srgb, var(--accent) 35%, transparent); border: 1px solid var(--line); }
+.portrait-wrap .hand { right: -24px; bottom: 30px; transform: rotate(-8deg); }
+.pulse { border-radius: 2px; transform: rotate(45deg); }
+
+/* project cards: portrait grid */
+.pcs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; margin-top: 36px; }
+.pc { display: flex; flex-direction: column; text-decoration: none; color: inherit; border-radius: 26px 26px 26px 6px; overflow: hidden; background: var(--surface); border: 1px solid var(--line); transition: transform .35s cubic-bezier(.2,.7,.2,1), border-color .3s, box-shadow .3s; min-width: 0; }
+.pc:hover, .pc:focus-visible { transform: translateY(-6px); border-color: var(--accent); box-shadow: 0 30px 60px -36px color-mix(in srgb, var(--accent) 60%, #000); }
+.pc-vis { position: relative; display: grid; place-items: center; padding: 34px 26px; min-height: 270px; overflow: hidden; }
+.pc .cover { width: min(88%, 330px); transform: rotate(-2.5deg); }
+.pc .v-research .cover { transform: rotate(2.5deg); }
+.pc:hover .cover { transform: rotate(0) scale(1.03); }
+.pc .v-ai .cover, .pc .v-buy .cover { box-shadow: 12px 14px 0 rgba(4, 14, 28, .55); }
+.pc .v-research .cover { box-shadow: -12px 14px 0 rgba(4, 14, 28, .55); }
+.pc-body { padding: 22px 24px 24px; display: flex; flex-direction: column; gap: 12px; flex: 1; }
+.pc-meta { display: flex; align-items: baseline; gap: 12px; font-size: .74rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--teal); }
+.pc-meta .num { font-family: var(--f-display); font-style: italic; font-weight: 400; font-size: 2rem; letter-spacing: 0; color: var(--accent); line-height: 1; text-transform: none; }
+.pc h3 { font-size: 1.65rem; line-height: 1.1; }
+.pc p { color: var(--text); font-size: .97rem; }
+.pc-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; padding-top: 4px; }
+.pc-tags span { font-size: .78rem; padding: 4px 10px; border-radius: 999px; background: var(--tint); color: var(--text); }
+.pc-open { display: inline-flex; align-items: center; gap: 10px; font-weight: 800; color: var(--accent); font-size: .92rem; border-top: 1px solid var(--line); padding-top: 14px; width: 100%; }
+.pc-open i { font-style: normal; transition: transform .25s; }
+.pc:hover .pc-open i { transform: translateX(6px); }
+@media (max-width: 900px) { .pcs { grid-template-columns: 1fr; max-width: 560px; } }
+
+/* project views */
+.pview { min-height: 80vh; }
+.pbar { display: flex; justify-content: space-between; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 34px; padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+.pbar .back { font-family: var(--f-label); font-weight: 800; color: var(--ink); text-decoration: none; padding: 10px 18px; border: 1px solid var(--line); border-radius: 999px; }
+.pbar .back:hover { border-color: var(--accent); color: var(--accent); }
+.pcount { font-family: var(--f-label); font-size: .76rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+.pview section.proj { margin-top: 0 !important; }
+.pnext { margin-top: 70px; display: flex; flex-direction: column; gap: 6px; padding: 28px 30px; border-radius: 22px 22px 22px 6px; border: 1px solid var(--line); background: var(--surface); text-decoration: none; color: var(--ink); transition: border-color .3s; }
+.pnext:hover { border-color: var(--accent); }
+.pnext span { font-family: var(--f-label); font-size: .76rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
+.pnext b { font-family: var(--f-display); font-weight: 500; font-size: clamp(1.6rem, 3vw, 2.3rem); letter-spacing: -0.02em; }
+.pnext b i { font-style: normal; color: var(--accent); }
+
+/* floating progress pill (replaces side tracker) */
+.ptrack { position: fixed; z-index: 45; right: 20px; bottom: calc(20px + env(safe-area-inset-bottom, 0px)); display: flex; align-items: center; gap: 10px; padding: 7px 16px 7px 7px; border-radius: 999px; background: color-mix(in srgb, #0A1424 88%, transparent); border: 1px solid #27425B; backdrop-filter: blur(8px); text-decoration: none; color: #EAF1F5; box-shadow: 0 14px 30px -18px #000; }
+.ptrack svg { width: 34px; height: 34px; transform: rotate(-90deg); }
+.ptrack .tr-bg { fill: none; stroke: #27425B; stroke-width: 3; }
+.ptrack .tr-fg { fill: none; stroke: #FF9FC9; stroke-width: 3; stroke-linecap: round; stroke-dasharray: 94.25; stroke-dashoffset: 94.25; }
+.ptrack .pt-text { display: grid; line-height: 1.15; }
+.ptrack .pt-label { font-size: .72rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.ptrack .pt-pct { font-size: .72rem; color: #8FA7B7; font-variant-numeric: tabular-nums; }
+@media (max-width: 560px) { .ptrack .pt-text { display: none; } .ptrack { padding: 6px; } }
+
+/* cursor: soft glow + dot that becomes a ring on links */
+.cursor-ring { width: 260px; height: 260px; margin: -130px 0 0 -130px; border: 0; background: radial-gradient(circle, color-mix(in srgb, var(--accent) 16%, transparent) 0, transparent 65%); mix-blend-mode: screen; z-index: 1; }
+.cursor-ring.hover { width: 260px; height: 260px; margin: -130px 0 0 -130px; background: radial-gradient(circle, color-mix(in srgb, var(--lilac) 20%, transparent) 0, transparent 65%); }
+.cursor-dot { width: 8px; height: 8px; margin: -4px 0 0 -4px; transition: width .2s, height .2s, margin .2s, background .2s, border-color .2s; border: 1.5px solid transparent; }
+.cursor-dot.hover { width: 38px; height: 38px; margin: -19px 0 0 -19px; background: transparent; border-color: var(--accent); }
+
+[tabindex="-1"]:focus { outline: none; }
+/* ===== v9: hierarchy, icons, visuals ===== */
+.ic { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; flex: none; }
+.ic.sm { width: 18px; height: 18px; vertical-align: -3px; margin-right: 6px; }
+.ic.tiny { width: 15px; height: 15px; vertical-align: -2px; margin-right: 6px; }
+.ibadge { width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center; flex: none; }
+.ibadge.big { width: 56px; height: 56px; border-radius: 18px; }
+.ibadge.big .ic { width: 26px; height: 26px; }
+.c-pink { background: var(--accent-soft); color: var(--accent); }
+.c-teal { background: var(--teal-soft); color: var(--teal); }
+.c-lilac { background: var(--lilac-soft); color: var(--lilac); }
+.c-gold { background: var(--gold-soft); color: var(--gold); }
+.section-head .sub, p.sub { font-size: 1rem; color: var(--muted); max-width: 56ch; }
+
+/* about */
+.about-top { display: grid; grid-template-columns: 1.15fr 1fr; gap: clamp(28px, 5vw, 70px); align-items: end; }
+.lead { font-family: var(--f-display); font-weight: 400; font-style: italic; font-size: clamp(1.3rem, 2.2vw, 1.7rem); line-height: 1.35; color: var(--ink); margin-top: 18px; max-width: 34ch; }
+.stats { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin: 0; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.stats div { padding: 18px 18px 16px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.stats dt { font-family: var(--f-display); font-size: 2.8rem; line-height: 1; color: var(--accent); font-weight: 400; }
+.stats dt small { font-size: .9rem; margin-left: 4px; color: var(--muted); font-family: var(--f-label); }
+.stats dd { margin: 6px 0 0; font-size: .84rem; color: var(--muted); line-height: 1.4; }
+.me .journey { margin-top: 56px; }
+.journey li { font-size: .82rem; padding-right: 14px; }
+.journey b { font-family: var(--f-label); font-weight: 700; font-size: .88rem; margin-top: 2px; }
+.journey .yr { font-family: var(--f-display); font-style: italic; font-size: 1.15rem; color: var(--accent); }
+.me .traits { margin-top: 50px; gap: 18px; }
+.trait { background: var(--surface); border: 1px solid var(--line); border-top: 1px solid var(--line); border-radius: 22px 22px 22px 6px; padding: 22px 22px 20px; gap: 12px; }
+.trait h3 { font-size: 1.3rem; margin-top: 4px; }
+.trait ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.trait li { font-size: .88rem; color: var(--muted); line-height: 1.45; padding-left: 18px; position: relative; }
+.trait li::before { content: ""; position: absolute; left: 0; top: .55em; width: 7px; height: 7px; border-radius: 2px; transform: rotate(45deg); background: var(--accent); opacity: .8; }
+.trait:nth-child(2) li::before { background: var(--teal); }
+.trait:nth-child(3) li::before { background: var(--lilac); }
+.trait li + li { margin-top: 0; }
+
+.process { margin-top: 56px; padding: 30px clamp(20px, 3vw, 36px) 34px; border-radius: 26px; background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 10%, var(--surface)), var(--surface) 55%, color-mix(in srgb, var(--lilac) 12%, var(--surface))); border: 1px solid var(--line); }
+.process-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px 30px; flex-wrap: wrap; }
+.process-head h3 { font-size: 1.6rem; }
+.process-head p { font-size: .92rem; color: var(--muted); max-width: 48ch; }
+.steps4 { list-style: none; margin: 28px 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; position: relative; }
+.steps4::before { content: ""; position: absolute; top: 27px; left: 8%; right: 8%; border-top: 2px dashed color-mix(in srgb, var(--accent) 45%, transparent); }
+.steps4 li { position: relative; display: grid; justify-items: center; text-align: center; gap: 4px; }
+.steps4 .sc { width: 56px; height: 56px; border-radius: 50%; display: grid; place-items: center; background: var(--bg); border: 1.5px solid var(--accent); color: var(--accent); position: relative; z-index: 1; }
+.steps4 li:nth-child(2) .sc { border-color: var(--teal); color: var(--teal); }
+.steps4 li:nth-child(3) .sc { border-color: var(--lilac); color: var(--lilac); }
+.steps4 li:nth-child(4) .sc { border-color: var(--gold); color: var(--gold); }
+.steps4 .sn { font-family: var(--f-label); font-size: .68rem; font-weight: 800; letter-spacing: .16em; color: var(--muted); margin-top: 8px; }
+.steps4 b { font-family: var(--f-display); font-weight: 500; font-size: 1.25rem; color: var(--ink); }
+.steps4 small { font-size: .8rem; color: var(--muted); }
+
+/* practice */
+.pillars { gap: 18px; margin-top: 34px; }
+.pillar { border-radius: 22px 22px 22px 6px; padding: 22px; gap: 14px; }
+.pillar-top { display: flex; justify-content: space-between; align-items: flex-start; }
+.pnum { font-family: var(--f-display); font-style: italic; font-size: 2.2rem; line-height: 1; color: color-mix(in srgb, var(--ink) 18%, transparent); }
+.pillar h3 { font-size: 1.35rem; }
+.chip { font-size: .76rem; padding: 3px 10px; }
+.pillar .ev { font-size: .84rem; color: var(--muted); line-height: 1.45; border-top: 1px dashed var(--line); padding-top: 12px; }
+.honest { margin-top: 18px; border-radius: 18px; }
+.honest h4 { font-size: .92rem; display: flex; align-items: center; color: var(--ink); }
+.honest ul { font-size: .86rem; color: var(--muted); }
+.honest li + li { margin-top: 3px; }
+
+/* cv tweaks */
+.tl-list button { grid-template-columns: 34px 1fr; column-gap: 12px; align-items: center; }
+.tl-list .tic { grid-row: span 2; width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; background: var(--tint); color: var(--teal); }
+.tl-list .tic .ic { width: 18px; height: 18px; }
+.tl-list .n { font-size: .92rem; }
+.tl-detail li { font-size: .92rem; }
+#cv .cvintro p { font-size: .92rem; }
+
+/* skills */
+.caps { gap: 18px; margin-top: 34px; }
+.cap { border-radius: 22px 22px 22px 6px; padding: 22px; gap: 16px; }
+.cap-h { display: flex; gap: 14px; align-items: center; }
+.cap-h h3 { font-size: 1.3rem; }
+.cap .basis { font-family: var(--f-label); font-size: .72rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.skills-bottom { display: grid; grid-template-columns: 1fr 1.35fr; gap: 18px; margin-top: 18px; }
+.lang { display: grid; gap: 6px; }
+.lang-h { display: flex; justify-content: space-between; font-size: .9rem; }
+.lang-h b { color: var(--ink); }
+.lang-h span { color: var(--muted); font-size: .82rem; }
+.cefr { display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; }
+.cefr i { height: 8px; border-radius: 4px; background: var(--line); }
+.cefr i.on { background: linear-gradient(90deg, var(--teal), color-mix(in srgb, var(--teal) 70%, var(--lilac))); }
+.cefr-scale { display: grid; grid-template-columns: repeat(6, 1fr); gap: 4px; font-size: .68rem; color: var(--muted); text-align: center; font-family: var(--f-label); font-weight: 700; letter-spacing: .06em; }
+.certlist { list-style: none; margin: 0; padding: 0; display: grid; }
+.certlist li { display: flex; justify-content: space-between; gap: 6px 14px; flex-wrap: wrap; padding: 10px 0; border-top: 1px solid var(--line); font-size: .88rem; }
+.certlist li:first-child { border-top: 0; padding-top: 0; }
+.certlist b { color: var(--ink); font-weight: 700; }
+.certlist span { color: var(--muted); font-size: .8rem; }
+.certlist .more { color: var(--muted); font-size: .8rem; }
+
+@media (max-width: 900px) {
+  .about-top, .skills-bottom { grid-template-columns: 1fr; }
+  .steps4 { grid-template-columns: 1fr 1fr; row-gap: 26px; }
+  .steps4::before { display: none; }
+}
+
+/* ===== v10 ===== */
+.me .trait { border-top: 2px solid var(--gold); }
+.me .trait:nth-child(2) { border-top-color: var(--teal); }
+.me .trait:nth-child(3) { border-top-color: var(--lilac); }
+
+/* CV: colourful */
+#cv .tabs { background: transparent; border: 0; gap: 14px; overflow: visible; display: grid; grid-template-columns: 1fr 1fr; }
+#cv .tabs button { display: flex; align-items: center; gap: 14px; padding: 18px 20px; border-radius: 20px 20px 20px 6px; border: 1.5px solid var(--line); background: var(--surface); text-align: left; box-shadow: none; transition: transform .2s, background .3s, border-color .3s; }
+#cv .tabs button + button { border-left: 1.5px solid var(--line); }
+#cv .tabs button:hover { transform: translateY(-2px); }
+#cv .tab-ic { width: 46px; height: 46px; border-radius: 14px; display: grid; place-items: center; background: var(--tint); color: var(--muted); flex: none; }
+#cv .tab-t { display: grid; gap: 2px; }
+#cv .tab-t b { font-family: var(--f-display); font-weight: 500; font-size: 1.35rem; color: var(--ink); }
+#cv .tab-t small { font-family: var(--f-label); font-size: .8rem; color: var(--muted); }
+#cv .tabs button.tab-p[aria-selected="true"] { background: linear-gradient(120deg, #B23C77, #6A3FA0); border-color: transparent; box-shadow: 0 18px 36px -22px #B23C77; }
+#cv .tabs button.tab-r[aria-selected="true"] { background: linear-gradient(120deg, #5A4FBD, #1D7B6F); border-color: transparent; box-shadow: 0 18px 36px -22px #5A4FBD; }
+#cv .tabs button[aria-selected="true"] .tab-t b, #cv .tabs button[aria-selected="true"] .tab-t small { color: #FFFFFF; }
+#cv .tabs button[aria-selected="true"] .tab-ic { background: rgba(255,255,255,.18); color: #FFFFFF; }
+#cv .cvintro { position: relative; overflow: hidden; border-radius: 22px; }
+#cv .cvintro.ci-p { background: linear-gradient(120deg, #2A1B3D 0%, #3B2150 45%, #1E2B4F 100%); }
+#cv .cvintro.ci-r { background: linear-gradient(120deg, #1D2448 0%, #2A2F6B 50%, #154447 100%); }
+#cv .cvintro::after { content: ""; position: absolute; width: 260px; height: 260px; right: -60px; top: -120px; border-radius: 50%; background: radial-gradient(circle, rgba(255,159,201,.35), transparent 70%); pointer-events: none; }
+#cv .cvintro.ci-r::after { background: radial-gradient(circle, rgba(127,224,207,.3), transparent 70%); }
+#cv .cvintro h3 { position: relative; }
+.cv-legend { display: flex; flex-wrap: wrap; gap: 8px 16px; font-family: var(--f-label); font-size: .78rem; font-weight: 700; color: var(--muted); }
+.cv-legend .lg { display: inline-flex; align-items: center; padding: 4px 10px 4px 8px; border-radius: 999px; background: var(--tc-soft); color: var(--tc); }
+.t-job { --tc: var(--accent); --tc-soft: var(--accent-soft); }
+.t-edu { --tc: var(--gold); --tc-soft: var(--gold-soft); }
+.t-res { --tc: var(--lilac); --tc-soft: var(--lilac-soft); }
+.t-talk { --tc: var(--teal); --tc-soft: var(--teal-soft); }
+.tl-list { position: relative; gap: 10px; padding-left: 0; }
+.tl-list::before { content: ""; position: absolute; left: 30px; top: 14px; bottom: 14px; width: 2px; background: linear-gradient(var(--accent), var(--lilac), var(--teal)); opacity: .35; border-radius: 2px; }
+.tl-list li { position: relative; }
+.tl-list button { border-radius: 16px 16px 16px 4px; padding: 12px 14px; background: var(--surface); border: 1.5px solid var(--line); grid-template-columns: 34px 1fr; }
+.tl-list .tic { background: var(--tc-soft); color: var(--tc); border-radius: 50%; position: relative; z-index: 1; box-shadow: 0 0 0 4px var(--bg); }
+.tl-list .d { color: var(--tc); font-family: var(--f-label); font-weight: 800; font-size: .72rem; letter-spacing: .06em; }
+.tl-list button:hover { border-color: var(--tc); }
+.tl-list button[aria-pressed="true"] { background: var(--tc-soft); border-color: var(--tc); transform: translateX(6px); }
+.tl-list button { transition: transform .25s, background .25s, border-color .25s; }
+.tl-detail { padding: 0 0 22px; overflow: hidden; border-radius: 22px 22px 22px 6px; border: 1.5px solid var(--tc); background: var(--surface); }
+.tl-detail > *:not(.dh) { margin-left: 24px; margin-right: 24px; }
+.tl-detail .dh { display: flex; align-items: center; gap: 14px; padding: 18px 24px; background: linear-gradient(110deg, var(--tc-soft), transparent 85%); border-bottom: 1px solid var(--line); margin-bottom: 4px; }
+.tl-detail .big-ic { width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center; background: var(--tc); color: var(--surface); }
+.tl-detail .big-ic .ic { width: 24px; height: 24px; }
+.tl-detail .dh > div { display: grid; gap: 2px; }
+.tl-detail .type-badge { font-family: var(--f-label); font-size: .72rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--tc); }
+.tl-detail .dd { font-family: var(--f-display); font-style: italic; font-size: 1.1rem; color: var(--ink); }
+.tl-detail h3 { font-size: 1.5rem; }
+.tl-detail .org { display: flex; align-items: center; font-size: .9rem; }
+.tl-detail ul { list-style: none; padding: 0; display: grid; gap: 8px; }
+.tl-detail li { position: relative; padding-left: 18px; font-size: .92rem; }
+.tl-detail li::before { content: ""; position: absolute; left: 0; top: .55em; width: 7px; height: 7px; border-radius: 2px; transform: rotate(45deg); background: var(--tc); }
+.tl-detail .chip { background: var(--tc-soft); border-color: transparent; color: var(--tc); font-weight: 700; }
+.cvfoot { padding: 16px 20px; border-radius: 16px; background: var(--surface); border: 1px dashed var(--line); }
+@media (max-width: 700px) { #cv .tabs { grid-template-columns: 1fr; } }
+
+/* seminar sample */
+.seminar { display: grid; gap: 18px; background: var(--surface); border: 1px solid var(--line); border-radius: 26px 26px 26px 6px; padding: clamp(18px, 3vw, 30px); }
+.sem-top { display: flex; justify-content: space-between; align-items: center; gap: 12px 20px; flex-wrap: wrap; }
+.sem-toggle { display: inline-flex; padding: 4px; border-radius: 999px; background: var(--tint); border: 1px solid var(--line); }
+.sem-toggle button { font: inherit; font-family: var(--f-label); font-weight: 800; font-size: .88rem; border: 0; background: transparent; color: var(--muted); padding: 9px 16px; border-radius: 999px; cursor: pointer; display: inline-flex; align-items: center; }
+.sem-toggle #mode-p[aria-pressed="true"] { background: var(--line); color: var(--ink); }
+.sem-toggle #mode-i[aria-pressed="true"] { background: linear-gradient(120deg, var(--accent), var(--lilac)); color: #1A1024; }
+.sem-ctx { font-size: .82rem; color: var(--muted); }
+.sem-body { display: grid; grid-template-columns: 1.35fr 1fr; gap: 18px; }
+.chatwin { border-radius: 18px; border: 1px solid var(--line); background: var(--bg); overflow: hidden; min-width: 0; }
+.chat-bar { display: flex; align-items: center; gap: 6px; padding: 10px 14px; background: var(--tint); border-bottom: 1px solid var(--line); font-size: .78rem; color: var(--muted); }
+.chat-bar i { width: 9px; height: 9px; border-radius: 50%; background: var(--line); }
+.chat-bar i:nth-child(1) { background: #FF8A8A; } .chat-bar i:nth-child(2) { background: #F3C46F; } .chat-bar i:nth-child(3) { background: #7FE0CF; }
+.chat-bar span { margin-left: 8px; }
+.chat-log { padding: 16px; display: grid; gap: 12px; min-height: 300px; align-content: start; }
+.cmsg { display: grid; grid-template-columns: 32px 1fr; gap: 10px; align-items: start; max-width: 92%; }
+.cmsg .cav { width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; font-family: var(--f-label); font-weight: 800; font-size: .78rem; }
+.cmsg .cwho { font-family: var(--f-label); font-size: .72rem; font-weight: 800; letter-spacing: .08em; color: var(--muted); }
+.cmsg p { margin-top: 3px; padding: 10px 13px; border-radius: 4px 14px 14px 14px; font-size: .9rem; line-height: 1.45; background: var(--tint); color: var(--text); }
+.c-s .cav { background: var(--accent-soft); color: var(--accent); }
+.c-s2 .cav { background: var(--teal-soft); color: var(--teal); }
+.c-ai .cav { background: var(--lilac-soft); color: var(--lilac); }
+.c-ai p { border: 1px dashed color-mix(in srgb, var(--lilac) 60%, transparent); background: color-mix(in srgb, var(--lilac-soft) 70%, transparent); }
+.c-s p { background: color-mix(in srgb, var(--accent-soft) 70%, transparent); }
+.c-s2 p { background: color-mix(in srgb, var(--teal-soft) 80%, transparent); }
+.cnote { font-size: .84rem; font-style: italic; color: var(--muted); text-align: center; padding: 8px; border-top: 1px dashed var(--line); }
+.sem-side { display: grid; gap: 12px; align-content: start; min-width: 0; }
+.sem-card { border-radius: 16px; border: 1px solid var(--line); padding: 14px 16px; background: var(--bg); display: grid; gap: 8px; }
+.sem-lbl { font-family: var(--f-label); font-size: .7rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); }
+.icap-meter { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+.icap-meter span { height: 30px; border-radius: 8px; background: var(--tint); display: grid; place-items: center; font-family: var(--f-label); font-weight: 800; font-size: .78rem; color: var(--muted); transition: background .3s, color .3s; }
+.icap-meter span.on.l0 { background: var(--line); color: var(--ink); }
+.icap-meter span.on.l1 { background: var(--gold); color: #1A1024; }
+.icap-meter span.on.l2 { background: var(--teal); color: #10231F; }
+.icap-meter span.on.l3 { background: var(--accent); color: #26101D; }
+.sem-level { font-family: var(--f-display); font-weight: 500; font-size: 1.5rem; }
+.sem-level.l0 { color: var(--muted); } .sem-level.l3 { color: var(--accent); }
+.sem-do { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.sem-do li { position: relative; padding-left: 18px; font-size: .88rem; color: var(--text); }
+.sem-do li::before { content: ""; position: absolute; left: 0; top: .5em; width: 7px; height: 7px; border-radius: 2px; transform: rotate(45deg); background: var(--teal); }
+.sem-out { background: linear-gradient(130deg, color-mix(in srgb, var(--accent) 12%, var(--bg)), var(--bg)); }
+.sem-out p { font-size: .9rem; color: var(--text); }
+.flow { border-radius: 18px; border: 1px solid var(--line); padding: 16px; background: var(--bg); display: grid; gap: 12px; }
+.flow-h { display: flex; justify-content: space-between; gap: 6px 16px; flex-wrap: wrap; }
+.flow-h b { font-family: var(--f-display); font-weight: 500; font-size: 1.15rem; color: var(--ink); }
+.flow-h span { font-size: .8rem; color: var(--muted); }
+.flow-row { display: grid; grid-template-columns: 1.1fr 1fr 1.6fr 1.6fr 1.3fr 1.1fr; gap: 8px; }
+.fz { border-radius: 14px; padding: 12px; background: var(--tint); display: grid; gap: 4px; align-content: start; min-width: 0; border-top: 3px solid var(--line); }
+.fz .ft { font-family: var(--f-label); font-size: .68rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.fz b { color: var(--ink); font-size: .92rem; }
+.fz small { font-size: .78rem; color: var(--muted); line-height: 1.35; }
+.fz .icap { justify-self: start; margin-top: 4px; }
+.fz.pre, .fz.post { background: transparent; border: 1px dashed var(--line); border-top: 3px dashed var(--line); }
+.fz:has(.icap.I) { border-top-color: var(--accent); }
+.fz:has(.icap.C) { border-top-color: var(--teal); }
+.fz:has(.icap.A) { border-top-color: var(--gold); }
+@media (max-width: 900px) { .sem-body { grid-template-columns: 1fr; } .flow-row { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 480px) { .flow-row { grid-template-columns: 1fr; } }
+
+/* contact email card */
+.mailcard { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; column-gap: 16px; row-gap: 14px; padding: 18px 20px; margin-bottom: 14px; border-radius: 22px 22px 22px 6px; background: linear-gradient(120deg, color-mix(in srgb, var(--accent) 16%, var(--surface)), var(--surface) 70%); border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line)); }
+.mailcard .ibadge.big { width: 50px; height: 50px; border-radius: 16px; }
+.mc-t { display: grid; gap: 3px; min-width: 0; }
+.mc-l { font-family: var(--f-label); font-size: .72rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); }
+.mc-a { font-family: var(--f-label); font-weight: 700; font-size: clamp(1rem, 1.6vw, 1.15rem); color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; user-select: all; }
+.mc-b { grid-column: 1 / -1; display: flex; gap: 8px; padding-top: 14px; border-top: 1px solid var(--line); }
+.mailcard .copy, .mc-send { flex: 1; text-align: center; margin: 0; padding: 9px 14px; border-radius: 999px; font-family: var(--f-label); font-weight: 800; font-size: .88rem; cursor: pointer; white-space: nowrap; }
+.mailcard .copy { background: var(--accent); color: #26101D; border: 0; }
+.mc-send { border: 1px solid var(--line); color: var(--ink); text-decoration: none; }
+.mc-send:hover { border-color: var(--accent); color: var(--accent); }
+@media (max-width: 380px) { .mc-a { white-space: normal; overflow-wrap: anywhere; } }
+</style>
+</head>
+<body>
+
+
+<nav class="top" aria-label="Portfolio sections">
+  <div class="in">
+    <a class="brand" href="#top"><span class="mono-mark" aria-hidden="true">N<b>·</b>A</span>Nilüfer Beyza Akcan</a>
+    <ul>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#practice">How I work</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6.5 6.5-6.5s6.5 2.9 6.5 6.5"/><circle cx="17.5" cy="9" r="2.6"/><path d="M17.5 14c2.3 0 4 1.8 4 4.5"/></symbol>
+    <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.5"/><circle cx="18" cy="6" r="2.5"/><path d="M8.5 18H15a3.5 3.5 0 000-7H9a3.5 3.5 0 010-7h6.5"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.6-3.4 8.3-8 9-4.6-.7-8-4.4-8-9V6z"/><path d="M8.5 12.2l2.5 2.5 4.6-5"/></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V11M10 20V5M16 20v-6M21 20H3"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6.5C10 5 7 4.5 3.5 5v13c3.5-.5 6.5 0 8.5 1.5 2-1.5 5-2 8.5-1.5V5C17 4.5 14 5 12 6.5z"/><path d="M12 6.5v13"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2.5L4.5 14H11l-1 7.5L18.5 10H12z"/></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.8 3.2 2.8 14.8 0 18M12 3c-2.8 3.2-2.8 14.8 0 18"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></symbol>
+    <symbol id="i-laptop" viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="11" rx="1.5"/><path d="M2 19.5h20"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8.5 7V5.5A1.5 1.5 0 0110 4h4a1.5 1.5 0 011.5 1.5V7M3 12.5h18"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z"/><path d="M6 11.2v4.6c0 1.6 2.7 3.2 6 3.2s6-1.6 6-3.2v-4.6M22 9v5"/></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0013 0M12 17.5V21"/></symbol>
+    <symbol id="i-flask" viewBox="0 0 24 24"><path d="M9 3h6M10 3v6.5L4.8 18.2A1.9 1.9 0 006.4 21h11.2a1.9 1.9 0 001.6-2.8L14 9.5V3"/><path d="M7.2 15h9.6"/></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9z"/><path d="M19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v10H10l-5 4v-4H4z"/><path d="M8 9.5h8M8 12h5"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><circle cx="12" cy="9" r="5.5"/><path d="M9 13.8L7.5 21 12 18.8l4.5 2.2L15 13.8"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0113 0C18.5 15.4 12 21 12 21z"/><circle cx="12" cy="10" r="2.3"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 7l8.5 6 8.5-6"/></symbol>
+    <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M4 20l1-4.5L15.5 5a2.1 2.1 0 013 3L8 18.5z"/><path d="M13.5 7l3 3"/></symbol>
+  </defs>
+</svg>
+<div class="scroll-progress" aria-hidden="true"><span id="sp"></span></div>
+<div class="cursor-ring" id="cring" aria-hidden="true"></div>
+<div class="cursor-dot" id="cdot" aria-hidden="true"></div>
+<a class="ptrack" id="tracker" href="#top" aria-label="Back to top">
+  <svg viewBox="0 0 36 36" aria-hidden="true"><circle cx="18" cy="18" r="15" class="tr-bg"/><circle cx="18" cy="18" r="15" class="tr-fg" id="tring"/></svg>
+  <span class="pt-text"><span class="pt-label" id="tlabel">Intro</span><span class="pt-pct" id="tpct">00%</span></span>
+</a>
+<div class="wrap" id="top">
+<main id="home">
+
+  <div class="band hero-band">
+  <header class="hero">
+    <div class="portrait-wrap">
+      <img class="portrait" src="data:image/jpeg;base64,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" alt="Portrait of Nilüfer Beyza Akcan">
+      <span class="hand" aria-hidden="true">hi there!</span>
+    </div>
+    <div>
+      <p class="overline"><span class="pulse" aria-hidden="true"></span>Instructional designer · Learning &amp; development</p>
+      <h1>Hi, I'm <em>Nilüfer</em>.</h1>
+      <p>I'm an instructional designer with a background in psychology. I started out designing mental training programmes for young athletes, and that work taught me something I still design around: people learn when they do the thinking themselves. I'm now finishing my M.A. in Research on Learning and Instruction at the University of Augsburg, with a thesis on how students use AI and what it means for their engagement.</p>
+      <div class="creds"><span>M.A. Research on Learning and Instruction · University of Augsburg</span><span>B.Sc. Psychology · Ufuk University</span></div>
+      <div class="facts-line"><span>Augsburg, Germany</span><span>Turkish · English · German</span><span>Open to ID and L&amp;D roles from early 2027</span></div>
+      <div class="hero-cta"><a class="btn" href="#work">See my work<span class="arr" aria-hidden="true">↓</span></a><a class="btn ghost" href="#cv">Read my CV<span class="arr" aria-hidden="true">↓</span></a></div>
+    </div>
+  </header>
+
+  </div>
+  <div class="band">
+  <section id="work" aria-labelledby="work-h">
+    <span class="kicker">Selected work</span>
+    <h2 id="work-h" style="margin-top:8px">Three projects, <em>three formats</em></h2>
+    <p style="margin-top:12px">Pick a card to open the full case: the problem, my design decisions and the learning science behind them.</p>
+    <div class="pcs">
+      <a class="pc" href="#think-with-ai">
+        <div class="pc-vis v-ai" aria-hidden="true">
+          <div class="cover">
+            <div class="c-top">Branching scenario / Storyline</div>
+            <div class="c-title">Think<br>with AI<span class="c-arrow">↗</span></div>
+            <div class="chat">
+              <div class="b me">Summarise these 40 notes</div>
+              <div class="b ai">Top theme: offline mode (12 notes)</div>
+              <div class="b check">Checked: 4 notes, not 12 ✓</div>
+            </div>
+            <div class="c-foot">Safety · Accuracy · Ownership</div>
+          </div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-meta"><span class="num">01</span><span>E-learning</span></div>
+          <h3>Think with AI</h3>
+          <p>A branching scenario where new employees practise using an AI assistant safely, critically and on their own terms.</p>
+          <div class="pc-tags"><span>Scenario-based</span><span>AI literacy</span><span>Storyline</span></div>
+          <span class="pc-open">Open project <i aria-hidden="true">→</i></span>
+        </div>
+      </a>
+      <a class="pc" href="#thesis">
+        <div class="pc-vis v-research" aria-hidden="true">
+          <div class="cover">
+            <div class="c-top">Master's thesis / Augsburg</div>
+            <div class="c-title">AI &amp;<br>engagement</div>
+            <div class="ladder-g">
+              <div><span>Passive</span><i style="width:30%"></i></div>
+              <div><span>Active</span><i style="width:50%"></i></div>
+              <div><span>Constructive</span><i style="width:72%"></i></div>
+              <div><span>Interactive</span><i style="width:94%"></i></div>
+            </div>
+            <div class="c-foot">n = 1,743 · Bavaria · ICAP</div>
+          </div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-meta"><span class="num">02</span><span>Research · Master's thesis</span></div>
+          <h3>AI and student engagement</h3>
+          <p>My master's thesis: how 1,743 students in Bavaria use AI, and what it means for deeper learning.</p>
+          <div class="pc-tags"><span>ICAP</span><span>Quantitative</span><span>In progress</span></div>
+          <span class="pc-open">Open project <i aria-hidden="true">→</i></span>
+        </div>
+      </a>
+      <a class="pc" href="#why-people-buy">
+        <div class="pc-vis v-buy" aria-hidden="true">
+          <div class="cover">
+            <div class="c-top">Live workshop / 3 hours</div>
+            <div class="c-title">Why people<br>buy</div>
+            <div class="cups-g">
+              <div><i style="height:36%"></i><span>€2.80</span></div>
+              <div><i style="height:50%"></i><span>€4.20</span></div>
+              <div><i style="height:64%"></i><span>€4.40</span></div>
+            </div>
+            <div class="c-foot">Experience · Reflect · Practise</div>
+          </div>
+        </div>
+        <div class="pc-body">
+          <div class="pc-meta"><span class="num">03</span><span>Workshop</span></div>
+          <h3>Why People Buy</h3>
+          <p>A three-hour workshop on consumer psychology for sales teams, built around practice and ethics.</p>
+          <div class="pc-tags"><span>Facilitation</span><span>Kolb's cycle</span><span>Sales enablement</span></div>
+          <span class="pc-open">Open project <i aria-hidden="true">→</i></span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  </div>
+  <div class="band alt">
+  <section class="me" id="about" aria-labelledby="me-h">
+    <div class="about-top">
+      <div>
+        <span class="kicker">About</span>
+        <h2 id="me-h" style="margin-top:10px">A little more <em>about me</em></h2>
+        <p class="lead">Psychology taught me how people think. Research taught me how to check. Instructional design is where the two meet.</p>
+      </div>
+      <dl class="stats">
+        <div><dt>3</dt><dd>countries I've lived and worked in</dd></div>
+        <div><dt>3</dt><dd>universities I've done research at</dd></div>
+        <div><dt>3</dt><dd>languages I work in</dd></div>
+        <div><dt>10<small>yrs</small></dt><dd>in psychology and learning, since 2016</dd></div>
+      </dl>
+    </div>
+
+    <div class="journey" aria-label="My path so far">
+      <ol>
+        <li><span class="yr">2016</span><b>Psychology degree</b><span class="where">Ankara</span></li>
+        <li><span class="yr">2020</span><b>Erasmus+ semester</b><span class="where">Olomouc</span></li>
+        <li><span class="yr">2021</span><b>Research assistant</b><span class="where">Palacký University</span></li>
+        <li><span class="yr">2022</span><b>Psychologist, para-athletes</b><span class="where">Ankara</span></li>
+        <li><span class="yr">2024</span><b>M.A. + research at TUM</b><span class="where">Augsburg · Munich</span></li>
+        <li><span class="yr">2025</span><b>L&amp;D intern + AI book</b><span class="where">Remote</span></li>
+        <li><span class="yr">2026</span><b>Thesis on AI &amp; engagement</b><span class="where">Augsburg</span></li>
+      </ol>
+    </div>
+
+    <div class="traits">
+      <div class="trait">
+        <span class="ibadge c-pink"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg></span>
+        <h3>Research comes first</h3>
+        <ul>
+          <li>Three research roles in three countries</li>
+          <li>Presented my own study at the Bernried Academic Retreat</li>
+          <li>I check the evidence before I design</li>
+        </ul>
+      </div>
+      <div class="trait">
+        <span class="ibadge c-teal"><svg class="ic" aria-hidden="true"><use href="#i-bolt"/></svg></span>
+        <h3>I put in the work</h3>
+        <ul>
+          <li>Moved to Germany and learned German alongside my M.A.</li>
+          <li>Studies, internship and research in parallel</li>
+          <li>Self-directed courses in ID, AI and R</li>
+        </ul>
+      </div>
+      <div class="trait">
+        <span class="ibadge c-lilac"><svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg></span>
+        <h3>Open to other views</h3>
+        <ul>
+          <li>Türkiye, the Czech Republic, Germany</li>
+          <li>Athletes, sales teams and students</li>
+          <li>I welcome feedback that changes my mind</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="process">
+      <div class="process-head">
+        <h3>How I work</h3>
+        <p>Problem first, content second. I design the practice, then add only what people need to do it well.</p>
+      </div>
+      <ol class="steps4">
+        <li><span class="sc"><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg></span><span class="sn">01</span><b>Analyse</b><small>Interviews · surveys · real work</small></li>
+        <li><span class="sc"><svg class="ic" aria-hidden="true"><use href="#i-pencil"/></svg></span><span class="sn">02</span><b>Design</b><small>ADDIE · ICAP · Bloom · Mayer</small></li>
+        <li><span class="sc"><svg class="ic" aria-hidden="true"><use href="#i-laptop"/></svg></span><span class="sn">03</span><b>Build</b><small>Articulate 360 · Canva · Figma</small></li>
+        <li><span class="sc"><svg class="ic" aria-hidden="true"><use href="#i-chart"/></svg></span><span class="sn">04</span><b>Evaluate</b><small>Pre/post · rubrics · Kirkpatrick</small></li>
+      </ol>
+    </div>
+  </section>
+
+  </div>
+  <div class="band">
+  <!-- HOW I RUN LEARNING PROJECTS -->
+  <section class="big" id="practice" aria-labelledby="pr-h">
+    <div class="section-head">
+      <span class="kicker">Beyond design</span>
+      <h2 id="pr-h">How I run a <em>learning project</em></h2>
+      <p class="sub">Content is one part. A project also needs clear analysis, agreement on the goal, a plan that holds and a way to check the result.</p>
+    </div>
+    <div class="pillars">
+      <div class="pillar">
+        <div class="pillar-top"><span class="ibadge big c-pink"><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg></span><span class="pnum">01</span></div>
+        <h3>Analysis &amp; stakeholders</h3>
+        <div class="chips"><span class="chip">Needs analysis</span><span class="chip">Interviews</span><span class="chip">Surveys</span><span class="chip">Audience analysis</span></div>
+        <p class="ev"><svg class="ic tiny" aria-hidden="true"><use href="#i-pin"/></svg>Needs analyses at Happy Mortals; individual needs assessments with athletes</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-top"><span class="ibadge big c-teal"><svg class="ic" aria-hidden="true"><use href="#i-route"/></svg></span><span class="pnum">02</span></div>
+        <h3>Planning &amp; delivery</h3>
+        <div class="chips"><span class="chip">ADDIE</span><span class="chip">Storyboarding</span><span class="chip">Facilitation</span><span class="chip">Remote teams</span></div>
+        <p class="ev"><svg class="ic tiny" aria-hidden="true"><use href="#i-pin"/></svg>Remote workshops for business teams; 14 months of group programmes</p>
+      </div>
+      <div class="pillar">
+        <div class="pillar-top"><span class="ibadge big c-lilac"><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg></span><span class="pnum">03</span></div>
+        <h3>Quality &amp; evaluation</h3>
+        <div class="chips"><span class="chip">Pre/post checks</span><span class="chip">Rubrics</span><span class="chip">Kirkpatrick</span><span class="chip">Research ethics</span></div>
+        <p class="ev"><svg class="ic tiny" aria-hidden="true"><use href="#i-pin"/></svg>Quizzes, rubrics and pre/post evaluations; data analysis at Palacký</p>
+      </div>
+    </div>
+    <div class="honest">
+      <div>
+        <h4><svg class="ic sm" aria-hidden="true"><use href="#i-briefcase"/></svg> From real work</h4>
+        <ul>
+          <li>L&amp;D internship, Happy Mortals</li>
+          <li>Psychologist, sports federation</li>
+          <li>Research at TUM, Palacký and UHS</li>
+          <li>Master's thesis (in progress)</li>
+        </ul>
+      </div>
+      <div>
+        <h4><svg class="ic sm" aria-hidden="true"><use href="#i-sparkle"/></svg> Portfolio concept projects</h4>
+        <ul>
+          <li><i>Think with AI</i> and <i>Why People Buy</i></li>
+          <li>Fictional companies, illustrative figures</li>
+          <li>Kept separate so no sample looks like a client result</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  </div>
+  <div class="band light">
+  <!-- CV -->
+  <section class="big" id="cv" aria-labelledby="cv-h">
+    <div class="section-head">
+      <span class="kicker">CV</span>
+      <h2 id="cv-h">My experience, <em>two ways</em></h2>
+      <p class="sub">Choose the version you need: practice for L&amp;D and instructional design roles, or research for academic ones. Select an entry to read more.</p>
+    </div>
+    <div class="tabs" role="tablist" aria-label="CV version">
+      <button type="button" role="tab" id="tab-practice" class="tab-p" aria-selected="true" aria-controls="cv-practice"><span class="tab-ic"><svg class="ic" aria-hidden="true"><use href="#i-briefcase"/></svg></span><span class="tab-t"><b>Practice CV</b><small>For L&amp;D and instructional design roles</small></span></button>
+      <button type="button" role="tab" id="tab-research" class="tab-r" aria-selected="false" aria-controls="cv-research"><span class="tab-ic"><svg class="ic" aria-hidden="true"><use href="#i-flask"/></svg></span><span class="tab-t"><b>Research CV</b><small>For academic and research roles</small></span></button>
+    </div>
+
+    <div class="cvpanel" id="cv-practice" role="tabpanel" aria-labelledby="tab-practice">
+      <div class="cvintro ci-p">
+        <div>
+          <h3>Learning design grounded in psychology</h3>
+          <p style="margin-top:6px">From needs analysis to workshop delivery and evaluation, for business teams, athletes and students.</p>
+        </div>
+        <div class="chips"><span class="chip">Instructional design</span><span class="chip">Workshop facilitation</span><span class="chip">Learning needs analysis</span><span class="chip">Assessment design</span><span class="chip">Articulate 360</span><span class="chip">AI-supported learning</span></div>
+      </div>
+      <div class="cv-legend" aria-hidden="true"><span class="lg t-job"><svg class="ic tiny" aria-hidden="true"><use href="#i-briefcase"/></svg>Work</span><span class="lg t-edu"><svg class="ic tiny" aria-hidden="true"><use href="#i-cap"/></svg>Education</span><span class="lg t-res"><svg class="ic tiny" aria-hidden="true"><use href="#i-flask"/></svg>Research</span><span class="lg t-talk"><svg class="ic tiny" aria-hidden="true"><use href="#i-mic"/></svg>Talks &amp; teaching</span></div>
+      <div class="tl">
+        <ul class="tl-list" data-group="practice"></ul>
+        <div class="tl-detail" aria-live="polite"></div>
+      </div>
+    </div>
+
+    <div class="cvpanel" id="cv-research" role="tabpanel" aria-labelledby="tab-research" hidden>
+      <div class="cvintro ci-r">
+        <div>
+          <h3>Learning sciences research</h3>
+          <p style="margin-top:6px">AI-supported learning, cognitive engagement, socio-emotional learning and instrument adaptation, across three universities in three countries.</p>
+        </div>
+        <div class="chips"><span class="chip">ICAP</span><span class="chip">Quantitative methods</span><span class="chip">Survey design</span><span class="chip">SPSS</span><span class="chip">R</span><span class="chip">Literature synthesis</span></div>
+      </div>
+      <div class="cv-legend" aria-hidden="true"><span class="lg t-job"><svg class="ic tiny" aria-hidden="true"><use href="#i-briefcase"/></svg>Work</span><span class="lg t-edu"><svg class="ic tiny" aria-hidden="true"><use href="#i-cap"/></svg>Education</span><span class="lg t-res"><svg class="ic tiny" aria-hidden="true"><use href="#i-flask"/></svg>Research</span><span class="lg t-talk"><svg class="ic tiny" aria-hidden="true"><use href="#i-mic"/></svg>Talks &amp; teaching</span></div>
+      <div class="tl">
+        <ul class="tl-list" data-group="research"></ul>
+        <div class="tl-detail" aria-live="polite"></div>
+      </div>
+    </div>
+
+    <div class="cvfoot" style="margin-top:16px">
+      <span>Need a PDF copy? Email me and I'll send whichever version you need.</span>
+      <a href="https://www.linkedin.com/in/nilufer-beyza-akcan/" target="_blank" rel="noopener">LinkedIn profile</a>
+    </div>
+  </section>
+
+  </div>
+  <div class="band alt">
+  <!-- SKILLS -->
+  <section class="big" id="skills" aria-labelledby="sk-h">
+    <div class="section-head">
+      <span class="kicker">Skills &amp; certificates</span>
+      <h2 id="sk-h">What I <em>work with</em></h2>
+      <p class="sub">Each group says where the skill comes from: work, study or projects.</p>
+    </div>
+    <div class="caps">
+      <div class="cap">
+        <div class="cap-h"><span class="ibadge c-pink"><svg class="ic" aria-hidden="true"><use href="#i-layers"/></svg></span><div><h3>Learning design</h3><span class="basis">Internship · M.A. · portfolio</span></div></div>
+        <div class="chips"><span class="chip">Needs analysis</span><span class="chip">ADDIE</span><span class="chip">ICAP</span><span class="chip">Bloom</span><span class="chip">Merrill</span><span class="chip">Kolb</span><span class="chip">Andragogy</span><span class="chip">Cognitive load</span><span class="chip">Multimedia learning</span><span class="chip">Scenarios</span><span class="chip">Storyboarding</span><span class="chip">Assessment design</span></div>
+      </div>
+      <div class="cap">
+        <div class="cap-h"><span class="ibadge c-teal"><svg class="ic" aria-hidden="true"><use href="#i-laptop"/></svg></span><div><h3>Tools, media &amp; AI</h3><span class="basis">Hands-on use · certificates</span></div></div>
+        <div class="chips"><span class="chip">Articulate 360</span><span class="chip">LMS platforms</span><span class="chip">Canva</span><span class="chip">Figma</span><span class="chip">Photoshop</span><span class="chip">Illustrator</span><span class="chip">InDesign</span><span class="chip">Premiere</span><span class="chip">Microsoft 365</span><span class="chip">ChatGPT</span><span class="chip">Copilot</span><span class="chip">Gemini</span></div>
+      </div>
+      <div class="cap">
+        <div class="cap-h"><span class="ibadge c-lilac"><svg class="ic" aria-hidden="true"><use href="#i-flask"/></svg></span><div><h3>Research &amp; evaluation</h3><span class="basis">Research roles · thesis</span></div></div>
+        <div class="chips"><span class="chip">Quantitative</span><span class="chip">Qualitative</span><span class="chip">Survey design</span><span class="chip">SPSS</span><span class="chip">R</span><span class="chip">SoSci Survey</span><span class="chip">Kirkpatrick</span><span class="chip">Pre/post evaluation</span><span class="chip">Evidence synthesis</span><span class="chip">Research ethics</span></div>
+      </div>
+      <div class="cap">
+        <div class="cap-h"><span class="ibadge c-gold"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg></span><div><h3>Facilitation &amp; collaboration</h3><span class="basis">Work · teaching · 3 countries</span></div></div>
+        <div class="chips"><span class="chip">Workshops</span><span class="chip">In person &amp; virtual</span><span class="chip">Academic talks</span><span class="chip">Public speaking</span><span class="chip">Counselling skills</span><span class="chip">Intercultural teams</span><span class="chip">Remote work</span></div>
+      </div>
+    </div>
+
+    <div class="skills-bottom">
+      <div class="cap langs">
+        <div class="cap-h"><span class="ibadge c-teal"><svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg></span><div><h3>Languages</h3><span class="basis">CEFR scale · A1 to C2</span></div></div>
+        <div class="lang"><div class="lang-h"><b>Turkish</b><span>Native</span></div><div class="cefr" role="img" aria-label="Turkish: Native"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i></div></div>
+        <div class="lang"><div class="lang-h"><b>English</b><span>C1 · fluent</span></div><div class="cefr" role="img" aria-label="English: C1 · fluent"><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i></div></div>
+        <div class="lang"><div class="lang-h"><b>German</b><span>B1 · improving</span></div><div class="cefr" role="img" aria-label="German: B1 · improving"><i class="on"></i><i class="on"></i><i class="on"></i><i class=""></i><i class=""></i><i class=""></i></div></div>
+        <div class="cefr-scale" aria-hidden="true"><span>A1</span><span>A2</span><span>B1</span><span>B2</span><span>C1</span><span>C2</span></div>
+      </div>
+      <div class="cap">
+        <div class="cap-h"><span class="ibadge c-pink"><svg class="ic" aria-hidden="true"><use href="#i-award"/></svg></span><div><h3>Certificates</h3><span class="basis">Self-directed learning</span></div></div>
+        <ul class="certlist">
+          <li><b>Organizational Learning and Development</b><span>LinkedIn Learning · 2025</span></li>
+          <li><b>R for Data Science: Analysis and Visualization</b><span>LinkedIn Learning · 2025</span></li>
+          <li><b>Instructional Design: Adult Learners</b><span>LinkedIn Learning · 2024</span></li>
+          <li><b>Designing AI-Enhanced Learning Experiences</b><span>LinkedIn Learning · 2024</span></li>
+          <li><b>Digital Product Design: UX Research &amp; UI Design</b><span>Rob Sutcliffe · 2024</span></li>
+          <li class="more">Also: E-learning Essentials · Models of ID · Components of Effective Learning · Designing the Learner's Journey</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  </div>
+  <div class="band deep contact-band" id="contact">
+    <div class="contact-grid">
+      <div>
+        <span class="kicker">Contact</span>
+        <h2 style="margin-top:10px">Let's build learning that <em>works</em></h2>
+        <p>I'm looking for instructional design and L&amp;D roles in Germany from early 2027. I'd love to hear about the learning problems your team is working on.</p>
+      </div>
+      <div class="c-rows">
+        <div class="mailcard">
+          <span class="ibadge big c-pink"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg></span>
+          <div class="mc-t">
+            <span class="mc-l">Email me</span>
+            <span class="mc-a" id="mail">akcan.nilufer@gmail.com</span>
+          </div>
+          <div class="mc-b">
+            <button class="copy" type="button" id="copyMail">Copy address</button>
+            <a class="mc-send" href="mailto:akcan.nilufer@gmail.com">Send email ↗</a>
+          </div>
+        </div>
+        <a class="c-row" href="https://www.linkedin.com/in/nilufer-beyza-akcan/" target="_blank" rel="noopener"><span>LinkedIn</span><b aria-hidden="true">↗</b></a>
+        <a class="c-row" href="#cv"><span>Read my CV</span><b aria-hidden="true">↑</b></a>
+      </div>
+    </div>
+    <div class="site-foot"><span>© 2026 Nilüfer Beyza Akcan · Augsburg, Germany · akcan.nilufer@gmail.com</span><span>Instructional design · Learning &amp; development</span></div>
+  </div>
+</main>
+<div id="views">
+  <div class="pview band " data-id="think-with-ai" hidden>
+    <div class="pbar"><a class="back" href="#work">← All projects</a><span class="pcount">Project 01 / 03</span></div>
+  <!-- PROJECT 1: E-LEARNING -->
+  <section class="proj" id="think-with-ai" aria-labelledby="p1-h">
+    <div class="proj-head">
+      <span class="kicker">Project 1 · E-learning</span>
+      <h2 id="p1-h">Think with <em>AI</em></h2>
+      <div class="meta"><span><b>For</b> new employees in office and knowledge work</span><span><b>Length</b> about 10 minutes</span><span><b>Format</b> self-paced branching scenario</span><span><b>Planned build</b> Articulate Storyline</span></div>
+    </div>
+    <div class="notice"><b>Concept project.</b> Corvel and its people are fictional. This is a working prototype that shows the scenario logic; the production version is planned in Storyline.</div>
+
+    <div class="row2">
+      <div>
+        <h3>Why I made this</h3>
+        <p>Most companies introduce AI assistants with a policy PDF and a tool demo. People learn which buttons to press, but not the harder part: when AI helps their thinking and when it quietly replaces it. The three mistakes I see most often are pasting confidential data into the wrong tool, trusting output that sounds right, and losing ownership of their own work.</p>
+        <p>A policy can't teach judgement. Practice can. So the module is one realistic afternoon at work with three decisions, and every decision has consequences.</p>
+      </div>
+      <div>
+        <h3>After the module, learners can</h3>
+        <ol class="objs">
+          <li><em>Decide</em> which information may go into which AI tool</li>
+          <li><em>Verify</em> AI output against the source before using it</li>
+          <li><em>Use</em> AI to challenge their own thinking instead of replacing it</li>
+          <li><em>Write</em> a prompt that gives context, task, limits and a way to check the answer</li>
+        </ol>
+        <div class="margin-note" style="margin-top:6px">
+          <svg width="34" height="28" viewBox="0 0 34 28" aria-hidden="true"><path d="M2 4 C 12 2, 22 8, 28 22" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/><path d="M22 20 L28 23 L29 16" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/></svg>
+          <span class="hand">try it below, it takes 5 minutes</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="player" aria-label="Think with AI e-learning prototype">
+      <div class="player-bar">
+        <span class="ttl">Think with AI</span>
+        <div class="progress" id="progress" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+      </div>
+      <div class="screen" id="screen" aria-live="polite"></div>
+    </div>
+
+    <div class="row2">
+      <div>
+        <h3>Design decisions</h3>
+        <p><b>Consequences, not "correct!"</b> Feedback shows what happens next at work. People remember a colleague's reaction far better than a red cross.</p>
+        <p><b>Three hidden scores.</b> Each choice moves data safety, accuracy or ownership. Learners only see them at the end, so they choose the way they would at work instead of hunting for points.</p>
+        <p><b>An ICAP lens on every choice.</b> Each option is tagged by how much thinking it asks of the learner, from passive to interactive. This comes straight from my thesis research.</p>
+        <p><b>No traps, no timer.</b> The tempting options are things real people do under time pressure. Everything works with a keyboard.</p>
+      </div>
+      <div>
+        <h3>What I'd test in a pilot</h3>
+        <p>My biggest worry is that the best option in each scene looks too obvious. In a pilot with five or six people from the target group, I'd watch them think aloud and make the weaker options more tempting where needed.</p>
+        <p>I'd also track which first choice people make. If most of them paste client data on the first try, that tells the business something its AI policy isn't getting across.</p>
+        <span class="hand">that data is a gift to the business</span>
+      </div>
+    </div>
+
+    <div class="stack">
+      <h3>The learning science behind it</h3>
+      <div class="panel theory">
+        <div class="th"><div><b>First Principles of Instruction</b><span class="ref">Merrill, 2002</span></div><p>The module starts with a real work problem. Learners act first, see the result, and then apply what they noticed in the prompt task.</p></div>
+        <div class="th"><div><b>Situated learning</b><span class="ref">Lave &amp; Wenger, 1991</span></div><p>Everything happens inside one realistic afternoon, with a real deadline and a colleague who reacts. The context is part of what people learn.</p></div>
+        <div class="th"><div><b>Cognitive load theory</b><span class="ref">Sweller, 1988</span></div><p>One decision per screen, three options, short text. Nothing on screen that doesn't help the decision.</p></div>
+        <div class="th"><div><b>Feedback that moves learning forward</b><span class="ref">Hattie &amp; Timperley, 2007</span></div><p>Each consequence answers "how am I doing?", and the results screen answers "where to next?" with a specific next step.</p></div>
+        <div class="th"><div><b>ICAP framework</b><span class="ref">Chi &amp; Wylie, 2014</span></div><p>Every option is tagged by the engagement it asks for, and the prompt task is deliberately constructive: learners produce something new.</p></div>
+        <div class="th"><div><b>Generation effect</b><span class="ref">Slamecka &amp; Graf, 1978</span></div><p>Learners write their own prompt before they see a model answer. Producing it themselves makes it stick.</p></div>
+        <div class="th"><div><b>Self-regulated learning</b><span class="ref">Zimmerman, 2002</span></div><p>The "thinking path" at the end helps learners look back at their own strategy, which is the reflection phase of self-regulation.</p></div>
+      </div>
+    </div>
+
+    <div class="stack">
+      <h3>Storyline build plan</h3>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>Element</th><th>How it works</th></tr></thead>
+          <tbody>
+            <tr><th>Variables</th><td>Three number variables (Safety, Accuracy, Ownership, 0 to 2) and a text variable for the ICAP path</td></tr>
+            <tr><th>Choices</th><td>Each option sets the variables and opens a consequence layer on the same slide</td></tr>
+            <tr><th>Branch</th><td>Scene 1, option C ("read everything by hand") adds a short bridge so scene 2 still makes sense</td></tr>
+            <tr><th>Results</th><td>Conditional states on the results slide show the meters and one of three manager messages</td></tr>
+            <tr><th>Prompt task</th><td>Text-entry field, then a self-check against four criteria and a model answer</td></tr>
+            <tr><th>Tracking</th><td>xAPI statements for each choice, so L&amp;D can see patterns across learners</td></tr>
+            <tr><th>Accessibility</th><td>Logical tab order, alt text, captions for any narration, no time limits, colour never the only signal</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+    <a class="pnext" href="#thesis"><span>Next project</span><b>AI and student engagement <i aria-hidden="true">→</i></b></a>
+  </div>
+  <div class="pview band" data-id="thesis" hidden>
+    <div class="pbar"><a class="back" href="#work">← All projects</a><span class="pcount">Project 02 / 03</span></div>
+  <!-- PROJECT 2: THESIS -->
+  <section class="proj" id="thesis" aria-labelledby="p2-h">
+    <div class="proj-head">
+      <span class="kicker">Project 2 · Research · Master's thesis</span>
+      <h2 id="p2-h">AI and student <em>engagement</em></h2>
+      <div class="meta"><span><b>Master's thesis:</b> AI-Supported Learning and ICAP-Based Engagement in Higher Education</span><span><b>University of Augsburg</b></span></div>
+      <span class="status"><i aria-hidden="true"></i>In progress. Submission in December 2026; I'll add the results here.</span>
+    </div>
+
+    <div class="row2">
+      <div>
+        <h3>The question behind it</h3>
+        <p>Students now use AI before, during and after class. I'm less interested in whether they use it than in how. Does it help them think harder, or does it let them skip the thinking? That difference matters for every university and company now writing AI guidelines.</p>
+        <p>I look at this through the ICAP framework (Chi &amp; Wylie, 2014). It sorts learning activities by how the learner engages: passive, active, constructive or interactive. Learning tends to get deeper as you move up that ladder.</p>
+      </div>
+      <div class="panel">
+        <h4>ICAP in short</h4>
+        <ul style="margin-top:6px">
+          <li><span class="icap P">Passive</span> receiving: reading, listening</li>
+          <li><span class="icap A">Active</span> doing something with it: highlighting, copying, repeating</li>
+          <li><span class="icap C">Constructive</span> producing new ideas: explaining, comparing, questioning</li>
+          <li><span class="icap I">Interactive</span> building ideas together: debating, explaining to each other</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="poster">
+      <div>
+        <h3>My research model</h3>
+        <p class="small" style="margin-top:4px">The relationships I'm testing, and which research question looks at each one.</p>
+      </div>
+      <div style="overflow-x:auto">
+        <svg class="model-svg" viewBox="0 0 860 330" role="img" aria-label="Research model: AI literacy and attitudes relate to AI use (RQ5). AI use, by purpose and timing, relates to ICAP engagement (RQ1, RQ2, RQ4). Satisfaction with digital infrastructure relates to constructive and interactive engagement (RQ3).">
+          <defs>
+            <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="var(--muted)"/></marker>
+          </defs>
+          <g font-family="Manrope, sans-serif">
+            <rect x="10" y="40" width="200" height="96" rx="14" fill="var(--surface)" stroke="var(--line)"/>
+            <text x="110" y="80" text-anchor="middle" font-weight="700" fill="var(--ink)" font-size="16">AI literacy</text>
+            <text x="110" y="104" text-anchor="middle" fill="var(--muted)" font-size="14">and attitudes toward AI</text>
+
+            <rect x="320" y="20" width="220" height="136" rx="14" fill="var(--lilac-soft)" stroke="var(--lilac)"/>
+            <text x="430" y="56" text-anchor="middle" font-weight="700" fill="var(--ink)" font-size="16">AI use</text>
+            <text x="430" y="84" text-anchor="middle" fill="var(--text)" font-size="14">purpose: what it's used for</text>
+            <text x="430" y="108" text-anchor="middle" fill="var(--text)" font-size="14">timing: during class, or in</text>
+            <text x="430" y="128" text-anchor="middle" fill="var(--text)" font-size="14">preparation and follow-up</text>
+
+            <rect x="650" y="20" width="200" height="290" rx="14" fill="var(--surface)" stroke="var(--line)"/>
+            <text x="750" y="54" text-anchor="middle" font-weight="700" fill="var(--ink)" font-size="16">ICAP engagement</text>
+            <rect x="670" y="72" width="160" height="44" rx="10" fill="var(--accent-soft)"/><text x="750" y="99" text-anchor="middle" fill="var(--accent)" font-weight="700" font-size="14">Interactive</text>
+            <rect x="670" y="124" width="160" height="44" rx="10" fill="var(--teal-soft)"/><text x="750" y="151" text-anchor="middle" fill="var(--teal)" font-weight="700" font-size="14">Constructive</text>
+            <rect x="670" y="176" width="160" height="44" rx="10" fill="var(--gold-soft)"/><text x="750" y="203" text-anchor="middle" fill="var(--gold)" font-weight="700" font-size="14">Active</text>
+            <rect x="670" y="228" width="160" height="44" rx="10" fill="var(--tint)"/><text x="750" y="255" text-anchor="middle" fill="var(--muted)" font-weight="700" font-size="14">Passive</text>
+
+            <rect x="320" y="214" width="220" height="96" rx="14" fill="var(--surface)" stroke="var(--line)"/>
+            <text x="430" y="254" text-anchor="middle" font-weight="700" fill="var(--ink)" font-size="16">Digital infrastructure</text>
+            <text x="430" y="278" text-anchor="middle" fill="var(--muted)" font-size="14">satisfaction with equipment</text>
+
+            <line x1="212" y1="88" x2="316" y2="88" stroke="var(--muted)" stroke-width="2" marker-end="url(#arr)"/>
+            <text x="264" y="76" text-anchor="middle" fill="var(--lilac)" font-weight="700" font-size="14">RQ5</text>
+            <line x1="542" y1="88" x2="646" y2="120" stroke="var(--muted)" stroke-width="2" marker-end="url(#arr)"/>
+            <text x="596" y="82" text-anchor="middle" fill="var(--lilac)" font-weight="700" font-size="13">RQ1 · 2 · 4</text>
+            <line x1="542" y1="262" x2="646" y2="146" stroke="var(--muted)" stroke-width="2" stroke-dasharray="6 5" marker-end="url(#arr)"/>
+            <text x="582" y="236" text-anchor="middle" fill="var(--lilac)" font-weight="700" font-size="14">RQ3</text>
+          </g>
+        </svg>
+      </div>
+      <div class="figures">
+        <div class="fig"><div class="n">1,743</div><p class="small">students in the original survey</p></div>
+        <div class="fig"><div class="n">Bavaria</div><p class="small">several universities and disciplines, so student groups can be compared</p></div>
+        <div class="fig"><div class="n">Survey</div><p class="small">quantitative design, secondary analysis of existing data</p></div>
+      </div>
+    </div>
+
+    <div class="row2">
+      <div>
+        <h3>Research questions</h3>
+        <ul class="rqs">
+          <li><span class="rq">RQ1</span><span>How do different purposes of AI use relate to students' engagement in digital learning activities?</span></li>
+          <li><span class="rq">RQ2</span><span>To what extent is AI use associated with passive, active, constructive and interactive learning activities?</span></li>
+          <li><span class="rq">RQ3</span><span>To what extent is satisfaction with digital equipment and infrastructure associated with more constructive and interactive learning activities?</span></li>
+          <li><span class="rq">RQ4</span><span>How is AI use during courses, and during preparation and follow-up, associated with interactive and constructive technology-supported activities?</span></li>
+          <li><span class="rq">RQ5</span><span>How do students' AI literacy and attitudes toward AI relate to their use of AI?</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>What I measure</h3>
+        <div class="panel">
+          <ul>
+            <li>AI use: purposes, and timing in and around courses</li>
+            <li>AI literacy</li>
+            <li>Attitudes toward AI</li>
+            <li>Satisfaction with digital equipment and infrastructure</li>
+            <li>ICAP-based learning activities</li>
+          </ul>
+        </div>
+        <p class="small">Working with an existing dataset means a lot of the work is careful: choosing variables and checking that each measure really fits the question I ask of it.</p>
+      </div>
+    </div>
+
+    <div class="stack">
+      <h3>Theories I build on</h3>
+      <div class="panel theory">
+        <div class="th"><div><b>ICAP framework</b><span class="ref">Chi &amp; Wylie, 2014</span></div><p>My main lens. It lets me describe engagement by what students actually do, not by how much time they spend.</p></div>
+        <div class="th"><div><b>Technology Acceptance Model</b><span class="ref">Davis, 1989</span></div><p>Helps explain why attitudes and perceived usefulness might shape whether and how students use AI (RQ5).</p></div>
+        <div class="th"><div><b>AI literacy</b><span class="ref">Long &amp; Magerko, 2020</span></div><p>What students need to know to use AI critically: what it can and can't do, and how to judge its output.</p></div>
+        <div class="th"><div><b>Self-regulated learning</b><span class="ref">Zimmerman, 2002</span></div><p>AI use in preparation and follow-up is part of how students plan, monitor and reflect on their learning (RQ4).</p></div>
+      </div>
+    </div>
+
+    <div class="stack">
+      <h3>From research to design</h3>
+      <p>The thesis is research, but I keep asking what it means for people who design learning. If the purpose of AI use matters more than how often people use it, then AI training should teach ways of using it, not just the tool. Here is how I already use that idea: the same task, with AI used at each ICAP level.</p>
+      <div class="panel" style="display:grid;gap:12px">
+        <div class="ladder-controls" role="group" aria-label="Choose a task">
+          <button type="button" id="lad-0" aria-pressed="true">Preparing for an exam</button>
+          <button type="button" id="lad-1" aria-pressed="false">Writing a seminar paper</button>
+          <button type="button" id="lad-2" aria-pressed="false">Learning new software at work</button>
+        </div>
+        <div class="ladder" id="ladder"></div>
+        <p class="small">This ladder is my own illustration of ICAP, not a thesis result. Whether a conversation with AI counts as "interactive" is still debated in research, which is part of why I find the topic so interesting.</p>
+      </div>
+    </div>
+
+    <div class="stack" id="ai-seminar">
+      <h3>Design sample: AI in an interactive seminar</h3>
+      <p>RQ4 asks how AI use <em>during</em> a course relates to constructive and interactive learning. To make that concrete, I sketched the same seminar moment twice: once with AI used passively, once with AI built into an interactive task. Switch between them.</p>
+      <div class="seminar">
+        <div class="sem-top">
+          <div class="sem-toggle" role="group" aria-label="Choose how AI is used">
+            <button type="button" id="mode-p" aria-pressed="false"><svg class="ic sm" aria-hidden="true"><use href="#i-book"/></svg>Passive use</button>
+            <button type="button" id="mode-i" aria-pressed="true"><svg class="ic sm" aria-hidden="true"><use href="#i-users"/></svg>Interactive use</button>
+          </div>
+          <span class="sem-ctx">Seminar · Educational Psychology · Topic: cognitive load theory</span>
+        </div>
+        <div class="sem-body">
+          <div class="chatwin">
+            <div class="chat-bar"><i></i><i></i><i></i><span>Course AI assistant</span></div>
+            <div class="chat-log" id="semchat"></div>
+          </div>
+          <div class="sem-side">
+            <div class="sem-card">
+              <span class="sem-lbl">ICAP level of this activity</span>
+              <div class="icap-meter" id="semmeter"><span>P</span><span>A</span><span>C</span><span>I</span></div>
+              <b class="sem-level" id="semlevel">Interactive</b>
+            </div>
+            <div class="sem-card">
+              <span class="sem-lbl">What the students do</span>
+              <ul class="sem-do" id="semdo"></ul>
+            </div>
+            <div class="sem-card sem-out">
+              <span class="sem-lbl">What comes out of it</span>
+              <p id="semout"></p>
+            </div>
+          </div>
+        </div>
+        <div class="flow">
+          <div class="flow-h"><b>The full 90-minute session, redesigned</b><span>AI before, during and after class</span></div>
+          <div class="flow-row">
+            <div class="fz pre"><span class="ft">Before class</span><b>Explain it back</b><small>Students summarise the reading in their own words; AI points out gaps</small><span class="icap C">Constructive</span></div>
+            <div class="fz" style="--w:10"><span class="ft">0–10 min</span><b>Warm-up quiz</b><small>AI-generated retrieval questions</small><span class="icap A">Active</span></div>
+            <div class="fz" style="--w:30"><span class="ft">10–40 min</span><b>Pair debate</b><small>AI plays the sceptic; pairs defend and revise a claim</small><span class="icap I">Interactive</span></div>
+            <div class="fz" style="--w:30"><span class="ft">40–70 min</span><b>Co-explain</b><small>Groups write a joint explanation; AI critiques it, groups improve it</small><span class="icap I">Interactive</span></div>
+            <div class="fz" style="--w:20"><span class="ft">70–90 min</span><b>Reflect</b><small>"What changed in our thinking, and why?"</small><span class="icap C">Constructive</span></div>
+            <div class="fz post"><span class="ft">After class</span><b>Spaced practice</b><small>Three AI questions on days 2, 7 and 21</small><span class="icap A">Active</span></div>
+          </div>
+        </div>
+        <p class="small">This is a design illustration based on the ICAP framework, not a thesis finding. My thesis looks at survey data on how students actually use AI; this sample shows how a lecturer could act on that kind of evidence.</p>
+      </div>
+    </div>
+  </section>
+
+    <a class="pnext" href="#why-people-buy"><span>Next project</span><b>Why People Buy <i aria-hidden="true">→</i></b></a>
+  </div>
+  <div class="pview band " data-id="why-people-buy" hidden>
+    <div class="pbar"><a class="back" href="#work">← All projects</a><span class="pcount">Project 03 / 03</span></div>
+  <!-- PROJECT 3: WORKSHOP -->
+  <section class="proj" id="why-people-buy" aria-labelledby="p3-h">
+    <div class="proj-head">
+      <span class="kicker">Project 3 · Live workshop</span>
+      <h2 id="p3-h">Why People <em>Buy</em></h2>
+      <div class="meta"><span><b>For</b> 16 sales associates and marketers</span><span><b>Length</b> 3 hours</span><span><b>Format</b> in person or virtual</span><span><b>My role</b> designer and facilitator</span></div>
+    </div>
+    <div class="notice"><b>Concept project.</b> Northbay Living is fictional and the figures are illustrative. I designed workshops like this as an L&amp;D intern at Happy Mortals; this sample was built from scratch for my portfolio and contains none of that material.</div>
+
+    <div class="row2">
+      <div>
+        <h3>The problem</h3>
+        <p>Northbay Living, a homeware retailer with 12 stores and an online shop, was about to launch a new brand. Sales associates described products by their features and rarely linked them to what the customer actually needed. Nobody could explain the new brand colours to customers either.</p>
+        <p>I talked to the head of sales and the marketing manager, sent a short survey to the 16 people in the target group, and read 40 customer reviews.</p>
+      </div>
+      <div class="panel">
+        <h4>What I found</h4>
+        <ul style="margin-top:6px">
+          <li><b>Knowledge:</b> 11 of 16 couldn't name a principle behind buying decisions.</li>
+          <li><b>Skill:</b> pitches listed features, not benefits for this customer.</li>
+          <li><b>Attitude:</b> many saw "persuasion" as pushy and avoided it.</li>
+        </ul>
+        <p class="hand" style="margin-top:10px">this last one changed the whole design</p>
+        <p class="small">A workshop that only taught techniques would have met resistance, so ethics runs through every module instead of sitting on the last slide.</p>
+      </div>
+    </div>
+
+    <div class="stack">
+      <h3>The agenda</h3>
+      <p>Input is short. Each block moves people into constructive or interactive work.</p>
+      <div class="agenda">
+        <div class="r"><div class="t">0:00<small>10 min</small></div><div class="w"><b>Which one would you buy?</b><p>Two versions of the same product page. People vote, then guess why one sold better.</p></div><span class="icap A">Active</span></div>
+        <div class="r"><div class="t">0:10<small>25 min</small></div><div class="w"><b>How the buying brain decides</b><p>Fast and slow thinking in a shop. Pairs predict which customer moments rely on quick judgements.</p></div><span class="icap C">Constructive</span></div>
+        <div class="r"><div class="t">0:35<small>30 min</small></div><div class="w"><b>Spot the bias</b><p>Gallery walk with eight real-world examples, each rated from fair to manipulative.</p></div><span class="icap C">Constructive</span></div>
+        <div class="r brk"><div class="t">1:05<small>10 min</small></div><div class="w"><b style="color:var(--muted)">Break</b></div><span></span></div>
+        <div class="r"><div class="t">1:15<small>35 min</small></div><div class="w"><b>Colour and visual cues</b><p>What research supports and what it doesn't. Pairs audit old and new brand assets and present one recommendation.</p></div><span class="icap I">Interactive</span></div>
+        <div class="r"><div class="t">1:50<small>35 min</small></div><div class="w"><b>Ethical influence in the pitch</b><p>Pairs rewrite a feature-based pitch, role-play it and give feedback with a rubric.</p></div><span class="icap I">Interactive</span></div>
+        <div class="r"><div class="t">2:25<small>15 min</small></div><div class="w"><b>My one-week experiment</b><p>Everyone plans one change to try with customers and how they'll know it worked.</p></div><span class="icap C">Constructive</span></div>
+        <div class="r"><div class="t">2:40<small>20 min</small></div><div class="w"><b>Post-check and close</b><p>Scenario check in the same format as before the workshop, a short pulse survey, commitments shared aloud.</p></div><span class="icap A">Active</span></div>
+      </div>
+    </div>
+
+    <div class="stack">
+      <h3>A look inside the facilitator guide</h3>
+      <div class="panel" style="display:grid;gap:12px">
+        <h4>Spot the bias · 30 minutes</h4>
+        <div class="cards8" aria-label="The eight example cards">
+          <div><b>Card 1</b>"Was €89, now €59"</div>
+          <div><b>Card 2</b>"Bestseller: 1,200 sold this month"</div>
+          <div><b>Card 3</b>"Only 3 left in stock"</div>
+          <div><b>Card 4</b>Frames at €19 / €34 / €36</div>
+          <div><b>Card 5</b>"Complete the look" bundle</div>
+          <div><b>Card 6</b>"Free delivery over €50"</div>
+          <div><b>Card 7</b>Insurance add-on ticked by default</div>
+          <div><b>Card 8</b>Countdown that resets on reload</div>
+        </div>
+        <p><b>5 min</b> Short input on anchoring, social proof, scarcity and the decoy effect, with one shop example each.<br>
+        <b>12 min</b> Pairs walk the cards. One sticky note names the principle, another rates it from 1 (fair) to 5 (manipulative). Virtual groups do the same on a shared whiteboard.<br>
+        <b>10 min</b> Debrief: Which card was hardest? Where did your ratings differ, and why? What would make card 3 honest?<br>
+        <b>3 min</b> Everyone writes one principle in their own words, without notes.</p>
+        <p class="small">Cards 7 and 8 are dark patterns. I expect disagreement here and let it run, because it sets up the ethics module better than any slide.</p>
+      </div>
+    </div>
+
+    <div class="stack">
+      <h3>Three sample slides</h3>
+      <div class="slides">
+        <figure>
+          <div class="slide" role="img" aria-label="Slide: Which coffee would you order? Small 2.80 euros, medium 4.20, large 4.40">
+            <div class="st">Which coffee would you order?</div>
+            <div class="cups">
+              <div class="cup"><i style="width:10cqi;height:12cqi"></i>Small<br>€2.80</div>
+              <div class="cup"><i style="width:12cqi;height:15cqi"></i>Medium<br>€4.20</div>
+              <div class="cup"><i style="width:14cqi;height:18cqi"></i>Large<br>€4.40</div>
+            </div>
+            <div class="foot"><span>Decoy effect</span><span>11</span></div>
+          </div>
+          <figcaption>A prediction before any explanation.</figcaption>
+        </figure>
+        <figure>
+          <div class="slide soft" role="img" aria-label="Slide: Does red make people buy? Popular claim versus research">
+            <div class="st">Does red make people buy?</div>
+            <div class="mvf">
+              <div><b>Popular claim</b>Each colour triggers one fixed emotion.</div>
+              <div class="e"><b>Research says</b>It depends on product, context and culture. Brand fit matters most.</div>
+            </div>
+            <div class="foot"><span>Labrecque &amp; Milne, 2012</span><span>19</span></div>
+          </div>
+          <figcaption>Taking an oversimplified claim apart.</figcaption>
+        </figure>
+        <figure>
+          <div class="slide" role="img" aria-label="Slide: My one-week experiment template">
+            <div class="st">My one-week experiment</div>
+            <div class="plan">
+              <div><b>I will try:</b> ______________</div>
+              <div><b>With which customers:</b> ______</div>
+              <div><b>I'll know it worked if:</b> ______</div>
+            </div>
+            <div class="foot"><span>Transfer</span><span>31</span></div>
+          </div>
+          <figcaption>Turning the workshop into action.</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="stack">
+      <h3>The theories behind the design</h3>
+      <p>The agenda follows Kolb's experiential learning cycle (1984). People experience something before I explain it, and they leave with an experiment to try.</p>
+      <div class="kolb">
+        <div><b>Experience</b><span>Vote on two product pages</span></div>
+        <div><b>Reflect</b><span>Why did one sell better?</span></div>
+        <div><b>Conceptualise</b><span>Short input on biases and colour</span></div>
+        <div><b>Experiment</b><span>Role-play, then a one-week test at work</span></div>
+      </div>
+      <div class="panel theory">
+        <div class="th"><div><b>Andragogy</b><span class="ref">Knowles, 1984</span></div><p>Adults need to know why something matters and want to use their own experience. Every activity starts from situations the team knows from the shop floor, which also helps with the "persuasion is pushy" resistance.</p></div>
+        <div class="th"><div><b>Dual-process theory</b><span class="ref">Kahneman, 2011</span></div><p>The content of Module 1: fast, intuitive thinking and slow, deliberate thinking, and why most buying moments are fast.</p></div>
+        <div class="th"><div><b>Social learning theory</b><span class="ref">Bandura, 1977</span></div><p>Role-plays and peer feedback let people watch each other try new pitches, which builds confidence faster than watching me.</p></div>
+        <div class="th"><div><b>Transfer of training</b><span class="ref">Baldwin &amp; Ford, 1988</span></div><p>Learning only matters if it reaches the job. The action plan and the team lead's 30-day check-in are there to support that transfer.</p></div>
+      </div>
+    </div>
+
+    <div class="stack">
+      <h3>How I'd know it worked</h3>
+      <div class="tbl">
+        <table>
+          <thead><tr><th>Kirkpatrick level</th><th>What I measure</th><th>How and when</th></tr></thead>
+          <tbody>
+            <tr><th>1 · Reaction</th><td>Relevance, confidence, intention to apply</td><td>Three-question pulse survey at the end</td></tr>
+            <tr><th>2 · Learning</th><td>Recognising and judging principles in real situations</td><td>Eight-item scenario check before and after</td></tr>
+            <tr><th>3 · Behaviour</th><td>Customer-centred, honest pitches on the shop floor</td><td>30-day check-in on each action plan; team lead observes five conversations with the rubric</td></tr>
+            <tr><th>4 · Results</th><td>A business number agreed with sales leadership</td><td>Average basket value on selected product lines, compared with an 8-week baseline</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+
+    <a class="pnext" href="#think-with-ai"><span>Next project</span><b>Think with AI <i aria-hidden="true">→</i></b></a>
+  </div>
+</div>
+</div>
+
+<script>
+(function () {
+  var ICAP = { P: 'Passive', A: 'Active', C: 'Constructive', I: 'Interactive' };
+  var scenes = [
+    {
+      tag: 'Scene 1 of 3 · 1:40 pm',
+      title: 'Where do you start?',
+      from: 'Jonas, your team lead',
+      msg: 'Welcome to your second week! Could you send me a one-page summary of the client interviews by 4 pm? All 40 notes are in the shared folder.',
+      extra: 'The notes include client names, contract values and some very frank complaints.',
+      opts: [
+        { t: 'Paste all 40 notes into a free public AI chatbot and ask for a summary.', s: 'safety', v: 0, i: 'P',
+          c: 'The summary arrives in seconds. An hour later, IT security messages you: the notes contained client names and contract values, and the free tool may use what you type to train its models. At Corvel, client data may only go into the approved company assistant.' },
+        { t: 'Remove names and contract values, then ask the company’s approved assistant to group the notes into themes.', s: 'safety', v: 2, i: 'A',
+          c: 'Good start. The anonymised notes are safe to process, and the approved assistant keeps data inside Corvel. You have a first set of themes in two minutes.' },
+        { t: 'Skip AI and read all 40 notes yourself.', s: 'safety', v: 2, i: 'A',
+          c: 'Safe and thorough, but at 3:00 you’re on note 24. Jonas stops by: “Use the approved assistant for the rest, just take the client names out first.” You do, and get a set of themes.' }
+      ]
+    },
+    {
+      tag: 'Scene 2 of 3 · 2:20 pm',
+      title: 'The assistant found something big',
+      from: 'Company AI assistant',
+      ai: 'Top theme: Clients want an offline mode (mentioned in 12 notes). I recommend prioritising this on the roadmap.',
+      extra: 'If this is true, it could change what the product team builds next quarter.',
+      opts: [
+        { t: 'Copy the themes straight into your summary.', s: 'accuracy', v: 0, i: 'P',
+          c: 'In the meeting, the product lead asks which clients wanted offline mode. You check: only 4 notes mention it. The assistant counted complaints about slow loading as the same thing. The room goes quiet.' },
+        { t: 'Ask the assistant: “Are you sure it’s 12?”', s: 'accuracy', v: 0, i: 'A',
+          c: 'The assistant replies, “Yes, 12 notes mention offline mode,” and sounds even more confident. Asking AI to check itself isn’t verification, because it can repeat the same mistake.' },
+        { t: 'Search the notes for “offline” and check the top two themes against the source.', s: 'accuracy', v: 2, i: 'C',
+          c: 'You find 4 notes, not 12. Eight others are about slow loading, which is a different problem. You correct both themes and add the real numbers. Ten minutes well spent.' }
+      ]
+    },
+    {
+      tag: 'Scene 3 of 3 · 3:10 pm',
+      title: 'Time to write',
+      from: 'Jonas, your team lead',
+      msg: 'Looking forward to it. In the meeting I’ll ask what surprised you most, so be ready for that.',
+      extra: 'You have 50 minutes and a list of checked themes.',
+      opts: [
+        { t: 'Ask the assistant to write the whole summary from the themes.', s: 'ownership', v: 0, i: 'P',
+          c: 'The text reads smoothly but says very little. When Jonas asks what surprised you most, you don’t have an answer, because the assistant did the thinking.' },
+        { t: 'Write your three key messages first, then ask the assistant: “Which notes contradict these points?”', s: 'ownership', v: 2, i: 'I',
+          c: 'The assistant points to three notes that don’t fit your second message. You rethink it and sharpen the point. The summary is yours, and stronger for being challenged.' },
+        { t: 'Write it yourself, then ask the assistant to tidy up the language.', s: 'ownership', v: 2, i: 'C',
+          c: 'Clear, and completely yours. Polishing language is a safe, useful job for AI. Next time you could go one step further and ask it to argue against your main point.' }
+      ]
+    }
+  ];
+  var state = { started: false };
+  var screen = document.getElementById('screen');
+  var bars = document.querySelectorAll('#progress i');
+  function setProgress(n) { bars.forEach(function (b, k) { b.className = k < n ? 'on' : ''; }); }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]; }); }
+  function render(html) {
+    screen.innerHTML = html;
+    var h = screen.querySelector('h3');
+    if (h && state.started) { h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }); }
+  }
+  function reset() { state = { scores: { safety: 0, accuracy: 0, ownership: 0 }, path: [], started: false }; }
+  function intro() {
+    reset(); setProgress(0);
+    render(
+      '<span class="scene-tag">About 5 minutes · no right or wrong buttons, just consequences</span>' +
+      '<h3>It’s your second week at Corvel</h3>' +
+      '<p>You work in the customer team of a software company. Your team lead needs a summary of 40 client interviews by 4 pm. You have an AI assistant and one afternoon.</p>' +
+      '<p>Choose what you would really do. You’ll see what happens next and, at the end, how your choices added up.</p>' +
+      '<div class="btns"><button class="btn" type="button" id="go">Start the afternoon</button></div>'
+    );
+    document.getElementById('go').addEventListener('click', function () { state.started = true; scene(0); });
+  }
+  function scene(n) {
+    var sc = scenes[n];
+    setProgress(n + 1);
+    var head = sc.ai
+      ? '<div class="aibox"><b>' + esc(sc.from) + '</b>' + esc(sc.ai) + '</div>'
+      : '<div class="situation"><div class="avatar" aria-hidden="true">J</div><div><div class="who">' + esc(sc.from) + '</div>' + esc(sc.msg) + '</div></div>';
+    render('<span class="scene-tag">' + esc(sc.tag) + '</span><h3>' + esc(sc.title) + '</h3>' + head +
+      '<p class="small">' + esc(sc.extra) + '</p><div class="choices">' +
+      sc.opts.map(function (o, k) { return '<button type="button" id="s' + n + 'o' + k + '"><span class="k">' + 'ABC'[k] + '</span><span>' + esc(o.t) + '</span></button>'; }).join('') + '</div>');
+    sc.opts.forEach(function (o, k) {
+      document.getElementById('s' + n + 'o' + k).addEventListener('click', function () { choose(n, k); });
+    });
+  }
+  function choose(n, k) {
+    var o = scenes[n].opts[k];
+    state.scores[o.s] = o.v;
+    state.path.push(o.i);
+    var last = n === scenes.length - 1;
+    render(
+      '<span class="scene-tag">' + esc(scenes[n].tag) + ' · what happened</span>' +
+      '<h3>You chose ' + 'ABC'[k] + '</h3>' +
+      '<div class="consequence"><p>' + esc(o.c) + '</p>' +
+      '<div class="lens"><span>Thinking this asked of you:</span><span class="icap ' + o.i + '">' + ICAP[o.i] + '</span></div></div>' +
+      '<div class="btns"><button class="btn" type="button" id="nx">' + (last ? 'See how it went' : 'Continue') + '</button></div>');
+    document.getElementById('nx').addEventListener('click', function () { if (last) results(); else scene(n + 1); });
+  }
+  function dots(v) { return '<div class="dots" aria-hidden="true"><i class="' + (v >= 1 ? 'on' : '') + '"></i><i class="' + (v >= 2 ? 'on' : '') + '"></i></div>'; }
+  function results() {
+    setProgress(4);
+    var sc = state.scores, total = sc.safety + sc.accuracy + sc.ownership;
+    var msg = total === 6 ? '“This is exactly what I needed, and the corrected numbers saved us from a bad decision. Could you show the team how you worked?”'
+      : total >= 4 ? '“Good summary, thanks. Let’s take ten minutes tomorrow to talk about one step you’d do differently.”'
+      : '“Thanks for getting it done. Let’s sit down tomorrow and go through how we use AI on client work. Every new joiner needs to get this right.”';
+    function m(lbl, v, ok, bad) { return '<div class="meter"><div class="lbl">' + lbl + '</div>' + dots(v) + '<p class="small" style="margin-top:6px">' + (v === 2 ? ok : bad) + '</p></div>'; }
+    render(
+      '<span class="scene-tag">4:00 pm · the meeting</span><h3>How your afternoon added up</h3>' +
+      '<div class="meters">' +
+      m('Data safety', sc.safety, 'Client data stayed protected.', 'Client data left the company.') +
+      m('Accuracy', sc.accuracy, 'You checked the output against the source.', 'An AI error reached the meeting.') +
+      m('Ownership', sc.ownership, 'The thinking in the summary is yours.', 'The AI did the thinking for you.') +
+      '</div>' +
+      '<div><p class="small">Your thinking path</p><div class="path">' + state.path.map(function (p, i) { return '<span class="icap ' + p + '">' + (i + 1) + '. ' + ICAP[p] + '</span>'; }).join('') + '</div></div>' +
+      '<div class="manager"><b>Jonas:</b> ' + msg + '</div>' +
+      '<div class="btns"><button class="btn" type="button" id="pt">One last practice: fix a prompt</button><button class="btn ghost" type="button" id="again">Replay the afternoon</button></div>');
+    document.getElementById('pt').addEventListener('click', promptTask);
+    document.getElementById('again').addEventListener('click', function () { reset(); state.started = true; scene(0); });
+  }
+  function promptTask() {
+    setProgress(5);
+    render(
+      '<span class="scene-tag">Practice · your turn to write</span><h3>Make this prompt better</h3>' +
+      '<div class="aibox"><b>A colleague’s prompt</b>Summarise these notes.</div>' +
+      '<label for="mine" class="small">Rewrite it the way you would send it to the company assistant.</label>' +
+      '<textarea id="mine" placeholder="For example: I’m preparing a summary for…"></textarea>' +
+      '<div class="btns"><button class="btn" type="button" id="chk">Check my prompt</button><button class="btn ghost" type="button" id="restart">Start over</button></div>' +
+      '<div id="self" hidden></div>');
+    document.getElementById('restart').addEventListener('click', function () { intro(); });
+    document.getElementById('chk').addEventListener('click', function () {
+      var box = document.getElementById('self');
+      box.hidden = false;
+      box.innerHTML = '<p><b>Does your prompt…</b></p><div class="checks" style="margin-top:6px">' +
+        ['say who it’s for and why (context)?', 'say exactly what you want back (task)?', 'set limits, like length, format or “no client names” (constraints)?', 'ask the AI to show which notes support each point, so you can check it?']
+          .map(function (q, i) { return '<label for="c' + i + '"><input type="checkbox" id="c' + i + '"><span>' + q + '</span></label>'; }).join('') +
+        '</div><p class="small" id="tally" style="margin-top:8px">Tick what your prompt already does.</p>' +
+        '<div class="model" style="margin-top:10px"><b>One strong version:</b> “I’m preparing a one-page summary of client interviews for my team lead. From the anonymised notes below, list the five most common themes. For each theme, give the number of notes and quote one note as evidence. Don’t include any client names.”</div>' +
+        '<p class="hand" style="margin-top:8px">the evidence part makes checking easy</p>';
+      var boxes = box.querySelectorAll('input');
+      boxes.forEach(function (b) { b.addEventListener('change', function () {
+        var c = 0; boxes.forEach(function (x) { if (x.checked) c++; });
+        document.getElementById('tally').textContent = c === 4 ? 'All four. That prompt will save you time and keep you safe.' : c + ' of 4. Try adding what’s missing, then compare with the version below.';
+      }); });
+    });
+  }
+  intro();
+
+  var tasks = [
+    [ ['P', 'Read an AI summary of the lecture instead of your own notes.'],
+      ['A', 'Ask AI for the key terms and copy them onto flashcards.'],
+      ['C', 'Explain a concept in your own words, then ask AI what you missed or got wrong.'],
+      ['I', 'Quiz each other in a study group, and use AI together to come up with harder follow-up questions.'] ],
+    [ ['P', 'Let AI write a paragraph and paste it in.'],
+      ['A', 'Ask AI to suggest sources, then pick the ones that look useful.'],
+      ['C', 'Draft your argument first, then ask AI for the strongest counterargument and answer it.'],
+      ['I', 'Discuss your outline with a classmate, with AI playing the sceptical reviewer for both of you.'] ],
+    [ ['P', 'Watch an AI-generated walkthrough of the tool.'],
+      ['A', 'Follow AI’s step-by-step instructions on a practice file.'],
+      ['C', 'Try a real task first, then ask AI to explain why your approach did or didn’t work.'],
+      ['I', 'Solve a task with a colleague and use AI to compare your two approaches.'] ]
+  ];
+  var ladder = document.getElementById('ladder');
+  function showTask(t) {
+    for (var k = 0; k < 3; k++) document.getElementById('lad-' + k).setAttribute('aria-pressed', String(k === t));
+    ladder.innerHTML = tasks[t].map(function (r) { return '<div class="rung"><span><span class="icap ' + r[0] + '">' + ICAP[r[0]] + '</span></span><span>' + esc(r[1]) + '</span></div>'; }).join('');
+  }
+  [0, 1, 2].forEach(function (k) { document.getElementById('lad-' + k).addEventListener('click', function () { showTask(k); }); });
+  showTask(0);
+
+
+  /* ---------- CV tabs + timelines ---------- */
+  var cvData = {
+    practice: [
+      { d: 'Oct 2025 – Mar 2026', n: 'Learning & Development Intern', org: 'Happy Mortals · Prague, Czech Republic (remote)',
+        b: ['Ran learning needs analyses to find skill gaps across teams and roles',
+            'Designed and delivered branding and sales workshops on consumer psychology, including why people buy and how colour affects buying decisions',
+            'Built workshops, e-learning modules and training presentations',
+            'Created quizzes, rubrics and pre/post evaluations to measure learning outcomes'],
+        tags: ['ADDIE', 'Needs analysis', 'Facilitation', 'Assessment'] },
+      { d: 'Since 2025', n: 'Guest Seminar Speaker', org: 'Turkish Cultural Center · Augsburg',
+        b: ['Invited twice to design and deliver public seminars on psychology topics',
+            'Digital Addiction and Attention Loss: the cognitive and motivational mechanisms behind screen use and their effect on focus and learning',
+            'Understanding Children\u2019s Emotional World: safe communication, healthy boundaries and recognising warning signs',
+            'Translated psychological research into practical guidance for a non-specialist audience'],
+        tags: ['Seminar design', 'Public speaking', 'Child development', 'Science communication'] },
+      { d: 'Aug 2022 – Oct 2023', n: 'Psychologist', org: 'Turkish Sports Federation for the Physically Disabled · Ankara, Türkiye',
+        b: ['Designed and ran mental training programmes that helped adolescent athletes with physical disabilities improve focus, manage stress and build confidence',
+            'Led workshops and group sessions on resilience, motivation and coping with competitive pressure',
+            'Provided individual counselling and assessed each athlete’s needs to set programme goals'],
+        tags: ['Programme design', 'Group facilitation', 'Inclusive design'] },
+      { d: '2024 – 2027', n: 'M.A. Research on Learning and Instruction', org: 'University of Augsburg · Germany',
+        b: ['Learning sciences, instructional design and educational psychology',
+            'Thesis: AI-Supported Learning and ICAP-Based Engagement in Higher Education (submission December 2026)'],
+        tags: ['Learning sciences', 'AI in education'] },
+      { d: '2016 – 2021', n: 'B.Sc. Psychology', org: 'Ufuk University · Ankara, Türkiye',
+        b: ['Foundations in cognitive, developmental and educational psychology',
+            'Erasmus+ exchange semester at Palacký University, Olomouc (2020)'],
+        tags: ['Psychology'] }
+    ],
+    research: [
+      { d: 'Oct 2024 – Apr 2027', n: 'M.A. Research on Learning and Instruction', org: 'University of Augsburg · Germany',
+        b: ['Master’s thesis: AI-Supported Learning and ICAP-Based Engagement in Higher Education',
+            'Secondary analysis of survey data from 1,743 university students in Bavaria',
+            'Focus on AI use, AI literacy, attitudes toward AI and ICAP-based engagement'],
+        tags: ['ICAP', 'Quantitative', 'AI in education'] },
+      { d: '2026', n: 'Academic presentation', org: 'Bernried Academic Retreat · University of Augsburg',
+        b: ['Presented a study on how adaptive and adaptable instructional support affect pre-service teachers’ perceived task difficulty',
+            'Covered theory, method, analysis and findings, and discussed implications for instructional design and teacher education'],
+        tags: ['Instructional support', 'Presentation'] },
+      { d: 'Apr 2025 – Jul 2025', n: 'Research Student Assistant', org: 'University of Health Sciences · Istanbul, Türkiye (remote)',
+        b: ['Ran an extensive literature review for an academic book on artificial intelligence',
+            'Synthesised current articles, books and journals and mapped thematic trends to shape the book’s structure'],
+        tags: ['Literature synthesis', 'AI'] },
+      { d: 'Nov 2024 – Mar 2025', n: 'Research Intern', org: 'Technical University of Munich (TUM) · Germany',
+        b: ['Contributed to the CLiViE project on cultural literacy through arts-based education for social cohesion',
+            'Worked with a PhD candidate and research team on socio-emotional learning projects',
+            'Reviewed literature on socio-emotional learning and educational technologies'],
+        tags: ['Socio-emotional learning', 'EdTech'] },
+      { d: '2022', n: 'Guest lecturer', org: 'Department of Psychology · Palacký University, Olomouc',
+        b: ['Lectured Czech undergraduate psychology students on the history, education pathways and research landscape of psychology in Turkey'],
+        tags: ['Teaching'] },
+      { d: 'Oct 2021 – Jul 2022', n: 'Research Assistant', org: 'Palacký University · Olomouc, Czech Republic',
+        b: ['Translated and adapted psychological diagnostic instruments for Turkish-speaking adolescents',
+            'Collected and analysed data, contributing to a research paper and to better diagnostic accuracy',
+            'Presented findings at academic meetings and upheld research ethics standards',
+            'Supported by an Erasmus+ Internship Grant (€1,800)'],
+        tags: ['Scale adaptation', 'Data analysis', 'Research ethics'] },
+      { d: '2016 – 2021', n: 'B.Sc. Psychology', org: 'Ufuk University · Ankara, Türkiye',
+        b: ['Erasmus+ exchange semester at Palacký University, Feb – Jun 2020 (Erasmus+ mobility grant, €1,500)'],
+        tags: ['Psychology'] }
+    ]
+  };
+  document.querySelectorAll('.tl-list').forEach(function (list) {
+    var group = list.getAttribute('data-group'), items = cvData[group];
+    var detail = list.parentNode.querySelector('.tl-detail');
+    var TYPES = { job: ['briefcase', 'Work experience'], edu: ['cap', 'Education'], res: ['flask', 'Research'], talk: ['mic', 'Talks & teaching'] };
+    function typeOf(it) { return /M\.A\.|B\.Sc/.test(it.n) ? 'edu' : /speaker|presentation|lecturer/i.test(it.n) ? 'talk' : /Research/.test(it.n) ? 'res' : 'job'; }
+    function icon(n) { return '<svg class="ic" aria-hidden="true"><use href="#i-' + n + '"/></svg>'; }
+    function show(i) {
+      list.querySelectorAll('button').forEach(function (b, k) { b.setAttribute('aria-pressed', String(k === i)); });
+      var it = items[i], ty = typeOf(it);
+      detail.className = 'tl-detail t-' + ty;
+      detail.innerHTML = '<div class="dh"><span class="big-ic">' + icon(TYPES[ty][0]) + '</span><div><span class="type-badge">' + TYPES[ty][1] + '</span><span class="dd">' + esc(it.d) + '</span></div></div>' +
+        '<h3>' + esc(it.n) + '</h3><div class="org"><svg class="ic tiny" aria-hidden="true"><use href="#i-pin"/></svg>' + esc(it.org) + '</div>' +
+        '<ul>' + it.b.map(function (x) { return '<li>' + esc(x) + '</li>'; }).join('') + '</ul>' +
+        '<div class="tagrow">' + it.tags.map(function (x) { return '<span class="chip">' + esc(x) + '</span>'; }).join('') + '</div>';
+    }
+    items.forEach(function (it, i) {
+      var li = document.createElement('li'), ty = typeOf(it);
+      li.innerHTML = '<button type="button" class="t-' + ty + '" id="tl-' + group + '-' + i + '"><span class="tic">' + icon(TYPES[ty][0]) + '</span><span class="d">' + esc(it.d) + '</span><span class="n">' + esc(it.n) + '</span></button>';
+      li.querySelector('button').addEventListener('click', function () { show(i); });
+      list.appendChild(li);
+    });
+    show(0);
+  });
+  var tabs = [['tab-practice', 'cv-practice'], ['tab-research', 'cv-research']];
+  tabs.forEach(function (pair, i) {
+    document.getElementById(pair[0]).addEventListener('click', function () {
+      tabs.forEach(function (q, k) {
+        document.getElementById(q[0]).setAttribute('aria-selected', String(k === i));
+        document.getElementById(q[1]).hidden = k !== i;
+      });
+    });
+  });
+
+
+  /* ---------- scroll + mouse effects ---------- */
+  var home = document.getElementById('home');
+  var views = Array.prototype.slice.call(document.querySelectorAll('.pview'));
+  (function () {
+    var sp = document.getElementById('sp'), pct = document.getElementById('tpct'), lab = document.getElementById('tlabel'), ring = document.getElementById('tring');
+    var secs = [['top', 'Intro'], ['work', 'Work'], ['about', 'About'], ['practice', 'How I work'], ['cv', 'CV'], ['skills', 'Skills'], ['contact', 'Contact']];
+    var ticking = false;
+    window.__fxUpdate = update;
+    function update() {
+      ticking = false;
+      var doc = document.documentElement, max = doc.scrollHeight - innerHeight;
+      var r = max > 0 ? Math.min(1, Math.max(0, scrollY / max)) : 0;
+      sp.style.transform = 'scaleX(' + r + ')';
+      pct.textContent = String(Math.round(r * 100)).padStart(2, '0') + '%';
+      ring.style.strokeDashoffset = (94.25 * (1 - r)).toFixed(2);
+      var open = views.filter(function (v) { return !v.hidden; })[0];
+      if (open) { lab.textContent = 'Project'; return; }
+      var name = 'Intro';
+      secs.forEach(function (s) { var el = document.getElementById(s[0]); if (el && s[0] !== 'top' && el.getBoundingClientRect().top <= innerHeight * 0.4) name = s[1]; });
+      lab.textContent = name;
+    }
+    addEventListener('scroll', function () { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+    addEventListener('resize', update);
+    update();
+
+    var fine = matchMedia('(pointer: fine)').matches, still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (fine && !still) {
+      var glow = document.getElementById('cring'), dot = document.getElementById('cdot');
+      var mx = -300, my = -300, gx = -300, gy = -300, started = false;
+      addEventListener('mousemove', function (e) {
+        mx = e.clientX; my = e.clientY;
+        dot.style.transform = 'translate(' + mx + 'px,' + my + 'px)';
+        if (!started) { started = true; gx = mx; gy = my; glow.classList.add('on'); dot.classList.add('on'); loop(); }
+        var hot = e.target.closest && e.target.closest('a, button, label, textarea, input');
+        dot.classList.toggle('hover', !!hot); glow.classList.toggle('hover', !!hot);
+      });
+      document.addEventListener('mouseleave', function () { glow.classList.remove('on'); dot.classList.remove('on'); });
+      document.addEventListener('mouseenter', function () { if (started) { glow.classList.add('on'); dot.classList.add('on'); } });
+      function loop() { gx += (mx - gx) * 0.12; gy += (my - gy) * 0.12; glow.style.transform = 'translate(' + gx.toFixed(1) + 'px,' + gy.toFixed(1) + 'px)'; requestAnimationFrame(loop); }
+    }
+
+    if (!still && 'IntersectionObserver' in window) {
+      var items = home.querySelectorAll('.row2, .stack, .pc, .pillar, .cap, .trait, .journey, .how, .honest, .section-head, .contact-grid');
+      var io = new IntersectionObserver(function (es) { es.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); } }); }, { rootMargin: '0px 0px -8% 0px' });
+      items.forEach(function (el) { if (el.getBoundingClientRect().top > innerHeight) { el.classList.add('rv'); io.observe(el); } });
+    }
+  })();
+
+
+  /* ---------- seminar sample ---------- */
+  (function () {
+    var modes = {
+      p: { lvl: 0, name: 'Passive', chat: [
+            ['s', 'Lena', 'Explain cognitive load theory.'],
+            ['ai', 'AI', 'Cognitive load theory (Sweller, 1988) describes how working memory has limited capacity. It distinguishes intrinsic, extraneous and germane load. Instruction should reduce extraneous load, for example by using worked examples…'],
+            ['note', '', 'Lena copies the answer into her notes. Omar reads it on his phone.']],
+          does: ['Read the AI’s explanation', 'Copy it into notes', 'No discussion, no new ideas'],
+          out: 'A tidy definition in everyone’s notes, but nobody had to think it through. Recall a week later is likely to be weak.' },
+      i: { lvl: 3, name: 'Interactive', chat: [
+            ['s', 'Lena', 'We think worked examples help beginners because they lower cognitive load. Can you challenge that?'],
+            ['ai', 'AI', 'Good claim. But what happens when learners already know the topic well? Do worked examples still help them?'],
+            ['s2', 'Omar', 'Hm, for experts the steps might be redundant… so the same example could actually add load.'],
+            ['s', 'Lena', 'So we should fade the examples as students get better. Let’s put that on our poster.'],
+            ['ai', 'AI', 'That matches the expertise reversal effect. How would you decide when to start fading?']],
+          does: ['Make a claim and defend it', 'Build on each other’s ideas', 'Revise their explanation together'],
+          out: 'A new idea the pair built themselves: fade worked examples as expertise grows. They can explain why, not just what.' }
+    };
+    var chat = document.getElementById('semchat'), meter = document.querySelectorAll('#semmeter span'), lvl = document.getElementById('semlevel'),
+        does = document.getElementById('semdo'), out = document.getElementById('semout'), bp = document.getElementById('mode-p'), bi = document.getElementById('mode-i');
+    if (!chat) return;
+    function set(k) {
+      var m = modes[k];
+      bp.setAttribute('aria-pressed', String(k === 'p')); bi.setAttribute('aria-pressed', String(k === 'i'));
+      chat.innerHTML = m.chat.map(function (c) {
+        if (c[0] === 'note') return '<div class="cnote">' + esc(c[2]) + '</div>';
+        return '<div class="cmsg c-' + c[0] + '"><span class="cav">' + (c[0] === 'ai' ? 'AI' : c[1][0]) + '</span><div><span class="cwho">' + esc(c[1]) + '</span><p>' + esc(c[2]) + '</p></div></div>';
+      }).join('');
+      meter.forEach(function (s, n) { s.className = n <= m.lvl ? 'on l' + n : ''; });
+      lvl.textContent = m.name; lvl.className = 'sem-level l' + m.lvl;
+      does.innerHTML = m.does.map(function (d) { return '<li>' + esc(d) + '</li>'; }).join('');
+      out.textContent = m.out;
+    }
+    bp.addEventListener('click', function () { set('p'); });
+    bi.addEventListener('click', function () { set('i'); });
+    set('i');
+  })();
+
+  /* ---------- project pages ---------- */
+  function route() {
+    var id = location.hash.slice(1);
+    var v = views.filter(function (x) { return x.getAttribute('data-id') === id; })[0];
+    var prev = document.documentElement.style.scrollBehavior;
+    document.documentElement.style.scrollBehavior = 'auto';
+    if (v) {
+      home.hidden = true;
+      views.forEach(function (x) { x.hidden = x !== v; });
+      scrollTo(0, 0);
+      var h = v.querySelector('h2'); if (h) { h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }); }
+    } else {
+      var wasHidden = home.hidden;
+      views.forEach(function (x) { x.hidden = true; });
+      home.hidden = false;
+      var el = id && document.getElementById(id);
+      if (el) el.scrollIntoView(); else if (wasHidden) scrollTo(0, 0);
+    }
+    document.documentElement.style.scrollBehavior = prev;
+    if (window.__fxUpdate) window.__fxUpdate();
+  }
+  addEventListener('hashchange', route);
+  route();
+
+  var cb = document.getElementById('copyMail');
+  cb.addEventListener('click', function () {
+    var t = document.getElementById('mail').textContent;
+    function sel() { var r = document.createRange(); r.selectNodeContents(document.getElementById('mail')); var s = getSelection(); s.removeAllRanges(); s.addRange(r); cb.textContent = 'Selected'; }
+    try { navigator.clipboard.writeText(t).then(function () { cb.textContent = 'Copied'; }, sel); } catch (e) { sel(); }
+  });
+})();
+</script>
+
+</body>
+</html>
