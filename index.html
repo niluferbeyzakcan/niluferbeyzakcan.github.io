@@ -1,3 +1,4 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <!doctype html>
 <html lang="en">
 <head>
@@ -831,6 +832,418 @@ nav.top .mono-mark { font-family: var(--f-display); font-style: italic; font-wei
 .chat-foot { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 10px 14px; border-top: 1px solid var(--line); background: var(--tint); font-family: var(--f-label); font-size: .78rem; font-weight: 700; color: var(--muted); }
 .chat-foot button { font: inherit; font-weight: 800; font-size: .82rem; border: 1px solid var(--accent); background: transparent; color: var(--accent); padding: 6px 14px; border-radius: 999px; cursor: pointer; }
 .chat-foot button:hover { background: var(--accent); color: #26101D; }
+
+/* ===== v15: e-learning course ===== */
+.intro1 { margin-top: 26px; display: grid; gap: 14px; }
+.lead1 { font-family: var(--f-display); font-style: italic; font-size: clamp(1.2rem, 2vw, 1.5rem); line-height: 1.4; color: var(--ink); max-width: 46ch; }
+.objchips { display: flex; flex-wrap: wrap; gap: 8px; }
+.objchips span { display: inline-flex; align-items: center; font-size: .82rem; font-weight: 700; padding: 6px 12px; border-radius: 999px; background: var(--tint); color: var(--ink); border: 1px solid var(--line); }
+.course { margin-top: 26px; display: grid; grid-template-columns: 250px minmax(0, 1fr); border-radius: 24px; overflow: hidden; border: 1px solid var(--line); background: var(--surface); box-shadow: 0 40px 80px -50px #000; }
+.c-side { background: linear-gradient(180deg, #2A1B3D, #1D2448); padding: 20px 14px; display: grid; align-content: start; gap: 18px; }
+.c-brand { display: flex; gap: 10px; align-items: center; padding: 0 6px; color: #fff; }
+.c-brand b { display: block; font-family: var(--f-display); font-weight: 500; font-size: 1.1rem; }
+.c-brand small { color: #C9BEDD; font-size: .76rem; }
+.c-logo { width: 38px; height: 38px; border-radius: 12px; display: grid; place-items: center; background: linear-gradient(135deg, #FF9FC9, #B5ABFF); color: #2A1B3D; flex: none; }
+.c-menu { list-style: none; margin: 0; padding: 0; display: grid; gap: 4px; }
+.c-menu button { width: 100%; font: inherit; font-size: .88rem; text-align: left; display: flex; align-items: center; gap: 10px; padding: 10px; border-radius: 12px; border: 0; background: transparent; color: #D9D2EA; cursor: pointer; }
+.c-menu button:hover { background: rgba(255,255,255,.07); }
+.c-menu button[aria-current="step"] { background: rgba(255,255,255,.13); color: #fff; font-weight: 700; }
+.cm-n { width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; font-size: .78rem; font-weight: 800; border: 1.5px solid rgba(255,255,255,.35); flex: none; }
+.c-menu button[aria-current="step"] .cm-n { background: #FF9FC9; border-color: #FF9FC9; color: #2A1B3D; }
+.c-menu button.done .cm-n { background: #7FE0CF; border-color: #7FE0CF; color: #10231F; font-size: 0; }
+.c-menu button.done .cm-n::after { content: "✓"; font-size: .8rem; }
+.c-main { display: grid; grid-template-rows: auto 1fr auto; min-width: 0; }
+.c-top { display: flex; align-items: center; gap: 14px; padding: 14px 22px; border-bottom: 1px solid var(--line); font-family: var(--f-label); font-size: .78rem; font-weight: 800; color: var(--muted); letter-spacing: .06em; }
+.c-prog { flex: 1; height: 6px; border-radius: 3px; background: var(--tint); overflow: hidden; }
+.c-prog i { display: block; height: 100%; width: 0; background: linear-gradient(90deg, var(--accent), var(--lilac)); border-radius: 3px; transition: width .4s; }
+.les { padding: 26px clamp(18px, 3vw, 34px); display: grid; gap: 16px; align-content: start; min-height: 520px; }
+.les h3 { font-size: clamp(1.5rem, 2.6vw, 2rem); }
+.les-k { font-family: var(--f-label); font-size: .72rem; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--accent); }
+.les-p { color: var(--muted); font-size: .95rem; }
+.les-note { font-size: .78rem; color: var(--muted); }
+.c-nav { display: flex; justify-content: space-between; gap: 10px; padding: 14px 22px; border-top: 1px solid var(--line); background: var(--tint); }
+.c-nav .btn:disabled { opacity: .4; cursor: default; }
+.tt-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px; }
+.tt { font: inherit; display: flex; align-items: center; gap: 10px; padding: 12px; border-radius: 14px; border: 1.5px solid var(--line); background: var(--bg); color: var(--ink); font-weight: 700; font-size: .9rem; cursor: pointer; text-align: left; }
+.tt-ic { width: 36px; height: 36px; border-radius: 10px; display: grid; place-items: center; background: var(--lilac-soft); color: var(--lilac); flex: none; }
+.tt[aria-pressed="true"] { border-color: var(--accent); background: var(--accent-soft); }
+.tt[aria-pressed="true"] .tt-ic { background: var(--accent); color: #26101D; }
+.tt-detail { border-radius: 18px; border: 1px solid var(--line); background: var(--bg); padding: 16px; display: grid; gap: 12px; }
+.td-tools { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: baseline; }
+.td-tools span { font-family: var(--f-label); font-size: .7rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--teal); }
+.td-tools b { color: var(--ink); font-size: .95rem; }
+.td-flow { display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: stretch; }
+.td-box { border-radius: 14px; padding: 12px 14px; background: var(--tint); }
+.td-box small { font-family: var(--f-label); font-size: .68rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.td-box p { font-size: .88rem; margin-top: 4px; font-family: var(--f-mono); color: var(--text); }
+.td-box.ai { background: color-mix(in srgb, var(--lilac-soft) 80%, transparent); border: 1px dashed var(--lilac); }
+.td-box.ai p { font-family: var(--f-body); }
+.td-arr { align-self: center; font-size: 1.4rem; color: var(--accent); }
+.td-tip { display: flex; align-items: center; font-size: .85rem; color: var(--gold); }
+.kc { border-radius: 16px; padding: 14px 16px; background: linear-gradient(120deg, color-mix(in srgb, var(--teal) 12%, var(--bg)), var(--bg)); border: 1px solid var(--line); display: grid; gap: 8px; }
+.kc > b { font-family: var(--f-label); font-size: .72rem; letter-spacing: .14em; text-transform: uppercase; color: var(--teal); }
+.kc-o { display: grid; gap: 6px; }
+.kc-o button, .claim { font: inherit; text-align: left; padding: 10px 14px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--surface); color: var(--text); cursor: pointer; font-size: .9rem; }
+.kc-o button.right { border-color: var(--teal); background: var(--teal-soft); color: var(--ink); }
+.kc-o button.wrong { border-color: var(--bad); color: var(--bad); }
+.kc-f { font-size: .88rem; color: var(--ink); min-height: 1.2em; }
+.lanes { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.ln { display: flex; align-items: center; justify-content: center; padding: 8px; border-radius: 10px; font-size: .78rem; font-weight: 800; }
+.ln.g { background: #173A2E; color: #7FE0A8; } .ln.a { background: #3A2F18; color: #F3C46F; } .ln.r { background: #3D1C24; color: #FF9A9A; }
+.dcards { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.dc { border-radius: 14px; border: 1.5px solid var(--line); background: var(--bg); padding: 12px; display: grid; gap: 8px; }
+.dc-t { font-weight: 700; color: var(--ink); font-size: .9rem; }
+.dc-b { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+.dc-b button { font: inherit; font-size: .72rem; font-weight: 800; padding: 6px 4px; border-radius: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--muted); cursor: pointer; }
+.dc-b .lg-g[aria-pressed="true"] { background: #7FE0A8; color: #0D2A1C; border-color: #7FE0A8; }
+.dc-b .lg-a[aria-pressed="true"] { background: #F3C46F; color: #2A1E05; border-color: #F3C46F; }
+.dc-b .lg-r[aria-pressed="true"] { background: #FF9A9A; color: #3A0E14; border-color: #FF9A9A; }
+.dc-f { font-size: .8rem; color: var(--muted); }
+.dc.ok { border-color: var(--teal); } .dc.ok .dc-f { color: var(--teal); }
+.dc.no { border-color: var(--bad); } .dc.no .dc-f { color: var(--bad); }
+.les-act { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.dscore { font-weight: 800; color: var(--ink); }
+.verify { display: grid; grid-template-columns: 1fr 1.3fr; gap: 14px; }
+.src, .aiout { border-radius: 16px; padding: 14px 16px; background: var(--bg); border: 1px solid var(--line); display: grid; gap: 10px; align-content: start; }
+.aiout { border-style: dashed; border-color: var(--lilac); }
+.src-h { display: flex; align-items: center; font-family: var(--f-label); font-size: .72rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.bar-r { display: grid; grid-template-columns: 100px 1fr 24px; gap: 8px; align-items: center; font-size: .85rem; }
+.bar-r i { display: block; height: 12px; border-radius: 6px; width: calc(var(--v) / 8 * 100%); background: linear-gradient(90deg, var(--teal), var(--lilac)); }
+.bar-r b { color: var(--ink); text-align: right; }
+.claim:hover { border-color: var(--accent); }
+.claim.caught { border-color: var(--bad); background: color-mix(in srgb, var(--bad) 15%, var(--surface)); text-decoration: line-through; color: var(--ink); }
+.claim.fine { border-color: var(--teal); }
+.habits { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.habits div { border-radius: 12px; padding: 10px 12px; background: var(--tint); }
+.habits b { display: block; color: var(--ink); font-size: .88rem; }
+.habits small { color: var(--muted); font-size: .78rem; }
+.pb { display: grid; gap: 12px; }
+.pb-blocks { display: flex; flex-wrap: wrap; gap: 8px; }
+.pb-blocks button { font: inherit; font-weight: 800; font-size: .85rem; padding: 8px 14px; border-radius: 999px; border: 1.5px dashed var(--line); background: transparent; color: var(--ink); cursor: pointer; }
+.pb-blocks button[aria-pressed="true"] { border-style: solid; }
+.pb-blocks [data-b="ctx"][aria-pressed="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+.pb-blocks [data-b="task"][aria-pressed="true"] { background: var(--teal-soft); border-color: var(--teal); color: var(--teal); }
+.pb-blocks [data-b="fmt"][aria-pressed="true"] { background: var(--gold-soft); border-color: var(--gold); color: var(--gold); }
+.pb-blocks [data-b="chk"][aria-pressed="true"] { background: var(--lilac-soft); border-color: var(--lilac); color: var(--lilac); }
+.pb-blocks [data-b="safe"][aria-pressed="true"] { background: #3D1C24; border-color: #FF9A9A; color: #FF9A9A; }
+.pb-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.pb-box { border-radius: 16px; padding: 14px 16px; background: var(--bg); border: 1px solid var(--line); display: grid; gap: 8px; align-content: start; font-size: .9rem; }
+.pb-box.out { border-style: dashed; border-color: var(--lilac); }
+.pb-box mark { background: none; padding: 1px 3px; border-radius: 4px; }
+.m-ctx { color: var(--accent); background: var(--accent-soft) !important; } .m-task { color: var(--teal); background: var(--teal-soft) !important; } .m-fmt { color: var(--gold); background: var(--gold-soft) !important; } .m-chk { color: var(--lilac); background: var(--lilac-soft) !important; } .m-safe { color: #FF9A9A; background: #3D1C24 !important; }
+.pb-box ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.vague { color: var(--muted); font-style: italic; }
+.pb-box .tiny { font-size: .78rem; color: var(--muted); } .pb-box .tiny.ok { color: var(--teal); font-weight: 700; }
+.pb-q { display: flex; align-items: center; gap: 10px; font-size: .74rem; font-weight: 800; color: var(--muted); border-top: 1px solid var(--line); padding-top: 8px; margin-top: 4px; }
+.pb-meter { display: flex; gap: 4px; flex: 1; }
+.pb-meter i { flex: 1; height: 8px; border-radius: 4px; background: var(--tint); }
+.pb-meter i.on { background: linear-gradient(90deg, var(--teal), var(--lilac)); }
+.les .screen { padding: 0; min-height: 0; }
+.fin { text-align: center; display: grid; justify-items: center; gap: 12px; padding: 20px 0; }
+.fin-ic { width: 72px; height: 72px; border-radius: 50%; display: grid; place-items: center; background: linear-gradient(135deg, #FF9FC9, #B5ABFF); color: #2A1B3D; }
+.fin-ic .ic { width: 34px; height: 34px; }
+.fin-g { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 10px; width: 100%; margin-top: 8px; }
+.fin-g div { border-radius: 16px; padding: 14px 10px; background: var(--bg); border: 1px solid var(--line); display: grid; justify-items: center; gap: 4px; color: var(--accent); }
+.fin-g b { color: var(--ink); font-size: .9rem; } .fin-g small { color: var(--muted); font-size: .76rem; }
+.fin-s { font-size: .88rem; color: var(--teal); font-weight: 700; }
+.behind { margin-top: 30px; border-radius: 18px; border: 1px solid var(--line); background: var(--surface); }
+.behind summary { cursor: pointer; padding: 16px 20px; font-family: var(--f-label); font-weight: 800; color: var(--ink); display: flex; align-items: center; list-style: none; }
+.behind summary::-webkit-details-marker { display: none; }
+.behind summary::after { content: "+"; margin-left: auto; font-size: 1.3rem; color: var(--accent); }
+.behind[open] summary::after { content: "−"; }
+.behind-in { padding: 0 20px 22px; }
+.behind-in .row2 { margin-top: 10px; }
+@media (max-width: 900px) {
+  .course { grid-template-columns: 1fr; }
+  .c-menu { grid-auto-flow: column; overflow-x: auto; }
+  .c-menu button span:last-child { white-space: nowrap; }
+  .tt-grid { grid-template-columns: 1fr 1fr; }
+  .td-flow, .verify, .pb-cols, .dcards { grid-template-columns: 1fr; }
+  .td-arr { transform: rotate(90deg); justify-self: center; }
+  .fin-g, .habits { grid-template-columns: 1fr 1fr; }
+}
+
+/* ===== colour lab ===== */
+.sits { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.sit { margin: 0; border-radius: 20px 20px 20px 6px; overflow: hidden; border: 1px solid var(--line); background: var(--surface); display: grid; grid-template-rows: 170px auto; }
+.sit-v { display: grid; place-items: center; background: #F2EEE8; }
+.sit figcaption { padding: 14px 16px 16px; display: grid; gap: 4px; grid-template-columns: auto 1fr; column-gap: 10px; align-items: center; }
+.sit figcaption > p, .sit .sit-s { grid-column: 1 / -1; }
+.sit b { color: var(--ink); font-size: 1rem; }
+.sit-s { font-family: var(--f-label); font-size: .7rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+.sit p { font-size: .86rem; color: var(--text); }
+.sit .watch { display: flex; align-items: flex-start; font-size: .8rem; color: var(--gold); }
+.sw { width: 22px; height: 22px; border-radius: 6px; }
+.sw-sale { background: #D7263D; } .sw-juice { background: #2E9E5B; } .sw-choc { background: linear-gradient(135deg, #1A1A1A 55%, #C9A23A 55%); } .sw-bank { background: #1F5FAD; } .sw-toy { background: conic-gradient(#D7263D 0 25%, #FFC93C 0 50%, #1F5FAD 0 75%, #2E9E5B 0); } .sw-snack { background: linear-gradient(135deg, #D7263D 55%, #FFC93C 55%); }
+.mk { position: relative; display: grid; place-items: center; width: 160px; height: 140px; }
+.mk-sale .rack { display: flex; gap: 8px; align-items: flex-end; border-top: 4px solid #8A8F98; padding-top: 6px; }
+.mk-sale .rack i { width: 34px; height: 70px; border-radius: 6px 6px 3px 3px; background: #C9CED6; }
+.mk-sale .rack i:nth-child(2) { background: #AEB5C0; height: 78px; }
+.mk-sale .tag { position: absolute; right: 8px; top: 22px; background: #D7263D; color: #fff; font-weight: 800; font-family: var(--f-label); padding: 6px 10px; border-radius: 6px; transform: rotate(8deg); box-shadow: 0 6px 14px -6px #D7263D; }
+.mk-juice .bottle { position: relative; width: 62px; height: 112px; border-radius: 18px 18px 12px 12px; background: #2E9E5B; display: grid; place-items: center; }
+.mk-juice .cap { position: absolute; top: -12px; left: 18px; width: 26px; height: 14px; border-radius: 4px; background: #E9E4DA; }
+.mk-juice .leaf { position: absolute; top: 22px; width: 22px; height: 12px; border-radius: 0 12px 0 12px; background: #CFF2D8; }
+.mk-juice b { color: #fff; font-family: var(--f-label); font-size: .7rem; letter-spacing: .1em; margin-top: 18px; }
+.mk-choc .box { position: relative; width: 130px; height: 84px; border-radius: 6px; background: #1A1A1A; display: grid; place-items: center; box-shadow: 0 10px 20px -10px #000; }
+.mk-choc .ribbon { position: absolute; left: 50%; top: 0; bottom: 0; width: 12px; transform: translateX(-50%); background: #C9A23A; }
+.mk-choc b { position: relative; background: inherit; padding: 2px 8px; color: #C9A23A; font-family: var(--f-display); letter-spacing: .3em; font-size: .9rem; }
+.mk-bank .phone { width: 78px; height: 132px; border-radius: 14px; background: #fff; border: 4px solid #22252B; display: grid; align-content: start; gap: 6px; padding: 0 0 8px; overflow: hidden; }
+.mk-bank .ph-h { height: 34px; background: #1F5FAD; }
+.mk-bank b { font-size: .72rem; color: #22252B; text-align: center; font-family: var(--f-label); }
+.mk-bank .ph-l { height: 6px; margin: 0 8px; border-radius: 3px; background: #E3E6EC; }
+.mk-bank .ph-l.s { width: 50%; }
+.mk-bank .ph-btn { height: 14px; margin: 6px 10px 0; border-radius: 7px; background: #1F5FAD; }
+.mk-toy .blocks { display: grid; grid-template-columns: 40px 40px; gap: 6px; transform: rotate(-6deg); }
+.mk-toy i { width: 40px; height: 40px; border-radius: 8px; background: #D7263D; box-shadow: inset 0 -6px 0 rgba(0,0,0,.15); }
+.mk-toy i:nth-child(2) { background: #FFC93C; } .mk-toy i:nth-child(3) { background: #1F5FAD; } .mk-toy i:nth-child(4) { background: #2E9E5B; }
+.mk-snack .fries { display: flex; gap: 14px; align-items: flex-end; }
+.mk-snack .f { position: relative; width: 56px; height: 64px; background: #D7263D; border-radius: 4px 4px 12px 12px; }
+.mk-snack .f i { position: absolute; bottom: 48px; width: 8px; height: 36px; background: #FFC93C; border-radius: 3px; }
+.mk-snack .f i:nth-child(1) { left: 6px; transform: rotate(-8deg); } .mk-snack .f i:nth-child(2) { left: 18px; height: 42px; } .mk-snack .f i:nth-child(3) { left: 30px; transform: rotate(6deg); } .mk-snack .f i:nth-child(4) { left: 42px; height: 30px; transform: rotate(10deg); }
+.mk-snack .cup { width: 38px; height: 70px; background: #FFC93C; border-radius: 4px 4px 10px 10px; box-shadow: inset 0 10px 0 #D7263D; }
+.recolour { margin-top: 6px; border-radius: 24px; border: 1px solid var(--line); background: var(--surface); padding: clamp(16px, 3vw, 26px); display: grid; gap: 16px; }
+.rc-head { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; align-items: center; }
+.rc-head b { display: block; font-family: var(--f-display); font-weight: 500; font-size: 1.35rem; color: var(--ink); }
+.rc-head small { color: var(--muted); font-size: .85rem; }
+.rc-prod { display: inline-flex; flex-wrap: wrap; gap: 4px; padding: 4px; border-radius: 16px; background: var(--tint); }
+.rc-prod button { font: inherit; font-weight: 800; font-size: .84rem; padding: 8px 14px; border-radius: 12px; border: 0; background: transparent; color: var(--muted); cursor: pointer; }
+.rc-prod button[aria-pressed="true"] { background: var(--accent); color: #26101D; }
+.rc-body { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; align-items: center; }
+.rc-stage { border-radius: 20px; background: #F2EEE8; min-height: 240px; display: grid; place-items: center; }
+.rc-stage .mk { transform: scale(1.45); }
+.rc-stage .mk * { transition: background .35s, color .35s; }
+.rc-side { display: grid; gap: 16px; }
+.rc-sw { display: flex; flex-wrap: wrap; gap: 10px; }
+.rc-sw button { width: 46px; height: 46px; border-radius: 50%; border: 3px solid var(--surface); background: var(--c); box-shadow: 0 0 0 1.5px var(--line); cursor: pointer; position: relative; }
+.rc-sw button[data-c="gold"] { background: linear-gradient(135deg, var(--c) 55%, var(--c2) 55%); }
+.rc-sw button[aria-pressed="true"] { box-shadow: 0 0 0 3px var(--accent); transform: scale(1.08); }
+.rc-fit { border-radius: 16px; padding: 14px 16px; background: var(--bg); border: 1.5px solid var(--line); display: grid; gap: 8px; }
+.fit-pill { justify-self: start; font-family: var(--f-label); font-weight: 800; font-size: .76rem; letter-spacing: .1em; text-transform: uppercase; padding: 4px 12px; border-radius: 999px; }
+.f-fit { border-color: var(--teal); } .f-fit .fit-pill { background: var(--teal); color: #10231F; }
+.f-mixed { border-color: var(--gold); } .f-mixed .fit-pill { background: var(--gold); color: #2A1E05; }
+.f-clash { border-color: var(--bad); } .f-clash .fit-pill { background: var(--bad); color: #3A0E14; }
+.rc-fit p { font-size: .92rem; color: var(--text); }
+@media (max-width: 900px) { .sits { grid-template-columns: 1fr 1fr; } .rc-body { grid-template-columns: 1fr; } }
+@media (max-width: 520px) { .sits { grid-template-columns: 1fr; } }
+
+/* ===== v16: colourful workshop ===== */
+[data-id="why-people-buy"] .proj-head h2 em { background: linear-gradient(90deg, #FF9FC9, #F3C46F); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.methods { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 6px; }
+.mt { border-radius: 16px; padding: 14px; display: grid; gap: 2px; color: #fff; }
+.mt .ic { width: 20px; height: 20px; opacity: .9; }
+.mt b { font-family: var(--f-display); font-weight: 500; font-size: 2rem; line-height: 1.1; }
+.mt small { font-size: .78rem; opacity: .9; }
+.m1 { background: linear-gradient(135deg, #B23C77, #6A3FA0); } .m2 { background: linear-gradient(135deg, #1D7B6F, #2E5E9E); } .m3 { background: linear-gradient(135deg, #B07A16, #B23C77); }
+.finds { display: grid; gap: 10px; border-radius: 22px 22px 22px 6px; }
+.gap { display: grid; grid-template-columns: auto 1fr; gap: 12px; align-items: start; padding: 10px 12px; border-radius: 14px; }
+.gap b { color: var(--ink); font-size: .92rem; } .gap p { font-size: .85rem; color: var(--muted); }
+.g1 { background: color-mix(in srgb, var(--lilac-soft) 70%, transparent); } .g2 { background: color-mix(in srgb, var(--teal-soft) 70%, transparent); } .g3 { background: color-mix(in srgb, var(--accent-soft) 80%, transparent); border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent); }
+.big-n { display: block; font-family: var(--f-display); font-size: 1.8rem; color: var(--lilac); line-height: 1; margin: 2px 0; }
+.big-n small { font-size: .9rem; color: var(--muted); }
+[data-id="why-people-buy"] .agenda { border: 0; background: transparent; display: grid; gap: 8px; }
+[data-id="why-people-buy"] .agenda .r { border: 1px solid var(--line); border-left: 5px solid var(--line); border-radius: 14px; background: var(--surface); }
+[data-id="why-people-buy"] .agenda .r:has(.icap.A) { border-left-color: var(--gold); background: linear-gradient(90deg, color-mix(in srgb, var(--gold) 10%, var(--surface)), var(--surface) 60%); }
+[data-id="why-people-buy"] .agenda .r:has(.icap.C) { border-left-color: var(--teal); background: linear-gradient(90deg, color-mix(in srgb, var(--teal) 10%, var(--surface)), var(--surface) 60%); }
+[data-id="why-people-buy"] .agenda .r:has(.icap.I) { border-left-color: var(--accent); background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 12%, var(--surface)), var(--surface) 60%); }
+[data-id="why-people-buy"] .agenda .r.brk { border-style: dashed; border-left-width: 1px; background: transparent; }
+[data-id="why-people-buy"] .agenda .t { font-family: var(--f-display); font-style: italic; font-size: 1.1rem; }
+[data-id="why-people-buy"] .cards8 div { border: 0; color: #22252B; font-weight: 700; box-shadow: 0 6px 14px -10px #000; transform: rotate(-1.2deg); }
+[data-id="why-people-buy"] .cards8 div:nth-child(even) { transform: rotate(1.2deg); }
+[data-id="why-people-buy"] .cards8 div b { color: rgba(0,0,0,.55); }
+[data-id="why-people-buy"] .cards8 div:nth-child(1) { background: #FFD6E4; } [data-id="why-people-buy"] .cards8 div:nth-child(2) { background: #D7F2EC; } [data-id="why-people-buy"] .cards8 div:nth-child(3) { background: #FFE9B8; } [data-id="why-people-buy"] .cards8 div:nth-child(4) { background: #E3E0F7; }
+[data-id="why-people-buy"] .cards8 div:nth-child(5) { background: #D6E8FF; } [data-id="why-people-buy"] .cards8 div:nth-child(6) { background: #E4F6D2; } [data-id="why-people-buy"] .cards8 div:nth-child(7) { background: #FFCACA; } [data-id="why-people-buy"] .cards8 div:nth-child(8) { background: #FFCACA; }
+[data-id="why-people-buy"] .cards8 div:nth-child(7)::after, [data-id="why-people-buy"] .cards8 div:nth-child(8)::after { content: "dark pattern"; display: block; margin-top: 4px; font-size: .66rem; letter-spacing: .1em; text-transform: uppercase; color: #B23C3C; }
+[data-id="why-people-buy"] .slide:not(.soft) { background: linear-gradient(140deg, #FFF4E8, #FFE1EC); border-color: transparent; }
+[data-id="why-people-buy"] .slide:not(.soft) .st, [data-id="why-people-buy"] .slide:not(.soft) .plan div b, [data-id="why-people-buy"] .slide:not(.soft) .cup { color: #2A1B3D; }
+[data-id="why-people-buy"] .slide:not(.soft) .foot, [data-id="why-people-buy"] .slide:not(.soft) .plan div { color: #7A6A80; border-color: #E9C8D6; }
+[data-id="why-people-buy"] .slide.soft { background: linear-gradient(140deg, #2A1B3D, #4A2350); }
+[data-id="why-people-buy"] .slide.soft .st { color: #fff; } [data-id="why-people-buy"] .slide.soft .foot { color: #C9BEDD; }
+.kolb-c div { color: #fff; }
+.kolb-c div b { color: #fff !important; } .kolb-c div span { color: rgba(255,255,255,.85) !important; }
+.kolb-c div:nth-child(1) { background: linear-gradient(135deg, #B07A16, #D69A2D); } .kolb-c div:nth-child(2) { background: linear-gradient(135deg, #1D7B6F, #2E9E8A); } .kolb-c div:nth-child(3) { background: linear-gradient(135deg, #5A4FBD, #7A6FD0); } .kolb-c div:nth-child(4) { background: linear-gradient(135deg, #B23C77, #D65A95); }
+.kolb-c div:not(:last-child)::after { color: var(--ink); }
+.thcards { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.thc { display: grid; grid-template-columns: auto 1fr; gap: 14px; padding: 16px; border-radius: 18px 18px 18px 6px; border: 1px solid var(--line); background: var(--surface); }
+.thc b { color: var(--ink); display: block; font-size: 1rem; }
+.thc .ref { font-size: .78rem; color: var(--muted); }
+.thc p { grid-column: 2; font-size: .86rem; color: var(--text); margin-top: -6px; }
+.tc1 .ibadge { background: var(--accent-soft); color: var(--accent); } .tc1 { border-top: 3px solid var(--accent); }
+.tc2 .ibadge { background: var(--gold-soft); color: var(--gold); } .tc2 { border-top: 3px solid var(--gold); }
+.tc3 .ibadge { background: var(--teal-soft); color: var(--teal); } .tc3 { border-top: 3px solid var(--teal); }
+.tc4 .ibadge { background: var(--lilac-soft); color: var(--lilac); } .tc4 { border-top: 3px solid var(--lilac); }
+.kp { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; align-items: end; }
+.kpl { position: relative; border-radius: 20px 20px 20px 6px; padding: 18px 16px; color: #fff; display: grid; gap: 6px; align-content: start; overflow: hidden; }
+.kpl.k1 { background: linear-gradient(160deg, #B07A16, #8A5A0E); min-height: 190px; } .kpl.k2 { background: linear-gradient(160deg, #1D7B6F, #145A52); min-height: 215px; } .kpl.k3 { background: linear-gradient(160deg, #5A4FBD, #3E3592); min-height: 240px; } .kpl.k4 { background: linear-gradient(160deg, #B23C77, #7E2556); min-height: 265px; }
+.kp-n { position: absolute; right: 12px; top: 2px; font-family: var(--f-display); font-style: italic; font-size: 4rem; line-height: 1; opacity: .22; }
+.kp-ic { width: 38px; height: 38px; border-radius: 12px; display: grid; place-items: center; background: rgba(255,255,255,.18); }
+.kpl b { font-family: var(--f-display); font-weight: 500; font-size: 1.3rem; }
+.kpl p { font-size: .86rem; color: rgba(255,255,255,.9); }
+.kpl small { display: flex; align-items: flex-start; font-size: .78rem; color: rgba(255,255,255,.8); margin-top: auto; }
+@media (max-width: 900px) { .methods { grid-template-columns: 1fr 1fr 1fr; } .thcards { grid-template-columns: 1fr; } .kp { grid-template-columns: 1fr 1fr; } .kpl { min-height: 0 !important; } }
+@media (max-width: 520px) { .methods, .kp { grid-template-columns: 1fr; } }
+
+.fsteps { line-height: 2.1; }
+.fsteps b { display: inline-block; min-width: 64px; text-align: center; margin-right: 8px; padding: 1px 10px; border-radius: 999px; font-size: .78rem; line-height: 1.6; color: #fff; background: linear-gradient(120deg, #B23C77, #6A3FA0); }
+.fsteps b:nth-of-type(2) { background: linear-gradient(120deg, #1D7B6F, #2E5E9E); }
+.fsteps b:nth-of-type(3) { background: linear-gradient(120deg, #B07A16, #B23C77); }
+.fsteps b:nth-of-type(4) { background: linear-gradient(120deg, #5A4FBD, #1D7B6F); }
+
+/* ===== v17: learn decks ===== */
+.phase { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.ph { display: inline-flex; align-items: center; font-family: var(--f-label); font-size: .74rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; padding: 5px 12px; border-radius: 999px; color: var(--muted); border: 1px solid var(--line); }
+.ph.on { background: linear-gradient(120deg, var(--accent), var(--lilac)); color: #1A1024; border-color: transparent; }
+.ph.done { color: var(--teal); border-color: var(--teal); }
+.ph-sep { width: 24px; height: 2px; background: var(--line); }
+.relearn { margin-left: auto; font: inherit; font-size: .8rem; font-weight: 800; background: none; border: 0; color: var(--accent); cursor: pointer; }
+.learn { display: grid; gap: 14px; }
+.deck { position: relative; border-radius: 22px; background: radial-gradient(120% 90% at 100% 0%, color-mix(in srgb, var(--lilac) 18%, var(--bg)), var(--bg) 60%); border: 1px solid var(--line); padding: 22px 22px 16px; display: grid; gap: 14px; overflow: hidden; }
+.ds { display: grid; gap: 12px; animation: dsin .35s ease-out; }
+@keyframes dsin { from { opacity: .3; transform: translateX(14px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .ds { animation: none; } }
+.ds-n { font-family: var(--f-label); font-size: .7rem; font-weight: 800; letter-spacing: .14em; color: var(--muted); }
+.ds h4 { font-family: var(--f-display); font-weight: 500; font-size: clamp(1.25rem, 2.2vw, 1.6rem); color: var(--ink); }
+.ds-vis { min-height: 220px; display: grid; place-items: center; }
+.ds-cap { font-size: .92rem; color: var(--text); max-width: 60ch; }
+.deck-nav { display: flex; align-items: center; justify-content: space-between; gap: 10px; border-top: 1px solid var(--line); padding-top: 12px; }
+.deck-nav button { font: inherit; font-weight: 800; font-size: .86rem; border-radius: 999px; padding: 8px 16px; cursor: pointer; }
+.dk-prev { background: transparent; border: 1px solid var(--line); color: var(--ink); }
+.dk-prev:disabled { opacity: .35; cursor: default; }
+.dk-next { background: var(--accent); border: 0; color: #26101D; }
+.dk-dots { display: flex; gap: 6px; }
+.dk-dots i { width: 8px; height: 8px; border-radius: 4px; background: var(--line); transition: width .25s, background .25s; }
+.dk-dots i.on { width: 26px; background: var(--accent); } .dk-dots i.seen { background: var(--teal); }
+.gate { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+.gate-skip { font: inherit; font-size: .82rem; background: none; border: 0; color: var(--muted); text-decoration: underline; cursor: pointer; }
+.practice { display: grid; gap: 16px; }
+.hub, .flowsvg { width: 100%; max-width: 440px; height: auto; }
+.apps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; width: 100%; }
+.app { border-radius: 14px; overflow: hidden; background: #F4F6FA; box-shadow: 0 14px 26px -18px #000; }
+.app-b { display: flex; align-items: center; gap: 4px; padding: 6px 8px; background: #E1E5EE; font-size: .66rem; font-weight: 800; color: #4A5068; }
+.app-b i { width: 7px; height: 7px; border-radius: 50%; background: #C3C9D6; } .app-b span { margin-left: 6px; }
+.app-c { padding: 10px; display: grid; gap: 6px; min-height: 110px; align-content: start; }
+.app-c .ln { height: 6px; border-radius: 3px; background: #D3D8E3; } .app-c .ln.s { width: 60%; }
+.app-c .vid { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; } .app-c .vid b { height: 22px; border-radius: 4px; background: #C9D3E6; }
+.app-c .grid { height: 48px; border-radius: 4px; background: repeating-linear-gradient(0deg, #D3D8E3 0 1px, transparent 1px 12px), repeating-linear-gradient(90deg, #D3D8E3 0 1px, transparent 1px 22px); }
+.spk { justify-self: start; margin-top: 4px; font-size: .7rem; font-weight: 800; padding: 4px 10px; border-radius: 999px; color: #fff; background: linear-gradient(120deg, #B23C77, #6A3FA0); box-shadow: 0 0 0 4px rgba(178,60,119,.15); }
+.q3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; width: 100%; }
+.q3 div { position: relative; border-radius: 18px; padding: 18px 14px 14px; background: var(--surface); border: 1px solid var(--line); display: grid; gap: 6px; justify-items: start; color: var(--accent); }
+.q3 div:nth-child(2) { color: var(--teal); } .q3 div:nth-child(3) { color: var(--lilac); }
+.q3 b { color: var(--ink); font-size: .95rem; } .q3 small { color: var(--muted); font-size: .8rem; }
+.q-n { position: absolute; right: 12px; top: 6px; font-family: var(--f-display); font-style: italic; font-size: 2.2rem; opacity: .3; }
+.lights { display: grid; gap: 10px; width: 100%; max-width: 460px; }
+.light { display: grid; grid-template-columns: auto 1fr; column-gap: 14px; align-items: center; padding: 12px 14px; border-radius: 16px; background: var(--surface); border: 1px solid var(--line); }
+.light small { grid-column: 2; color: var(--muted); font-size: .82rem; } .light b { color: var(--ink); font-size: .95rem; }
+.bulb { grid-row: span 2; width: 34px; height: 34px; border-radius: 50%; }
+.light.g .bulb { background: #7FE0A8; box-shadow: 0 0 18px #7FE0A8; } .light.a .bulb { background: #F3C46F; box-shadow: 0 0 18px #F3C46F; } .light.r .bulb { background: #FF9A9A; box-shadow: 0 0 18px #FF9A9A; }
+.anon { display: grid; grid-template-columns: 1fr auto 1fr; gap: 12px; align-items: center; width: 100%; }
+.an-box { border-radius: 16px; padding: 14px; background: var(--surface); border: 1px solid var(--line); font-size: .9rem; }
+.an-box small, .sticky small, .bcard small { display: block; font-family: var(--f-label); font-size: .68rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+.an-box.ok { border-color: #7FE0A8; }
+.an-arr { font-size: 1.4rem; color: var(--accent); font-weight: 800; text-align: center; }
+mark.pii { background: #3D1C24; color: #FF9A9A; padding: 0 4px; border-radius: 4px; } mark.safe { background: #173A2E; color: #7FE0A8; padding: 0 4px; border-radius: 4px; }
+.flowp { stroke-dasharray: 6 6; animation: flowd 1.2s linear infinite; }
+@keyframes flowd { to { stroke-dashoffset: -24; } }
+@media (prefers-reduced-motion: reduce) { .flowp { animation: none; } }
+.gauges { display: flex; align-items: center; gap: 24px; }
+.gauge { display: grid; justify-items: center; gap: 8px; font-size: .85rem; color: var(--muted); font-weight: 700; }
+.g-ring { width: 130px; height: 130px; border-radius: 50%; display: grid; place-items: center; background: conic-gradient(var(--c) calc(var(--p) * 1%), var(--line) 0); position: relative; }
+.g-ring::before { content: ""; position: absolute; inset: 14px; border-radius: 50%; background: var(--bg); }
+.g-ring b { position: relative; font-family: var(--f-display); font-size: 2rem; color: var(--ink); font-weight: 500; }
+.g-vs { font-family: var(--f-display); font-size: 2.6rem; color: var(--accent); }
+.errs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; width: 100%; }
+.er { border-radius: 18px; padding: 16px 14px; display: grid; gap: 6px; background: var(--surface); border: 1px solid var(--line); border-top: 4px solid var(--c); }
+.er.e1 { --c: #FF9A9A; } .er.e2 { --c: var(--gold); } .er.e3 { --c: var(--lilac); }
+.er-v { font-family: var(--f-mono); font-size: 1.25rem; color: var(--c); font-weight: 500; }
+.er-v s { opacity: .6; font-size: .9rem; margin-left: 4px; }
+.er b { color: var(--ink); } .er small { color: var(--muted); font-size: .8rem; }
+.loop { position: relative; width: 260px; height: 240px; }
+.loop-svg { width: 240px; height: 240px; position: absolute; left: 10px; top: 0; }
+.lp { position: absolute; display: grid; text-align: center; font-size: .74rem; color: var(--muted); background: var(--bg); padding: 4px 8px; border-radius: 10px; }
+.lp b { font-size: .95rem; } .lp.l1 b { color: var(--gold); } .lp.l2 b { color: var(--teal); } .lp.l3 b { color: var(--lilac); }
+.lp.l1 { right: -30px; top: 50px; } .lp.l2 { left: 80px; bottom: 6px; } .lp.l3 { left: -30px; top: 50px; }
+.lp.mid { left: 50%; top: 50%; transform: translate(-50%, -50%); font-family: var(--f-display); font-style: italic; font-size: 1.15rem; color: var(--ink); background: none; }
+.brief { display: grid; grid-template-columns: 1fr auto 1.4fr; gap: 14px; align-items: center; width: 100%; }
+.sticky { position: relative; background: #FFE9B8; color: #3A2A00; border-radius: 4px; padding: 16px; transform: rotate(-3deg); box-shadow: 0 12px 20px -14px #000; }
+.sticky small { color: #8A6A1A; } .sticky p { font-family: var(--f-display); font-size: 1.2rem; }
+.bcard { position: relative; background: var(--surface); border: 1px solid var(--teal); border-radius: 18px; padding: 16px; font-size: .9rem; color: var(--text); }
+.bcard b { color: var(--teal); }
+.face { position: absolute; right: -10px; top: -12px; width: 32px; height: 32px; border-radius: 50%; display: grid; place-items: center; font-weight: 800; background: #FF9A9A; color: #3A0E14; }
+.face.ok { background: #7FE0A8; color: #0D2A1C; }
+.tower { display: grid; gap: 6px; width: 100%; max-width: 420px; }
+.tb { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 10px 14px; border-radius: 12px; color: #fff; }
+.tb b { font-size: .95rem; } .tb small { font-size: .8rem; opacity: .9; }
+.t1 { background: linear-gradient(120deg, #B23C77, #D65A95); margin: 0 0; } .t2 { background: linear-gradient(120deg, #1D7B6F, #2E9E8A); margin: 0 14px; } .t3 { background: linear-gradient(120deg, #B07A16, #D69A2D); margin: 0 28px; } .t4 { background: linear-gradient(120deg, #5A4FBD, #7A6FD0); margin: 0 42px; } .t5 { background: linear-gradient(120deg, #9E3A4A, #C9506A); margin: 0 56px; }
+.anno { display: grid; gap: 12px; width: 100%; }
+.anno p { font-size: 1rem; line-height: 1.9; background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 16px; }
+.anno mark { padding: 2px 4px; border-radius: 4px; background: none; }
+.anno-k { display: flex; flex-wrap: wrap; gap: 6px; }
+.anno-k span { font-size: .74rem; font-weight: 800; padding: 3px 10px; border-radius: 999px; }
+.k-ctx { background: var(--accent-soft); color: var(--accent); } .k-task { background: var(--teal-soft); color: var(--teal); } .k-fmt { background: var(--gold-soft); color: var(--gold); } .k-chk { background: var(--lilac-soft); color: var(--lilac); } .k-safe { background: #3D1C24; color: #FF9A9A; }
+@media (max-width: 760px) {
+  .apps, .q3, .errs { grid-template-columns: 1fr; }
+  .anon, .brief { grid-template-columns: 1fr; } .an-arr { transform: rotate(90deg); }
+  .gauges { gap: 10px; } .g-ring { width: 100px; height: 100px; }
+  .tb { margin: 0 !important; }
+}
+
+/* ===== v18: workshop exercises ===== */
+.decoy { border-radius: 24px; border: 1px solid var(--line); background: radial-gradient(110% 80% at 0% 0%, color-mix(in srgb, var(--gold) 14%, var(--surface)), var(--surface) 60%); padding: clamp(16px, 3vw, 26px); display: grid; gap: 18px; }
+.dc-head { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+.dc-tog { display: inline-flex; padding: 4px; gap: 4px; border-radius: 16px; background: var(--tint); }
+.dc-tog button { font: inherit; font-weight: 800; font-size: .86rem; padding: 8px 16px; border-radius: 12px; border: 0; background: transparent; color: var(--muted); cursor: pointer; }
+.dc-tog button[aria-pressed="true"] { background: var(--gold); color: #2A1E05; }
+.dc-ctx { display: inline-flex; align-items: center; font-size: .82rem; color: var(--muted); }
+.dc-body { display: grid; grid-template-columns: 1.1fr 1fr; gap: 20px; align-items: center; }
+.menu-board { display: flex; justify-content: center; align-items: flex-end; gap: 18px; padding: 24px 18px 18px; border-radius: 20px; background: #1E1612; border: 6px solid #3A2A20; box-shadow: inset 0 0 40px rgba(0,0,0,.4); min-height: 240px; }
+.pop { display: grid; justify-items: center; gap: 4px; color: #F6EBDD; font-family: var(--f-label); transition: opacity .35s, transform .35s; }
+.pop b { font-size: .9rem; } .pop .pr { font-family: var(--f-display); font-size: 1.3rem; color: #FFC93C; }
+.pop em { font-style: normal; font-size: .66rem; letter-spacing: .12em; text-transform: uppercase; background: #FF9A9A; color: #3A0E14; padding: 1px 8px; border-radius: 999px; }
+.pop.m { display: none; } .pop.m.show { display: grid; animation: popin .4s ease-out; }
+@keyframes popin { from { transform: translateY(10px) scale(.9); opacity: 0; } }
+.bucket { position: relative; background: repeating-linear-gradient(90deg, #D7263D 0 12px, #FFFFFF 12px 24px); clip-path: polygon(0 0, 100% 0, 86% 100%, 14% 100%); }
+.corn { position: absolute; left: -4%; right: -4%; top: -22%; height: 34%; border-radius: 50% 50% 20% 20%; background: radial-gradient(circle at 20% 60%, #FFF3C4 18%, transparent 19%), radial-gradient(circle at 50% 40%, #FFE9A0 20%, transparent 21%), radial-gradient(circle at 80% 60%, #FFF3C4 18%, transparent 19%), #FFE08A; }
+.pop .bucket { margin-top: 18px; }
+.pop.s .bucket { width: 54px; height: 64px; } .pop.m .bucket { width: 70px; height: 92px; } .pop.l .bucket { width: 80px; height: 104px; }
+.shares { display: grid; gap: 10px; }
+.sh { display: grid; grid-template-columns: 70px 1fr 44px; gap: 10px; align-items: center; font-size: .9rem; color: var(--text); }
+.sh b { color: var(--ink); text-align: right; font-variant-numeric: tabular-nums; }
+.sh-t { height: 16px; border-radius: 8px; background: var(--tint); overflow: hidden; }
+.sh-t i { display: block; height: 100%; width: 0; border-radius: 8px; background: linear-gradient(90deg, var(--lilac), var(--teal)); transition: width .6s cubic-bezier(.2,.7,.2,1); }
+.sh-t i.lg { background: linear-gradient(90deg, var(--gold), var(--accent)); }
+#shmrow { display: none; } #shmrow.show { display: grid; }
+.dc-insight { font-size: .9rem; color: var(--ink); padding: 10px 12px; border-radius: 12px; background: color-mix(in srgb, var(--gold) 12%, var(--bg)); border-left: 3px solid var(--gold); }
+.dc-q { display: grid; gap: 8px; border-top: 1px dashed var(--line); padding-top: 14px; }
+.dc-q > b { font-family: var(--f-label); font-size: .74rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); }
+.fmgrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.fmc { border-radius: 20px 20px 20px 6px; border: 1.5px solid var(--line); background: var(--surface); padding: 14px; display: grid; gap: 10px; align-content: start; transition: border-color .25s; }
+.fmc.ok { border-color: var(--teal); } .fmc.no { border-color: var(--bad); }
+.fm-v { border-radius: 14px; background: #F4F1EC; min-height: 112px; display: grid; place-items: center; padding: 12px; color: #22252B; }
+.fm-t { color: var(--ink); font-size: .98rem; }
+.fm-b { display: grid; grid-template-columns: repeat(3, 1fr); gap: 4px; }
+.fm-b button { font: inherit; font-size: .74rem; font-weight: 800; padding: 7px 4px; border-radius: 9px; border: 1px solid var(--line); background: var(--bg); color: var(--muted); cursor: pointer; }
+.fm-b [data-v="f"][aria-pressed="true"] { background: #7FE0A8; color: #0D2A1C; border-color: #7FE0A8; }
+.fm-b [data-v="g"][aria-pressed="true"] { background: #F3C46F; color: #2A1E05; border-color: #F3C46F; }
+.fm-b [data-v="m"][aria-pressed="true"] { background: #FF9A9A; color: #3A0E14; border-color: #FF9A9A; }
+.fm-f { font-size: .84rem; color: var(--text); min-height: 1em; }
+.fmc.ok .fm-f b { color: var(--teal); } .fmc.no .fm-f b { color: var(--bad); }
+.pm { display: grid; gap: 4px; justify-items: center; text-align: center; font-family: var(--f-label); }
+.pm small { font-size: .7rem; color: #6A6F7E; }
+.pm-timer { background: #D7263D; color: #fff; padding: 10px 16px; border-radius: 12px; }
+.pm-timer small { color: #FFD6DB; } .pm-timer b { font-family: var(--f-mono); font-size: 1.5rem; letter-spacing: .05em; } .pm-timer span { font-size: .66rem; background: rgba(0,0,0,.25); padding: 2px 8px; border-radius: 999px; }
+.pm-stock { grid-template-columns: auto 1fr; text-align: left; justify-items: start; column-gap: 8px; }
+.pm-stock .dot { grid-row: span 2; width: 12px; height: 12px; border-radius: 50%; background: #E8862B; box-shadow: 0 0 0 4px rgba(232,134,43,.2); }
+.pm-stock b { color: #B5561A; }
+.pm-box { grid-template-columns: auto 1fr; text-align: left; justify-items: start; column-gap: 10px; background: #fff; padding: 10px 12px; border-radius: 10px; border: 1px solid #DCDFE6; }
+.pm-box .chk { width: 22px; height: 22px; border-radius: 5px; background: #1F5FAD; color: #fff; display: grid; place-items: center; font-size: .8rem; }
+.pm-box b { font-size: .84rem; } .pm-box small { display: block; }
+.pm-stars b { color: #C98A00; font-size: 1.1rem; } .bar5 { width: 120px; height: 6px; border-radius: 3px; background: #E3E0D8; overflow: hidden; } .bar5 i { display: block; height: 100%; background: #C98A00; }
+.pm-bundle { grid-template-columns: repeat(5, auto); align-items: center; column-gap: 6px; }
+.pm-bundle .it { width: 34px; height: 34px; border-radius: 8px; } .pm-bundle .a { background: #2E9E5B; } .pm-bundle .b { background: #F4A7C3; border-radius: 50%; } .pm-bundle .c { background: #1F5FAD; }
+.pm-bundle small { grid-column: 1 / -1; background: #2E9E5B; color: #fff; padding: 2px 10px; border-radius: 999px; margin-top: 4px; }
+.pm-pop { background: #fff; padding: 12px; border-radius: 12px; box-shadow: 0 8px 18px -10px #000; gap: 6px; }
+.pm-pop b { font-size: .88rem; } .pm-pop .yes { background: #D7263D; color: #fff; font-size: .76rem; font-weight: 800; padding: 5px 16px; border-radius: 999px; } .pm-pop .no { font-size: .66rem; color: #8A8F98; text-decoration: underline; }
+@media (max-width: 900px) { .dc-body { grid-template-columns: 1fr; } .fmgrid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 520px) { .fmgrid { grid-template-columns: 1fr; } .menu-board { gap: 10px; } }
 </style>
 </head>
 <body>
@@ -909,7 +1322,7 @@ nav.top .mono-mark { font-family: var(--f-display); font-style: italic; font-wei
       <a class="pc" href="#think-with-ai">
         <div class="pc-vis v-ai" aria-hidden="true">
           <div class="cover">
-            <div class="c-top">Branching scenario / Storyline</div>
+            <div class="c-top">E-learning course / 5 lessons</div>
             <div class="c-title">Think<br>with AI<span class="c-arrow">↗</span></div>
             <div class="chat">
               <div class="b me">Summarise these 40 notes</div>
@@ -922,8 +1335,8 @@ nav.top .mono-mark { font-family: var(--f-display); font-style: italic; font-wei
         <div class="pc-body">
           <div class="pc-meta"><span class="num">01</span><span>E-learning</span></div>
           <h3>Think with AI</h3>
-          <p>A branching scenario where new employees practise using an AI assistant safely, critically and on their own terms.</p>
-          <div class="pc-tags"><span>Scenario-based</span><span>AI literacy</span><span>Storyline</span></div>
+          <p>A five-lesson e-learning course: choose the right AI tool, protect data, check output and write better prompts.</p>
+          <div class="pc-tags"><span>E-learning</span><span>AI literacy</span><span>Interactive</span></div>
           <span class="pc-open">Open project <i aria-hidden="true">→</i></span>
         </div>
       </a>
@@ -1229,39 +1642,170 @@ nav.top .mono-mark { font-family: var(--f-display); font-style: italic; font-wei
     <div class="proj-head">
       <span class="kicker">Project 1 · E-learning</span>
       <h2 id="p1-h">Think with <em>AI</em></h2>
-      <div class="meta"><span><b>For</b> new employees in office and knowledge work</span><span><b>Length</b> about 10 minutes</span><span><b>Format</b> self-paced branching scenario</span><span><b>Planned build</b> Articulate Storyline</span></div>
+      <div class="meta"><span><b>For</b> new employees in office and knowledge work</span><span><b>Length</b> about 12 minutes</span><span><b>Format</b> self-paced course, 5 lessons</span><span><b>Planned build</b> Articulate Storyline</span></div>
     </div>
-    <div class="notice"><b>Concept project.</b> Corvel and its people are fictional. This is a working prototype that shows the scenario logic; the production version is planned in Storyline.</div>
+    <div class="notice"><b>Concept project.</b> Corvel and its people are fictional. This is a working prototype of the course; the production version is planned in Articulate Storyline.</div>
 
-    <div class="row2">
-      <div>
-        <h3>Why I made this</h3>
-        <p>Most companies introduce AI assistants with a policy PDF and a tool demo. People learn which buttons to press, but not the harder part: when AI helps their thinking and when it quietly replaces it. The three mistakes I see most often are pasting confidential data into the wrong tool, trusting output that sounds right, and losing ownership of their own work.</p>
-        <p>A policy can't teach judgement. Practice can. So the module is one realistic afternoon at work with three decisions, and every decision has consequences.</p>
-      </div>
-      <div>
-        <h3>After the module, learners can</h3>
-        <ol class="objs">
-          <li><em>Decide</em> which information may go into which AI tool</li>
-          <li><em>Verify</em> AI output against the source before using it</li>
-          <li><em>Use</em> AI to challenge their own thinking instead of replacing it</li>
-          <li><em>Write</em> a prompt that gives context, task, limits and a way to check the answer</li>
+    <div class="intro1">
+      <p class="lead1">Companies hand out AI tools with a policy PDF. People learn the buttons, not the judgement. This short course teaches the judgement, through five hands-on lessons.</p>
+      <div class="objchips"><span><svg class="ic tiny" aria-hidden="true"><use href="#i-search"/></svg>Pick the right tool</span><span><svg class="ic tiny" aria-hidden="true"><use href="#i-shield"/></svg>Protect data</span><span><svg class="ic tiny" aria-hidden="true"><use href="#i-flask"/></svg>Check the output</span><span><svg class="ic tiny" aria-hidden="true"><use href="#i-pencil"/></svg>Write strong prompts</span></div>
+    </div>
+
+    <div class="course" id="course">
+      <aside class="c-side">
+        <div class="c-brand"><span class="c-logo"><svg class="ic" aria-hidden="true"><use href="#i-sparkle"/></svg></span><div><b>Think with AI</b><small>Corvel Academy · 12 min</small></div></div>
+        <ol class="c-menu" id="cmenu">
+          <li><button type="button" data-l="0"><span class="cm-n">1</span><span>Pick the right tool</span></button></li>
+          <li><button type="button" data-l="1"><span class="cm-n">2</span><span>What can I paste?</span></button></li>
+          <li><button type="button" data-l="2"><span class="cm-n">3</span><span>Check before you trust</span></button></li>
+          <li><button type="button" data-l="3"><span class="cm-n">4</span><span>Write a better prompt</span></button></li>
+          <li><button type="button" data-l="4"><span class="cm-n">5</span><span>Your afternoon at work</span></button></li>
+          <li><button type="button" data-l="5"><span class="cm-n">★</span><span>Wrap-up</span></button></li>
         </ol>
-        <div class="margin-note" style="margin-top:6px">
-          <svg width="34" height="28" viewBox="0 0 34 28" aria-hidden="true"><path d="M2 4 C 12 2, 22 8, 28 22" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/><path d="M22 20 L28 23 L29 16" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round"/></svg>
-          <span class="hand">try it below, it takes 5 minutes</span>
-        </div>
+      </aside>
+      <div class="c-main">
+        <div class="c-top"><span id="ctitle">Lesson 1 of 5</span><div class="c-prog"><i id="cprog"></i></div><span id="cpct">0%</span></div>
+
+        <section class="les" data-l="0">
+          <span class="les-k">Lesson 1</span>
+          <h3>Pick the right tool for the job</h3>
+          <div class="learn"><div class="phase"><span class="ph on"><svg class="ic tiny" aria-hidden="true"><use href="#i-book"/></svg>Learn</span><span class="ph-sep"></span><span class="ph"><svg class="ic tiny" aria-hidden="true"><use href="#i-pencil"/></svg>Practise</span></div>
+          <div class="deck"><div class="ds" data-i="0"><span class="ds-n">1 / 3</span><h4>Think of AI as a team of specialists</h4><div class="ds-vis"><svg viewBox="0 0 420 220" class="hub" role="img" aria-label="Your task in the centre, connected to four AI specialists: writer, note-taker, analyst and researcher">
+  <g stroke="var(--line)" stroke-width="2" stroke-dasharray="5 5"><line x1="210" y1="110" x2="80" y2="45"/><line x1="210" y1="110" x2="340" y2="45"/><line x1="210" y1="110" x2="80" y2="178"/><line x1="210" y1="110" x2="340" y2="178"/></g>
+  <circle cx="210" cy="110" r="44" fill="var(--accent)"/><text x="210" y="106" text-anchor="middle" font-size="13" font-weight="800" fill="#26101D" font-family="Manrope, sans-serif">YOUR</text><text x="210" y="123" text-anchor="middle" font-size="13" font-weight="800" fill="#26101D" font-family="Manrope, sans-serif">TASK</text>
+  <g font-family="Manrope, sans-serif" font-size="13" font-weight="700" text-anchor="middle">
+   <rect x="20" y="22" width="120" height="44" rx="14" fill="var(--lilac-soft)" stroke="var(--lilac)"/><text x="80" y="49" fill="var(--lilac)">✎ Writer</text>
+   <rect x="280" y="22" width="120" height="44" rx="14" fill="var(--teal-soft)" stroke="var(--teal)"/><text x="340" y="49" fill="var(--teal)">◷ Note-taker</text>
+   <rect x="20" y="156" width="120" height="44" rx="14" fill="var(--gold-soft)" stroke="var(--gold)"/><text x="80" y="183" fill="var(--gold)">▥ Analyst</text>
+   <rect x="280" y="156" width="120" height="44" rx="14" fill="var(--accent-soft)" stroke="var(--accent)"/><text x="340" y="183" fill="var(--accent)">⌕ Researcher</text>
+  </g></svg></div><p class="ds-cap">No single AI is best at everything. Different tools are built for different jobs, so the question is never "which AI is best?" but "which one fits this task?"</p></div><div class="ds" data-i="1" hidden><span class="ds-n">2 / 3</span><h4>Start inside the app you already use</h4><div class="ds-vis"><div class="apps">
+  <div class="app"><div class="app-b"><i></i><i></i><i></i><span>Mail</span></div><div class="app-c"><span class="ln"></span><span class="ln s"></span><span class="ln"></span><span class="spk">✦ Draft reply</span></div></div>
+  <div class="app"><div class="app-b"><i></i><i></i><i></i><span>Meetings</span></div><div class="app-c"><span class="vid"><b></b><b></b><b></b><b></b></span><span class="spk">✦ Recap</span></div></div>
+  <div class="app"><div class="app-b"><i></i><i></i><i></i><span>Sheets</span></div><div class="app-c"><span class="grid"></span><span class="spk">✦ Analyse</span></div></div>
+</div></div><p class="ds-cap">Most work apps now have a built-in assistant. It already sees your email, meeting or sheet, and it stays inside your company’s systems.</p></div><div class="ds" data-i="2" hidden><span class="ds-n">3 / 3</span><h4>Ask three questions before you choose</h4><div class="ds-vis"><div class="q3"><div><span class="q-n">1</span><svg class="ic" aria-hidden="true"><use href="#i-layers"/></svg><b>What do I need back?</b><small>A text, a summary, a number, a picture?</small></div><div><span class="q-n">2</span><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg><b>Where is my data?</b><small>Use the assistant inside the app that already holds it</small></div><div><span class="q-n">3</span><svg class="ic" aria-hidden="true"><use href="#i-flask"/></svg><b>Can I check it?</b><small>Prefer tools that show sources or formulas</small></div></div></div><p class="ds-cap">These three questions take ten seconds and prevent most bad tool choices.</p></div><div class="deck-nav"><button type="button" class="dk-prev" aria-label="Previous slide">←</button><span class="dk-dots"><i class="on"></i><i class=""></i><i class=""></i></span><button type="button" class="dk-next">Next →</button></div></div>
+          <div class="gate"><button type="button" class="btn gate-btn">I'm ready, let me practise →</button><button type="button" class="gate-skip">Skip to practice</button></div></div>
+          <div class="practice" hidden>
+          <p class="les-p">Start from the task, not the tool. Choose a task to see which kind of AI fits, with a real example.</p>
+          <div class="tt-grid" id="ttgrid"><button type="button" class="tt" data-i="0" aria-pressed="true"><span class="tt-ic"><svg class="ic" aria-hidden="true"><use href="#i-mail"/></svg></span><span>Emails &amp; documents</span></button><button type="button" class="tt" data-i="1" aria-pressed="false"><span class="tt-ic"><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg></span><span>Meeting notes</span></button><button type="button" class="tt" data-i="2" aria-pressed="false"><span class="tt-ic"><svg class="ic" aria-hidden="true"><use href="#i-chart"/></svg></span><span>Spreadsheets &amp; data</span></button><button type="button" class="tt" data-i="3" aria-pressed="false"><span class="tt-ic"><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg></span><span>Research with sources</span></button><button type="button" class="tt" data-i="4" aria-pressed="false"><span class="tt-ic"><svg class="ic" aria-hidden="true"><use href="#i-sparkle"/></svg></span><span>Visuals &amp; slides</span></button><button type="button" class="tt" data-i="5" aria-pressed="false"><span class="tt-ic"><svg class="ic" aria-hidden="true"><use href="#i-globe"/></svg></span><span>Translation</span></button></div>
+          <div class="tt-detail" id="ttdetail" aria-live="polite"></div>
+          <div class="kc" id="kc1">
+            <b>Quick check</b>
+            <p>You need action items from a 60-minute Teams call. What do you use?</p>
+            <div class="kc-o"><button type="button" data-ok="0">A free image generator</button><button type="button" data-ok="1">Copilot in Teams, then check names and owners</button><button type="button" data-ok="0">Translate the recording</button></div>
+            <p class="kc-f" aria-live="polite"></p>
+          </div>
+          <p class="les-note">Tool names are examples as of 2026 and change fast. Always use the tools your company has approved.</p>
+          </div>
+        </section>
+
+        <section class="les" data-l="1" hidden>
+          <span class="les-k">Lesson 2</span>
+          <h3>What can I paste into AI?</h3>
+          <div class="learn"><div class="phase"><span class="ph on"><svg class="ic tiny" aria-hidden="true"><use href="#i-book"/></svg>Learn</span><span class="ph-sep"></span><span class="ph"><svg class="ic tiny" aria-hidden="true"><use href="#i-pencil"/></svg>Practise</span></div>
+          <div class="deck"><div class="ds" data-i="0"><span class="ds-n">1 / 3</span><h4>Where does your text go?</h4><div class="ds-vis"><svg viewBox="0 0 440 210" class="flowsvg" role="img" aria-label="Text typed into a free public tool may leave the company and be used for training. Text typed into a company-approved tool stays inside the company boundary.">
+  <rect x="150" y="10" width="280" height="88" rx="14" fill="none" stroke="#FF9A9A" stroke-dasharray="6 5"/><text x="420" y="28" text-anchor="end" font-size="11" font-weight="800" fill="#FF9A9A" font-family="Manrope, sans-serif">OUTSIDE YOUR COMPANY</text>
+  <rect x="150" y="112" width="280" height="88" rx="14" fill="color-mix(in srgb, #7FE0A8 10%, transparent)" stroke="#7FE0A8"/><text x="420" y="130" text-anchor="end" font-size="11" font-weight="800" fill="#7FE0A8" font-family="Manrope, sans-serif">INSIDE YOUR COMPANY</text>
+  <circle cx="50" cy="105" r="30" fill="var(--accent)"/><text x="50" y="110" text-anchor="middle" font-size="13" font-weight="800" fill="#26101D" font-family="Manrope, sans-serif">You</text>
+  <path d="M80 95 C 120 60, 140 55, 175 55" fill="none" stroke="#FF9A9A" stroke-width="2.5" class="flowp"/>
+  <path d="M80 115 C 120 150, 140 156, 175 156" fill="none" stroke="#7FE0A8" stroke-width="2.5" class="flowp"/>
+  <g font-family="Manrope, sans-serif" font-size="12" font-weight="700">
+   <rect x="175" y="38" width="110" height="34" rx="10" fill="#3D1C24"/><text x="230" y="60" text-anchor="middle" fill="#FF9A9A">Free public AI</text>
+   <path d="M285 55 h40" stroke="#FF9A9A" stroke-width="2" stroke-dasharray="3 4"/><text x="372" y="52" text-anchor="middle" fill="#FF9A9A">may be stored</text><text x="372" y="68" text-anchor="middle" fill="#FF9A9A">or used to train</text>
+   <rect x="175" y="139" width="110" height="34" rx="10" fill="#173A2E"/><text x="230" y="161" text-anchor="middle" fill="#7FE0A8">Approved AI</text>
+   <path d="M285 156 h40" stroke="#7FE0A8" stroke-width="2"/><text x="372" y="153" text-anchor="middle" fill="#7FE0A8">stays protected</text><text x="372" y="169" text-anchor="middle" fill="#7FE0A8">by contract</text>
+  </g></svg></div><p class="ds-cap">Many free tools may store what you type and use it to improve their models. Company-approved tools are covered by a contract that keeps your data protected.</p></div><div class="ds" data-i="1" hidden><span class="ds-n">2 / 3</span><h4>The traffic-light rule</h4><div class="ds-vis"><div class="lights"><div class="light g"><span class="bulb"></span><b>Green · any tool</b><small>Public info, your own text with no names</small></div><div class="light a"><span class="bulb"></span><b>Amber · approved AI only</b><small>Internal plans, anonymised notes</small></div><div class="light r"><span class="bulb"></span><b>Red · keep out</b><small>Personal data, salaries, passwords, unpublished results</small></div></div></div><p class="ds-cap">One simple rule for every paste: green is fine anywhere, amber only in the approved tool, red never goes into AI.</p></div><div class="ds" data-i="2" hidden><span class="ds-n">3 / 3</span><h4>Turn red into amber: anonymise first</h4><div class="ds-vis"><div class="anon"><div class="an-box"><small>Before</small><p>Call with <mark class="pii">Anna Weber</mark> from <mark class="pii">Brandt GmbH</mark>: unhappy about the <mark class="pii">€48,000</mark> renewal, wants faster support.</p></div><span class="an-arr" aria-hidden="true">→</span><div class="an-box ok"><small>After</small><p>Call with <mark class="safe">[Client A]</mark> from <mark class="safe">[Company 1]</mark>: unhappy about the <mark class="safe">[renewal]</mark>, wants faster support.</p></div></div></div><p class="ds-cap">Remove names, companies and amounts before you paste. The AI still gets the meaning, but not the secrets.</p></div><div class="deck-nav"><button type="button" class="dk-prev" aria-label="Previous slide">←</button><span class="dk-dots"><i class="on"></i><i class=""></i><i class=""></i></span><button type="button" class="dk-next">Next →</button></div></div>
+          <div class="gate"><button type="button" class="btn gate-btn">I'm ready, let me practise →</button><button type="button" class="gate-skip">Skip to practice</button></div></div>
+          <div class="practice" hidden>
+          <p class="les-p">Free public tools may use what you type to train their models. Sort each item into the right lane.</p>
+          <div class="lanes"><span class="ln g"><svg class="ic tiny" aria-hidden="true"><use href="#i-shield"/></svg>Any tool</span><span class="ln a"><svg class="ic tiny" aria-hidden="true"><use href="#i-shield"/></svg>Company-approved AI only</span><span class="ln r"><svg class="ic tiny" aria-hidden="true"><use href="#i-shield"/></svg>Keep out of AI</span></div>
+          <div class="dcards" id="dcards"><div class="dc" data-k="g" data-why="Already public, so any tool is fine."><span class="dc-t">Public product text from our website</span><div class="dc-b" role="group" aria-label="Public product text from our website"><button type="button" class="lg-g" data-v="g">Any tool</button><button type="button" class="lg-a" data-v="a">Approved only</button><button type="button" class="lg-r" data-v="r">Keep out</button></div><span class="dc-f"></span></div><div class="dc" data-k="g" data-why="No personal or confidential data."><span class="dc-t">Your own agenda with no names</span><div class="dc-b" role="group" aria-label="Your own agenda with no names"><button type="button" class="lg-g" data-v="g">Any tool</button><button type="button" class="lg-a" data-v="a">Approved only</button><button type="button" class="lg-r" data-v="r">Keep out</button></div><span class="dc-f"></span></div><div class="dc" data-k="a" data-why="Fine in the company-approved assistant, not in free public tools."><span class="dc-t">Anonymised interview notes</span><div class="dc-b" role="group" aria-label="Anonymised interview notes"><button type="button" class="lg-g" data-v="g">Any tool</button><button type="button" class="lg-a" data-v="a">Approved only</button><button type="button" class="lg-r" data-v="r">Keep out</button></div><span class="dc-f"></span></div><div class="dc" data-k="a" data-why="Confidential, so only the approved assistant."><span class="dc-t">Internal project timeline</span><div class="dc-b" role="group" aria-label="Internal project timeline"><button type="button" class="lg-g" data-v="g">Any tool</button><button type="button" class="lg-a" data-v="a">Approved only</button><button type="button" class="lg-r" data-v="r">Keep out</button></div><span class="dc-f"></span></div><div class="dc" data-k="r" data-why="Personal and commercial data. Keep it out unless your company explicitly allows it."><span class="dc-t">Client names and contract values</span><div class="dc-b" role="group" aria-label="Client names and contract values"><button type="button" class="lg-g" data-v="g">Any tool</button><button type="button" class="lg-a" data-v="a">Approved only</button><button type="button" class="lg-r" data-v="r">Keep out</button></div><span class="dc-f"></span></div><div class="dc" data-k="r" data-why="Sensitive personal data. Never paste it into AI."><span class="dc-t">A colleague's salary or health information</span><div class="dc-b" role="group" aria-label="A colleague's salary or health information"><button type="button" class="lg-g" data-v="g">Any tool</button><button type="button" class="lg-a" data-v="a">Approved only</button><button type="button" class="lg-r" data-v="r">Keep out</button></div><span class="dc-f"></span></div><div class="dc" data-k="r" data-why="Never, in any tool."><span class="dc-t">Passwords or access codes</span><div class="dc-b" role="group" aria-label="Passwords or access codes"><button type="button" class="lg-g" data-v="g">Any tool</button><button type="button" class="lg-a" data-v="a">Approved only</button><button type="button" class="lg-r" data-v="r">Keep out</button></div><span class="dc-f"></span></div><div class="dc" data-k="r" data-why="Price-sensitive and confidential. Keep it out."><span class="dc-t">Unpublished quarterly results</span><div class="dc-b" role="group" aria-label="Unpublished quarterly results"><button type="button" class="lg-g" data-v="g">Any tool</button><button type="button" class="lg-a" data-v="a">Approved only</button><button type="button" class="lg-r" data-v="r">Keep out</button></div><span class="dc-f"></span></div></div>
+          <div class="les-act"><button type="button" class="btn" id="dcheck">Check my answers</button><span class="dscore" id="dscore" aria-live="polite"></span></div>
+          </div>
+        </section>
+
+        <section class="les" data-l="2" hidden>
+          <span class="les-k">Lesson 3</span>
+          <h3>Check before you trust</h3>
+          <div class="learn"><div class="phase"><span class="ph on"><svg class="ic tiny" aria-hidden="true"><use href="#i-book"/></svg>Learn</span><span class="ph-sep"></span><span class="ph"><svg class="ic tiny" aria-hidden="true"><use href="#i-pencil"/></svg>Practise</span></div>
+          <div class="deck"><div class="ds" data-i="0"><span class="ds-n">1 / 3</span><h4>AI sounds sure, even when it’s wrong</h4><div class="ds-vis"><div class="gauges"><div class="gauge"><div class="g-ring" style="--p:95;--c:var(--accent)"><b>95%</b></div><span>How sure it sounds</span></div><div class="g-vs">≠</div><div class="gauge"><div class="g-ring" style="--p:0;--c:var(--teal)"><b>?</b></div><span>How often it’s checked</span></div></div></div><p class="ds-cap">AI writes the most likely next words. That makes it fluent and confident, but confidence is not the same as accuracy.</p></div><div class="ds" data-i="1" hidden><span class="ds-n">2 / 3</span><h4>Three mistakes to watch for</h4><div class="ds-vis"><div class="errs"><div class="er e1"><span class="er-v">12 <s>4</s></span><b>Wrong numbers</b><small>Counts and totals that drift</small></div><div class="er e2"><span class="er-v">[1] ???</span><b>Invented sources</b><small>Studies or links that don’t exist</small></div><div class="er e3"><span class="er-v">A + B = A</span><b>Merged ideas</b><small>Two different points blended into one</small></div></div></div><p class="ds-cap">These three errors cause most problems at work. Once you know them, you start seeing them.</p></div><div class="ds" data-i="2" hidden><span class="ds-n">3 / 3</span><h4>Build a checking habit</h4><div class="ds-vis"><div class="loop"><svg viewBox="0 0 240 240" class="loop-svg" aria-hidden="true"><circle cx="120" cy="120" r="88" fill="none" stroke="var(--line)" stroke-width="2" stroke-dasharray="6 6"/><path d="M120 32 A88 88 0 0 1 196 164" fill="none" stroke="var(--gold)" stroke-width="4" stroke-linecap="round"/><path d="M196 164 A88 88 0 0 1 44 164" fill="none" stroke="var(--teal)" stroke-width="4" stroke-linecap="round"/><path d="M44 164 A88 88 0 0 1 120 32" fill="none" stroke="var(--lilac)" stroke-width="4" stroke-linecap="round"/></svg>
+  <span class="lp l1"><b>Count</b>numbers vs source</span><span class="lp l2"><b>Ask</b>"quote the evidence"</span><span class="lp l3"><b>Spot-check</b>verify one claim</span><span class="lp mid">Every<br>time</span></div></div><p class="ds-cap">Count, ask, spot-check. It takes two minutes and protects your reputation.</p></div><div class="deck-nav"><button type="button" class="dk-prev" aria-label="Previous slide">←</button><span class="dk-dots"><i class="on"></i><i class=""></i><i class=""></i></span><button type="button" class="dk-next">Next →</button></div></div>
+          <div class="gate"><button type="button" class="btn gate-btn">I'm ready, let me practise →</button><button type="button" class="gate-skip">Skip to practice</button></div></div>
+          <div class="practice" hidden>
+          <p class="les-p">The assistant summarised 18 client interviews. One sentence is wrong. Compare it with the source and click the mistake.</p>
+          <div class="verify">
+            <div class="src">
+              <span class="src-h"><svg class="ic tiny" aria-hidden="true"><use href="#i-book"/></svg>Source: interview tally</span>
+              <div class="bar-r"><span>Slow loading</span><i style="--v:8"></i><b>8</b></div>
+              <div class="bar-r"><span>Price</span><i style="--v:6"></i><b>6</b></div>
+              <div class="bar-r"><span>Offline mode</span><i style="--v:4"></i><b>4</b></div>
+            </div>
+            <div class="aiout">
+              <span class="src-h"><svg class="ic tiny" aria-hidden="true"><use href="#i-sparkle"/></svg>AI summary</span>
+              <button type="button" class="claim" data-ok="1">The most requested feature is offline mode, mentioned in 12 interviews.</button>
+              <button type="button" class="claim" data-ok="0">Price came up in 6 interviews.</button>
+              <button type="button" class="claim" data-ok="0">Several clients said the app loads slowly.</button>
+            </div>
+          </div>
+          <p class="kc-f" id="vfb" aria-live="polite"></p>
+          <div class="habits"><div><b>Count</b><small>Check numbers against the source</small></div><div><b>Ask for evidence</b><small>"Quote the note for each point"</small></div><div><b>Spot-check</b><small>Verify at least one claim yourself</small></div></div>
+          </div>
+        </section>
+
+        <section class="les" data-l="3" hidden>
+          <span class="les-k">Lesson 4</span>
+          <h3>Write a better prompt</h3>
+          <div class="learn"><div class="phase"><span class="ph on"><svg class="ic tiny" aria-hidden="true"><use href="#i-book"/></svg>Learn</span><span class="ph-sep"></span><span class="ph"><svg class="ic tiny" aria-hidden="true"><use href="#i-pencil"/></svg>Practise</span></div>
+          <div class="deck"><div class="ds" data-i="0"><span class="ds-n">1 / 3</span><h4>Brief AI like a new colleague</h4><div class="ds-vis"><div class="brief"><div class="sticky"><small>Vague</small><p>"Summarise these notes."</p><span class="face">?</span></div><span class="an-arr" aria-hidden="true">vs</span><div class="bcard"><small>A real brief</small><p><b>Who it’s for:</b> my team lead<br><b>What I need:</b> 5 themes with counts<br><b>How:</b> bullets, 150 words<br><b>Proof:</b> one quote each</p><span class="face ok">✓</span></div></div></div><p class="ds-cap">You would never hand a new colleague a pile of notes and say "summarise". Give AI the same brief you’d give a person.</p></div><div class="ds" data-i="1" hidden><span class="ds-n">2 / 3</span><h4>Stack five building blocks</h4><div class="ds-vis"><div class="tower"><div class="tb t5"><b>Data rule</b><small>"No names"</small></div><div class="tb t4"><b>Evidence</b><small>"Quote one note per theme"</small></div><div class="tb t3"><b>Format</b><small>"Bullets, max 150 words"</small></div><div class="tb t2"><b>Task</b><small>"List the 5 most common themes"</small></div><div class="tb t1"><b>Context</b><small>"Summary for my team lead"</small></div></div></div><p class="ds-cap">Context at the base, then task, format, evidence and a data rule. Each block makes the answer more useful.</p></div><div class="ds" data-i="2" hidden><span class="ds-n">3 / 3</span><h4>See it in one prompt</h4><div class="ds-vis"><div class="anno"><p><mark class="m-ctx">I’m preparing a one-page summary for my team lead.</mark> <mark class="m-task">List the five most common themes and how many notes mention each.</mark> <mark class="m-fmt">Use bullet points, max 150 words.</mark> <mark class="m-chk">Quote one note as evidence for each theme.</mark> <mark class="m-safe">Don’t add any names.</mark></p><div class="anno-k"><span class="k-ctx">Context</span><span class="k-task">Task</span><span class="k-fmt">Format</span><span class="k-chk">Evidence</span><span class="k-safe">Data rule</span></div></div></div><p class="ds-cap">Five short sentences. Now build one yourself and watch the answer change.</p></div><div class="deck-nav"><button type="button" class="dk-prev" aria-label="Previous slide">←</button><span class="dk-dots"><i class="on"></i><i class=""></i><i class=""></i></span><button type="button" class="dk-next">Next →</button></div></div>
+          <div class="gate"><button type="button" class="btn gate-btn">I'm ready, let me practise →</button><button type="button" class="gate-skip">Skip to practice</button></div></div>
+          <div class="practice" hidden>
+          <p class="les-p">Add building blocks to the prompt and watch the answer improve.</p>
+          <div class="pb">
+            <div class="pb-blocks" id="pblocks">
+              <button type="button" data-b="ctx" aria-pressed="false">+ Context</button>
+              <button type="button" data-b="task" aria-pressed="false">+ Clear task</button>
+              <button type="button" data-b="fmt" aria-pressed="false">+ Format</button>
+              <button type="button" data-b="chk" aria-pressed="false">+ Evidence</button>
+              <button type="button" data-b="safe" aria-pressed="false">+ Data rule</button>
+            </div>
+            <div class="pb-cols">
+              <div class="pb-box"><span class="src-h"><svg class="ic tiny" aria-hidden="true"><use href="#i-pencil"/></svg>Your prompt</span><p id="pbprompt"></p></div>
+              <div class="pb-box out"><span class="src-h"><svg class="ic tiny" aria-hidden="true"><use href="#i-sparkle"/></svg>AI answer</span><div id="pbout"></div><div class="pb-q"><span>Answer quality</span><div class="pb-meter" id="pbmeter"><i></i><i></i><i></i><i></i><i></i></div></div></div>
+            </div>
+          </div>
+          </div>
+        </section>
+
+        <section class="les" data-l="4" hidden>
+          <span class="les-k">Lesson 5</span>
+          <h3>Your afternoon at work</h3>
+          <p class="les-p">Put it all together. Three decisions, real consequences.</p>
+          <div class="progress" id="progress" aria-hidden="true" style="display:none"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="screen" id="screen" aria-live="polite"></div>
+        </section>
+
+        <section class="les" data-l="5" hidden>
+          <div class="fin">
+            <span class="fin-ic"><svg class="ic" aria-hidden="true"><use href="#i-award"/></svg></span>
+            <span class="les-k">Course complete</span>
+            <h3>You can now think with AI</h3>
+            <div class="fin-g">
+              <div><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg><b>Task first</b><small>Then choose the tool</small></div>
+              <div><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg><b>Green, amber, red</b><small>Know what stays out</small></div>
+              <div><svg class="ic" aria-hidden="true"><use href="#i-flask"/></svg><b>Verify</b><small>Count, ask, spot-check</small></div>
+              <div><svg class="ic" aria-hidden="true"><use href="#i-pencil"/></svg><b>Build prompts</b><small>Context, task, format, evidence</small></div>
+            </div>
+            <p class="fin-s" id="certs"></p>
+            <button type="button" class="btn ghost" id="crestart">Restart the course</button>
+          </div>
+        </section>
+
+        <div class="c-nav"><button type="button" class="btn ghost" id="cback">← Back</button><button type="button" class="btn" id="cnext">Next lesson →</button></div>
       </div>
     </div>
 
-    <div class="player" aria-label="Think with AI e-learning prototype">
-      <div class="player-bar">
-        <span class="ttl">Think with AI</span>
-        <div class="progress" id="progress" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
-      </div>
-      <div class="screen" id="screen" aria-live="polite"></div>
-    </div>
-
+    <details class="behind">
+      <summary><svg class="ic sm" aria-hidden="true"><use href="#i-layers"/></svg>Behind the design: decisions, learning science and build plan</summary>
+      <div class="behind-in">
     <div class="row2">
       <div>
         <h3>Design decisions</h3>
@@ -1308,6 +1852,8 @@ nav.top .mono-mark { font-family: var(--f-display); font-style: italic; font-wei
         </table>
       </div>
     </div>
+      </div>
+    </details>
   </section>
 
     <a class="pnext" href="#thesis"><span>Next project</span><b>AI and student engagement <i aria-hidden="true">→</i></b></a>
@@ -1506,18 +2052,80 @@ nav.top .mono-mark { font-family: var(--f-display); font-style: italic; font-wei
       <div>
         <h3>The problem</h3>
         <p>Northbay Living, a homeware retailer with 12 stores and an online shop, was about to launch a new brand. Sales associates described products by their features and rarely linked them to what the customer actually needed. Nobody could explain the new brand colours to customers either.</p>
-        <p>I talked to the head of sales and the marketing manager, sent a short survey to the 16 people in the target group, and read 40 customer reviews.</p>
+        <div class="methods"><div class="mt m1"><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg><b>2</b><small>stakeholder interviews</small></div><div class="mt m2"><svg class="ic" aria-hidden="true"><use href="#i-chart"/></svg><b>16</b><small>survey responses</small></div><div class="mt m3"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg><b>40</b><small>customer reviews read</small></div></div>
       </div>
-      <div class="panel">
+      <div class="panel finds">
         <h4>What I found</h4>
-        <ul style="margin-top:6px">
-          <li><b>Knowledge:</b> 11 of 16 couldn't name a principle behind buying decisions.</li>
-          <li><b>Skill:</b> pitches listed features, not benefits for this customer.</li>
-          <li><b>Attitude:</b> many saw "persuasion" as pushy and avoided it.</li>
-        </ul>
+        <div class="gap g1"><span class="ibadge c-lilac"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg></span><div><b>Knowledge gap</b><span class="big-n">11<small>/16</small></span><p>couldn't name a principle behind buying decisions</p></div></div>
+        <div class="gap g2"><span class="ibadge c-teal"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg></span><div><b>Skill gap</b><p>Pitches listed features, not benefits for this customer</p></div></div>
+        <div class="gap g3"><span class="ibadge c-pink"><svg class="ic" aria-hidden="true"><use href="#i-shield"/></svg></span><div><b>Attitude barrier</b><p>Many saw "persuasion" as pushy and avoided it</p></div></div>
         <p class="hand" style="margin-top:10px">this last one changed the whole design</p>
         <p class="small">A workshop that only taught techniques would have met resistance, so ethics runs through every module instead of sitting on the last slide.</p>
       </div>
+    </div>
+
+    <div class="stack colourlab">
+      <h3>Colour in real buying situations</h3>
+      <p class="sub">Colour has no fixed meaning. It works when it fits the product and the moment. These six everyday situations are the backbone of the colour module.</p>
+      <div class="sits"><figure class="sit"><div class="sit-v"><div class="mk mk-sale"><div class="rack"><i></i><i></i><i></i></div><span class="tag">−40%</span></div></div><figcaption><span class="sw sw-sale"></span><b>Red</b><span class="sit-s">Sale and clearance</span><p>A red price tag pulls the eye first and signals "act now".</p><p class="watch"><svg class="ic tiny" aria-hidden="true"><use href="#i-pin"/></svg>Overused, it feels cheap or pushy.</p></figcaption></figure><figure class="sit"><div class="sit-v"><div class="mk mk-juice"><div class="bottle"><span class="cap"></span><span class="leaf"></span><b>FRESH</b></div></div></div><figcaption><span class="sw sw-juice"></span><b>Green</b><span class="sit-s">Organic and healthy food</span><p>Green reads as natural, fresh and eco-friendly.</p><p class="watch"><svg class="ic tiny" aria-hidden="true"><use href="#i-pin"/></svg>Only works if the product really is. Otherwise it is greenwashing.</p></figcaption></figure><figure class="sit"><div class="sit-v"><div class="mk mk-choc"><div class="box"><span class="ribbon"></span><b>NOIR</b></div></div></div><figcaption><span class="sw sw-choc"></span><b>Black &amp; gold</b><span class="sit-s">Premium gifts</span><p>Dark colours with metallic details signal luxury and quality.</p><p class="watch"><svg class="ic tiny" aria-hidden="true"><use href="#i-pin"/></svg>On everyday products, it can look overpriced.</p></figcaption></figure><figure class="sit"><div class="sit-v"><div class="mk mk-bank"><div class="phone"><span class="ph-h"></span><b>€2,480.50</b><span class="ph-l"></span><span class="ph-l s"></span><span class="ph-btn"></span></div></div></div><figcaption><span class="sw sw-bank"></span><b>Blue</b><span class="sit-s">Banking and insurance apps</span><p>Blue is widely linked with trust, calm and competence.</p><p class="watch"><svg class="ic tiny" aria-hidden="true"><use href="#i-pin"/></svg>So common in finance that it rarely stands out.</p></figcaption></figure><figure class="sit"><div class="sit-v"><div class="mk mk-toy"><div class="blocks"><i></i><i></i><i></i><i></i></div></div></div><figcaption><span class="sw sw-toy"></span><b>Bright mix</b><span class="sit-s">Toys and kids' products</span><p>Saturated, contrasting colours say fun and energy.</p><p class="watch"><svg class="ic tiny" aria-hidden="true"><use href="#i-pin"/></svg>Feels childish for adult audiences.</p></figcaption></figure><figure class="sit"><div class="sit-v"><div class="mk mk-snack"><div class="fries"><span class="f"><i></i><i></i><i></i><i></i></span><span class="cup"></span></div></div></div><figcaption><span class="sw sw-snack"></span><b>Red &amp; yellow</b><span class="sit-s">Fast food and snacks</span><p>High-contrast warm colours grab attention and suggest speed.</p><p class="watch"><svg class="ic tiny" aria-hidden="true"><use href="#i-pin"/></svg>Clashes with "healthy" or "calm" messages.</p></figcaption></figure></div>
+
+      <div class="recolour">
+        <div class="rc-head"><div><b>Try it: recolour the product</b><small>Pick a product, then a colour. Does it fit?</small></div>
+          <div class="rc-prod" role="group" aria-label="Product"><button type="button" data-p="choc" aria-pressed="true">Premium chocolate</button><button type="button" data-p="juice" aria-pressed="false">Kids' juice</button><button type="button" data-p="bank" aria-pressed="false">Banking app</button></div></div>
+        <div class="rc-body">
+          <div class="rc-stage" id="rcstage"></div>
+          <div class="rc-side">
+            <div class="rc-sw" role="group" aria-label="Colour" id="rcsw">
+              <button type="button" data-c="red" style="--c:#D7263D" aria-label="Red"></button>
+              <button type="button" data-c="blue" style="--c:#1F5FAD" aria-label="Blue"></button>
+              <button type="button" data-c="green" style="--c:#2E9E5B" aria-label="Green"></button>
+              <button type="button" data-c="gold" style="--c:#1A1A1A;--c2:#C9A23A" aria-label="Black and gold"></button>
+              <button type="button" data-c="pink" style="--c:#F4A7C3" aria-label="Pastel pink"></button>
+              <button type="button" data-c="yellow" style="--c:#FFC93C" aria-label="Bright yellow"></button>
+            </div>
+            <div class="rc-fit" id="rcfit"><span class="fit-pill"></span><p></p></div>
+          </div>
+        </div>
+      </div>
+      <p class="small">Associations are tendencies that research reports across many studies (for example Labrecque &amp; Milne, 2012), not rules. Culture matters: white means purity in many Western markets but mourning in parts of East Asia; red means luck in China. The products shown are generic mockups, not real brands.</p>
+    </div>
+
+    <div class="stack exlab">
+      <h3>Exercise: why does the middle option exist?</h3>
+      <p class="sub">The decoy effect, in a cinema queue. Add a "decoy" size and watch how choices shift.</p>
+      <div class="decoy">
+        <div class="dc-head">
+          <div class="dc-tog" role="group" aria-label="Menu version"><button type="button" id="dec-off" aria-pressed="true">Two sizes</button><button type="button" id="dec-on" aria-pressed="false">Add a medium</button></div>
+          <span class="dc-ctx"><svg class="ic tiny" aria-hidden="true"><use href="#i-pin"/></svg>Cinema snack bar · popcorn</span>
+        </div>
+        <div class="dc-body">
+          <div class="menu-board">
+            <div class="pop s"><div class="bucket"><span class="corn"></span></div><b>Small</b><span class="pr">€3.00</span></div>
+            <div class="pop m" id="popm"><div class="bucket"><span class="corn"></span></div><b>Medium</b><span class="pr">€6.50</span><em>decoy</em></div>
+            <div class="pop l"><div class="bucket"><span class="corn"></span></div><b>Large</b><span class="pr">€7.00</span></div>
+          </div>
+          <div class="shares">
+            <span class="src-h"><svg class="ic tiny" aria-hidden="true"><use href="#i-chart"/></svg>What 100 customers choose</span>
+            <div class="sh"><span>Small</span><div class="sh-t"><i id="shs"></i></div><b id="shsv"></b></div>
+            <div class="sh" id="shmrow"><span>Medium</span><div class="sh-t"><i id="shm"></i></div><b id="shmv"></b></div>
+            <div class="sh"><span>Large</span><div class="sh-t"><i id="shl" class="lg"></i></div><b id="shlv"></b></div>
+            <p class="dc-insight" id="dcins"></p>
+          </div>
+        </div>
+        <div class="dc-q">
+          <b>Your turn: is this ethical?</b>
+          <div class="kc-o" id="decq"><button type="button" data-ok="0">Yes, always. It’s just pricing.</button><button type="button" data-ok="1">It depends: only if the large size is genuinely good value for that customer.</button><button type="button" data-ok="0">No, never. Three sizes is manipulation.</button></div>
+          <p class="kc-f" id="decf" aria-live="polite"></p>
+        </div>
+      </div>
+      <p class="small">Numbers are illustrative, based on the pattern reported in decoy-effect research (Huber, Payne &amp; Puto, 1982; Ariely, 2008).</p>
+    </div>
+
+    <div class="stack exlab">
+      <h3>Exercise: fair or manipulative?</h3>
+      <p class="sub">Six things you see on real shop pages. Judge each one, then check your answers.</p>
+      <div class="fmgrid" id="fmgrid"><div class="fmc" data-k="m" data-why="Fake urgency. The deadline isn’t real, so it pressures people with a lie." data-p="False scarcity"><div class="fm-v"><div class="pm pm-timer"><small>Offer ends in</small><b>00:09:59</b><span>resets every time you reload</span></div></div><b class="fm-t">Countdown timer</b><div class="fm-b" role="group" aria-label="Countdown timer"><button type="button" data-v="f">Fair</button><button type="button" data-v="g">Grey zone</button><button type="button" data-v="m">Manipulative</button></div><p class="fm-f" aria-live="polite"></p></div><div class="fmc" data-k="f" data-why="Honest scarcity. It’s true and helps customers decide in time." data-p="Scarcity"><div class="fm-v"><div class="pm pm-stock"><span class="dot"></span><b>Only 2 left in stock</b><small>warehouse count: 2</small></div></div><b class="fm-t">"Only 2 left"</b><div class="fm-b" role="group" aria-label=""Only 2 left""><button type="button" data-v="f">Fair</button><button type="button" data-v="g">Grey zone</button><button type="button" data-v="m">Manipulative</button></div><p class="fm-f" aria-live="polite"></p></div><div class="fmc" data-k="m" data-why="A pre-ticked box adds cost people never chose. That’s sneaking, not selling." data-p="Default trap"><div class="fm-v"><div class="pm pm-box"><span class="chk">✓</span><div><b>Add 3-year protection</b><small>+ €39 · ticked for you</small></div></div></div><b class="fm-t">Insurance add-on</b><div class="fm-b" role="group" aria-label="Insurance add-on"><button type="button" data-v="f">Fair</button><button type="button" data-v="g">Grey zone</button><button type="button" data-v="m">Manipulative</button></div><p class="fm-f" aria-live="polite"></p></div><div class="fmc" data-k="f" data-why="Real reviews, including mixed ones, are social proof customers can trust." data-p="Social proof"><div class="fm-v"><div class="pm pm-stars"><b>★★★★☆ 4.6</b><small>1,284 reviews · incl. 3-star ones</small><span class="bar5"><i style="width:72%"></i></span></div></div><b class="fm-t">Customer reviews</b><div class="fm-b" role="group" aria-label="Customer reviews"><button type="button" data-v="f">Fair</button><button type="button" data-v="g">Grey zone</button><button type="button" data-v="m">Manipulative</button></div><p class="fm-f" aria-live="polite"></p></div><div class="fmc" data-k="g" data-why="Helpful when the items truly match. Pushy when they’re random upsells." data-p="Bundling"><div class="fm-v"><div class="pm pm-bundle"><span class="it a"></span><b>+</b><span class="it b"></span><b>+</b><span class="it c"></span><small>Bundle −10%</small></div></div><b class="fm-t">"Complete the look"</b><div class="fm-b" role="group" aria-label=""Complete the look""><button type="button" data-v="f">Fair</button><button type="button" data-v="g">Grey zone</button><button type="button" data-v="m">Manipulative</button></div><p class="fm-f" aria-live="polite"></p></div><div class="fmc" data-k="m" data-why="The “no” button shames the customer into saying yes." data-p="Confirmshaming"><div class="fm-v"><div class="pm pm-pop"><b>Wait! Get 15% off?</b><span class="yes">Yes please</span><span class="no">No thanks, I don’t like saving money</span></div></div><b class="fm-t">Exit pop-up</b><div class="fm-b" role="group" aria-label="Exit pop-up"><button type="button" data-v="f">Fair</button><button type="button" data-v="g">Grey zone</button><button type="button" data-v="m">Manipulative</button></div><p class="fm-f" aria-live="polite"></p></div></div>
+      <div class="les-act"><button type="button" class="btn" id="fmcheck">Check my answers</button><span class="dscore" id="fmscore" aria-live="polite"></span></div>
     </div>
 
     <div class="stack">
@@ -1549,7 +2157,7 @@ nav.top .mono-mark { font-family: var(--f-display); font-style: italic; font-wei
           <div><b>Card 7</b>Insurance add-on ticked by default</div>
           <div><b>Card 8</b>Countdown that resets on reload</div>
         </div>
-        <p><b>5 min</b> Short input on anchoring, social proof, scarcity and the decoy effect, with one shop example each.<br>
+        <p class="fsteps"><b>5 min</b> Short input on anchoring, social proof, scarcity and the decoy effect, with one shop example each.<br>
         <b>12 min</b> Pairs walk the cards. One sticky note names the principle, another rates it from 1 (fair) to 5 (manipulative). Virtual groups do the same on a shared whiteboard.<br>
         <b>10 min</b> Debrief: Which card was hardest? Where did your ratings differ, and why? What would make card 3 honest?<br>
         <b>3 min</b> Everyone writes one principle in their own words, without notes.</p>
@@ -1601,33 +2209,23 @@ nav.top .mono-mark { font-family: var(--f-display); font-style: italic; font-wei
     <div class="stack">
       <h3>The theories behind the design</h3>
       <p>The agenda follows Kolb's experiential learning cycle (1984). People experience something before I explain it, and they leave with an experiment to try.</p>
-      <div class="kolb">
+      <div class="kolb kolb-c">
         <div><b>Experience</b><span>Vote on two product pages</span></div>
         <div><b>Reflect</b><span>Why did one sell better?</span></div>
         <div><b>Conceptualise</b><span>Short input on biases and colour</span></div>
         <div><b>Experiment</b><span>Role-play, then a one-week test at work</span></div>
       </div>
-      <div class="panel theory">
-        <div class="th"><div><b>Andragogy</b><span class="ref">Knowles, 1984</span></div><p>Adults need to know why something matters and want to use their own experience. Every activity starts from situations the team knows from the shop floor, which also helps with the "persuasion is pushy" resistance.</p></div>
-        <div class="th"><div><b>Dual-process theory</b><span class="ref">Kahneman, 2011</span></div><p>The content of Module 1: fast, intuitive thinking and slow, deliberate thinking, and why most buying moments are fast.</p></div>
-        <div class="th"><div><b>Social learning theory</b><span class="ref">Bandura, 1977</span></div><p>Role-plays and peer feedback let people watch each other try new pitches, which builds confidence faster than watching me.</p></div>
-        <div class="th"><div><b>Transfer of training</b><span class="ref">Baldwin &amp; Ford, 1988</span></div><p>Learning only matters if it reaches the job. The action plan and the team lead's 30-day check-in are there to support that transfer.</p></div>
+      <div class="thcards">
+        <div class="thc tc1"><span class="ibadge"><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg></span><div><b>Andragogy</b><span class="ref">Knowles, 1984</span></div><p>Adults need to know why something matters and want to use their own experience. Every activity starts from situations the team knows from the shop floor, which also helps with the "persuasion is pushy" resistance.</p></div>
+        <div class="thc tc2"><span class="ibadge"><svg class="ic" aria-hidden="true"><use href="#i-bolt"/></svg></span><div><b>Dual-process theory</b><span class="ref">Kahneman, 2011</span></div><p>The content of Module 1: fast, intuitive thinking and slow, deliberate thinking, and why most buying moments are fast.</p></div>
+        <div class="thc tc3"><span class="ibadge"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg></span><div><b>Social learning theory</b><span class="ref">Bandura, 1977</span></div><p>Role-plays and peer feedback let people watch each other try new pitches, which builds confidence faster than watching me.</p></div>
+        <div class="thc tc4"><span class="ibadge"><svg class="ic" aria-hidden="true"><use href="#i-route"/></svg></span><div><b>Transfer of training</b><span class="ref">Baldwin &amp; Ford, 1988</span></div><p>Learning only matters if it reaches the job. The action plan and the team lead's 30-day check-in are there to support that transfer.</p></div>
       </div>
     </div>
 
     <div class="stack">
       <h3>How I'd know it worked</h3>
-      <div class="tbl">
-        <table>
-          <thead><tr><th>Kirkpatrick level</th><th>What I measure</th><th>How and when</th></tr></thead>
-          <tbody>
-            <tr><th>1 · Reaction</th><td>Relevance, confidence, intention to apply</td><td>Three-question pulse survey at the end</td></tr>
-            <tr><th>2 · Learning</th><td>Recognising and judging principles in real situations</td><td>Eight-item scenario check before and after</td></tr>
-            <tr><th>3 · Behaviour</th><td>Customer-centred, honest pitches on the shop floor</td><td>30-day check-in on each action plan; team lead observes five conversations with the rubric</td></tr>
-            <tr><th>4 · Results</th><td>A business number agreed with sales leadership</td><td>Average basket value on selected product lines, compared with an 8-week baseline</td></tr>
-          </tbody>
-        </table>
-      </div>
+      <div class="kp"><div class="kpl k1"><span class="kp-n">1</span><span class="kp-ic"><svg class="ic" aria-hidden="true"><use href="#i-chat"/></svg></span><b>Reaction</b><p>Relevance, confidence, intention to apply</p><small><svg class="ic tiny" aria-hidden="true"><use href="#i-pin"/></svg>Pulse survey at the end</small></div><div class="kpl k2"><span class="kp-n">2</span><span class="kp-ic"><svg class="ic" aria-hidden="true"><use href="#i-book"/></svg></span><b>Learning</b><p>Recognising and judging principles in real situations</p><small><svg class="ic tiny" aria-hidden="true"><use href="#i-pin"/></svg>Scenario check before and after</small></div><div class="kpl k3"><span class="kp-n">3</span><span class="kp-ic"><svg class="ic" aria-hidden="true"><use href="#i-users"/></svg></span><b>Behaviour</b><p>Customer-centred, honest pitches on the shop floor</p><small><svg class="ic tiny" aria-hidden="true"><use href="#i-pin"/></svg>30-day check-in and five observed conversations</small></div><div class="kpl k4"><span class="kp-n">4</span><span class="kp-ic"><svg class="ic" aria-hidden="true"><use href="#i-chart"/></svg></span><b>Results</b><p>A business number agreed with sales leadership</p><small><svg class="ic tiny" aria-hidden="true"><use href="#i-pin"/></svg>Average basket value vs an 8-week baseline</small></div></div>
     </div>
   </section>
 
@@ -2007,6 +2605,206 @@ nav.top .mono-mark { font-family: var(--f-display); font-style: italic; font-wei
     set(0);
   })();
 
+
+  /* ---------- Think with AI course ---------- */
+  (function () {
+    var course = document.getElementById('course'); if (!course) return;
+    var les = course.querySelectorAll('.les'), menu = course.querySelectorAll('#cmenu button');
+    var title = document.getElementById('ctitle'), prog = document.getElementById('cprog'), pct = document.getElementById('cpct');
+    var back = document.getElementById('cback'), next = document.getElementById('cnext');
+    var cur = 0, done = {}, score = { kc: null, sort: null, verify: null };
+    function go(n) {
+      cur = n; done[n] = true;
+      les.forEach(function (s, i) { s.hidden = i !== n; });
+      menu.forEach(function (b, i) { b.setAttribute('aria-current', i === n ? 'step' : 'false'); b.classList.toggle('done', !!done[i] && i !== n); });
+      var p = Math.round(Object.keys(done).length / 6 * 100);
+      prog.style.width = p + '%'; pct.textContent = p + '%';
+      title.textContent = n < 5 ? 'Lesson ' + (n + 1) + ' of 5' : 'Wrap-up';
+      back.disabled = n === 0;
+      next.hidden = n === 5;
+      next.textContent = n === 4 ? 'Finish course →' : 'Next lesson →';
+      if (n === 5) {
+        var parts = [];
+        if (score.kc !== null) parts.push('Quick check: ' + (score.kc ? 'correct' : 'reviewed'));
+        if (score.sort !== null) parts.push('Data sorting: ' + score.sort + '/8');
+        if (score.verify !== null) parts.push('Mistake spotted: ' + (score.verify ? 'first try' : 'with a hint'));
+        document.getElementById('certs').textContent = parts.length ? parts.join(' · ') : 'Go back to any lesson to practise again.';
+      }
+      var h = les[n].querySelector('h3'); if (h && started) { h.setAttribute('tabindex', '-1'); h.focus({ preventScroll: true }); }
+      started = true;
+    }
+    var started = false;
+    menu.forEach(function (b, i) { b.addEventListener('click', function () { go(i); }); });
+    back.addEventListener('click', function () { if (cur > 0) go(cur - 1); });
+    next.addEventListener('click', function () { if (cur < 5) go(cur + 1); });
+    document.getElementById('crestart').addEventListener('click', function () { done = {}; go(0); });
+
+    // lesson 1
+    var T = [{"t": "Emails &amp; documents", "tools": "Microsoft 365 Copilot (Outlook, Word) \u00b7 Gemini (Gmail, Docs)", "in": "notes: client asked to move workshop, new date fri, need room for 16, apologise for delay", "out": "Dear Ms Weber, thank you for your patience. We have moved the workshop to Friday and booked a room for 16 people. Apologies for the delay in confirming.", "tip": "Always read before sending. You are the author, not the AI."}, {"t": "Meeting notes", "tools": "Copilot in Teams \u00b7 Zoom AI Companion", "in": "45-minute call recording with 6 people", "out": "Decisions: launch moved to May. Actions: Aylin sends budget by Tue; Jonas books venue. Open: who owns training?", "tip": "Check names and owners. AI often mixes up who said what."}, {"t": "Spreadsheets &amp; data", "tools": "Copilot in Excel \u00b7 Gemini in Sheets", "in": "\"Which region had the biggest drop in Q3?\"", "out": "North: \u221218% vs Q2 (from 2,340 to 1,920 orders). Suggests a bar chart by region.", "tip": "Ask it to show the formula it used, then spot-check one number."}, {"t": "Research with sources", "tools": "Perplexity \u00b7 ChatGPT or Gemini with web search", "in": "\"What does research say about spaced repetition in workplace training?\"", "out": "A short summary with 4 numbered sources you can open.", "tip": "Open at least two sources. If there is no source, treat it as a rumour."}, {"t": "Visuals &amp; slides", "tools": "Canva Magic Studio \u00b7 Adobe Firefly \u00b7 Copilot in PowerPoint", "in": "\"Make a title slide for an onboarding course, calm blue tones\"", "out": "Three layout options with a matching icon set.", "tip": "Check rights and brand rules before using generated images."}, {"t": "Translation", "tools": "DeepL \u00b7 Microsoft Translator", "in": "English training handout, 2 pages", "out": "German version in seconds, with formal \"Sie\" selected.", "tip": "Ask a native speaker to check key terms and tone."}];
+    var tiles = course.querySelectorAll('#ttgrid .tt'), det = document.getElementById('ttdetail');
+    function showTask(i) {
+      tiles.forEach(function (b, k) { b.setAttribute('aria-pressed', String(k === i)); });
+      var x = T[i];
+      det.innerHTML = '<div class="td-tools"><span>Good fit</span><b>' + x.tools + '</b></div>' +
+        '<div class="td-flow"><div class="td-box"><small>You give it</small><p>' + esc(x.in) + '</p></div><span class="td-arr" aria-hidden="true">→</span><div class="td-box ai"><small>It gives you</small><p>' + esc(x.out) + '</p></div></div>' +
+        '<p class="td-tip"><svg class="ic tiny" aria-hidden="true"><use href="#i-shield"/></svg>' + esc(x.tip) + '</p>';
+    }
+    tiles.forEach(function (b, i) { b.addEventListener('click', function () { showTask(i); }); });
+    showTask(0);
+    function kc(box, key) {
+      var bs = box.querySelectorAll('.kc-o button'), f = box.querySelector('.kc-f');
+      bs.forEach(function (b) { b.addEventListener('click', function () {
+        var ok = b.getAttribute('data-ok') === '1';
+        if (score[key] === null) score[key] = ok;
+        bs.forEach(function (x) { x.classList.remove('right', 'wrong'); if (x.getAttribute('data-ok') === '1') x.classList.add('right'); });
+        if (!ok) b.classList.add('wrong');
+        f.textContent = ok ? 'Correct. A meeting assistant saves the most time here, but always check names and owners.' : 'Not quite. Meeting notes are a job for a meeting assistant like Copilot in Teams.';
+      }); });
+    }
+    kc(document.getElementById('kc1'), 'kc');
+
+    // lesson 2
+    var dcs = course.querySelectorAll('.dc');
+    dcs.forEach(function (c) { c.querySelectorAll('.dc-b button').forEach(function (b) { b.addEventListener('click', function () {
+      c.querySelectorAll('.dc-b button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+      c.setAttribute('data-pick', b.getAttribute('data-v')); c.classList.remove('ok', 'no'); c.querySelector('.dc-f').textContent = '';
+    }); }); });
+    document.getElementById('dcheck').addEventListener('click', function () {
+      var n = 0, picked = 0;
+      dcs.forEach(function (c) {
+        var p = c.getAttribute('data-pick'); if (!p) return; picked++;
+        var ok = p === c.getAttribute('data-k'); if (ok) n++;
+        c.classList.toggle('ok', ok); c.classList.toggle('no', !ok);
+        c.querySelector('.dc-f').textContent = (ok ? '✓ ' : '✗ ') + c.getAttribute('data-why');
+      });
+      if (picked === 8 && score.sort === null) score.sort = n;
+      document.getElementById('dscore').textContent = picked < 8 ? 'Sort all 8 items first (' + picked + '/8 done).' : n + ' of 8 correct.';
+    });
+
+    // lesson 3
+    var claims = course.querySelectorAll('.claim'), vfb = document.getElementById('vfb');
+    claims.forEach(function (b) { b.addEventListener('click', function () {
+      var ok = b.getAttribute('data-ok') === '1';
+      if (score.verify === null) score.verify = ok;
+      if (ok) { claims.forEach(function (x) { x.disabled = true; }); b.classList.add('caught'); vfb.textContent = 'Spotted it. The source shows 4 interviews, not 12. The AI merged "slow loading" complaints into "offline mode". Always count before you copy.'; }
+      else { b.classList.add('fine'); vfb.textContent = 'This one matches the source. Look for a number that doesn’t.'; }
+    }); });
+
+    // lesson 4
+    var B = { ctx: 'I’m preparing a one-page summary for my team lead.', task: 'From the notes below, list the five most common themes and how many notes mention each.', fmt: 'Use bullet points, maximum 150 words.', chk: 'Quote one note as evidence for each theme.', safe: 'The notes are anonymised; do not add any names.' };
+    var order = ['ctx', 'task', 'fmt', 'chk', 'safe'], on = {};
+    var outs = [
+      '<p class="vague">The notes discuss various topics including the product, pricing and some technical aspects. Overall, feedback is mixed with both positive and negative points…</p>',
+      '<p class="vague">For your team lead: clients mention the product, prices and performance. Feedback is mixed…</p>',
+      '<ul><li>Slow loading (8)</li><li>Price (6)</li><li>Offline mode (4)</li><li>Onboarding (3)</li><li>Support speed (2)</li></ul>',
+      '<ul><li><b>Slow loading (8)</b></li><li><b>Price (6)</b></li><li><b>Offline mode (4)</b></li><li>Onboarding (3)</li><li>Support speed (2)</li></ul><p class="tiny">Short, scannable, ready to paste.</p>',
+      '<ul><li><b>Slow loading (8):</b> <i>"The dashboard takes ages to open."</i></li><li><b>Price (6):</b> <i>"Hard to justify for a small team."</i></li><li><b>Offline mode (4):</b> <i>"I work on trains a lot."</i></li><li>Onboarding (3) · Support speed (2)</li></ul>',
+      '<ul><li><b>Slow loading (8):</b> <i>"The dashboard takes ages to open."</i></li><li><b>Price (6):</b> <i>"Hard to justify for a small team."</i></li><li><b>Offline mode (4):</b> <i>"I work on trains a lot."</i></li><li>Onboarding (3) · Support speed (2)</li></ul><p class="tiny ok">✓ Evidence for every point · ✓ no names · ✓ under 150 words</p>'
+    ];
+    var pbs = course.querySelectorAll('#pblocks button');
+    function renderP() {
+      var n = 0, txt = order.filter(function (k) { return on[k]; }).map(function (k) { n++; return '<mark class="m-' + k + '">' + esc(B[k]) + '</mark>'; });
+      document.getElementById('pbprompt').innerHTML = n ? txt.join(' ') : '<span class="vague">Summarise these notes.</span>';
+      document.getElementById('pbout').innerHTML = outs[n];
+      document.querySelectorAll('#pbmeter i').forEach(function (m, i) { m.className = i < n ? 'on' : ''; });
+    }
+    pbs.forEach(function (b) { b.addEventListener('click', function () { var k = b.getAttribute('data-b'); on[k] = !on[k]; b.setAttribute('aria-pressed', String(!!on[k])); renderP(); }); });
+    renderP();
+    done = {}; go(0); started = false;
+  })();
+
+
+  /* ---------- learn decks ---------- */
+  document.querySelectorAll('.les').forEach(function (sec) {
+    var learn = sec.querySelector('.learn'); if (!learn) return;
+    var slides = learn.querySelectorAll('.ds'), dots = learn.querySelectorAll('.dk-dots i'), prev = learn.querySelector('.dk-prev'), next = learn.querySelector('.dk-next');
+    var practice = sec.querySelector('.practice'), phases = learn.querySelectorAll('.ph'), gate = learn.querySelector('.gate'), deckEl = learn.querySelector('.deck');
+    var i = 0;
+    function show(k) {
+      i = k; slides.forEach(function (s, n) { s.hidden = n !== k; }); dots.forEach(function (d, n) { d.className = n === k ? 'on' : (n < k ? 'seen' : ''); });
+      prev.disabled = k === 0; next.textContent = k === slides.length - 1 ? 'Practise →' : 'Next →';
+    }
+    function startPractice() {
+      practice.hidden = false; deckEl.hidden = true; gate.hidden = true;
+      phases[0].classList.remove('on'); phases[0].classList.add('done'); phases[1].classList.add('on');
+      var back = document.createElement('button'); back.type = 'button'; back.className = 'relearn'; back.textContent = '↺ Review the lesson';
+      back.addEventListener('click', function () { practice.hidden = true; deckEl.hidden = false; gate.hidden = false; phases[1].classList.remove('on'); phases[0].classList.add('on'); back.remove(); show(0); });
+      learn.querySelector('.phase').appendChild(back);
+    }
+    prev.addEventListener('click', function () { if (i > 0) show(i - 1); });
+    next.addEventListener('click', function () { if (i < slides.length - 1) show(i + 1); else startPractice(); });
+    learn.querySelector('.gate-btn').addEventListener('click', startPractice);
+    learn.querySelector('.gate-skip').addEventListener('click', startPractice);
+    show(0);
+  });
+
+  /* ---------- colour lab ---------- */
+  (function () {
+    var stage = document.getElementById('rcstage'); if (!stage) return;
+    var FIT = {
+      choc: { red: ['mixed', 'Red feels festive and works for Valentine’s editions, but less premium all year round.'], blue: ['clash', 'Blue suggests cool and clinical, not rich and indulgent.'], green: ['mixed', 'Green hints at mint or organic. Fine for a niche line, not for "luxury".'], gold: ['fit', 'Black and gold read as premium and giftable. This is the classic luxury choice.'], pink: ['mixed', 'Pastel pink feels sweet and playful. It fits a gift edition, but loses some luxury.'], yellow: ['clash', 'Bright yellow feels cheap and fast, the opposite of slow indulgence.'] },
+      juice: { red: ['fit', 'Red signals energy and fruit flavours like strawberry. Kids notice it fast.'], blue: ['mixed', 'Blue feels cool and fresh, but less like fruit. Works for "berry" flavours.'], green: ['fit', 'Green says fresh and healthy, which parents look for.'], gold: ['clash', 'Black and gold look premium and serious. Children and parents won’t read it as a kids’ drink.'], pink: ['fit', 'Pastel pink feels friendly and sweet, good for a softer kids’ range.'], yellow: ['fit', 'Bright yellow is cheerful and sunny, and stands out on a crowded shelf.'] },
+      bank: { red: ['clash', 'Red in a banking app looks like an error or a warning. Use it only for alerts.'], blue: ['fit', 'Blue is linked with trust and stability, which is why so many banks use it.'], green: ['fit', 'Green suggests growth and money. It works well for savings or eco-banking.'], gold: ['mixed', 'Black and gold feel exclusive. Good for a premium card, too heavy for everyday banking.'], pink: ['mixed', 'Pink feels friendly and modern. It can work for a young, digital-first brand.'], yellow: ['clash', 'Large areas of bright yellow are tiring to read and feel less secure.'] }
+    };
+    var COL = { red: ['#D7263D', '#FFFFFF'], blue: ['#1F5FAD', '#FFFFFF'], green: ['#2E9E5B', '#FFFFFF'], gold: ['#1A1A1A', '#C9A23A'], pink: ['#F4A7C3', '#5A2340'], yellow: ['#FFC93C', '#3A2A00'] };
+    var prod = 'choc', col = 'gold';
+    var LBL = { fit: 'Good fit', mixed: 'Depends', clash: 'Clashes' };
+    function draw() {
+      var c = COL[col];
+      var m = prod === 'choc' ? '<div class="mk mk-choc rc"><div class="box" style="background:' + c[0] + '"><span class="ribbon" style="background:' + c[1] + '"></span><b style="color:' + c[1] + '">NOIR</b></div></div>'
+        : prod === 'juice' ? '<div class="mk mk-juice rc"><div class="bottle" style="background:' + c[0] + '"><span class="cap"></span><span class="leaf" style="background:' + c[1] + '"></span><b style="color:' + c[1] + '">FRESH</b></div></div>'
+        : '<div class="mk mk-bank rc"><div class="phone"><span class="ph-h" style="background:' + c[0] + '"></span><b>€2,480.50</b><span class="ph-l"></span><span class="ph-l s"></span><span class="ph-btn" style="background:' + c[0] + '"></span></div></div>';
+      stage.innerHTML = m;
+      var f = FIT[prod][col], box = document.getElementById('rcfit');
+      box.className = 'rc-fit f-' + f[0]; box.querySelector('.fit-pill').textContent = LBL[f[0]]; box.querySelector('p').textContent = f[1];
+      document.querySelectorAll('#rcsw button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-c') === col)); });
+      document.querySelectorAll('.rc-prod button').forEach(function (b) { b.setAttribute('aria-pressed', String(b.getAttribute('data-p') === prod)); });
+    }
+    document.querySelectorAll('#rcsw button').forEach(function (b) { b.addEventListener('click', function () { col = b.getAttribute('data-c'); draw(); }); });
+    document.querySelectorAll('.rc-prod button').forEach(function (b) { b.addEventListener('click', function () { prod = b.getAttribute('data-p'); draw(); }); });
+    draw();
+  })();
+
+
+  /* ---------- workshop exercises ---------- */
+  (function () {
+    var off = document.getElementById('dec-off'); if (!off) return;
+    var on = document.getElementById('dec-on'), m = document.getElementById('popm'), mrow = document.getElementById('shmrow');
+    function set(d) {
+      off.setAttribute('aria-pressed', String(!d)); on.setAttribute('aria-pressed', String(d));
+      m.classList.toggle('show', d); mrow.classList.toggle('show', d);
+      var s = d ? [20, 5, 75] : [60, 0, 40];
+      [['shs', 'shsv', 0], ['shm', 'shmv', 1], ['shl', 'shlv', 2]].forEach(function (x) { document.getElementById(x[0]).style.width = s[x[2]] + '%'; document.getElementById(x[1]).textContent = s[x[2]] + '%'; });
+      document.getElementById('dcins').textContent = d
+        ? 'Almost nobody buys the medium. Its job is to make the large look like a bargain: only 50 cents more for much more popcorn.'
+        : 'With two sizes, most people play it safe and pick the small.';
+    }
+    off.addEventListener('click', function () { set(false); }); on.addEventListener('click', function () { set(true); }); set(false);
+    var qb = document.querySelectorAll('#decq button'), qf = document.getElementById('decf');
+    qb.forEach(function (b) { b.addEventListener('click', function () {
+      var ok = b.getAttribute('data-ok') === '1';
+      qb.forEach(function (x) { x.classList.remove('right', 'wrong'); if (x.getAttribute('data-ok') === '1') x.classList.add('right'); });
+      if (!ok) b.classList.add('wrong');
+      qf.textContent = ok ? 'Exactly. Offering choices is fine; the question is whether the customer ends up better off.' : 'Not quite. The decoy is a tool. Whether it’s fair depends on the value for the customer.';
+    }); });
+
+    var cs = document.querySelectorAll('.fmc');
+    cs.forEach(function (c) { c.querySelectorAll('.fm-b button').forEach(function (b) { b.addEventListener('click', function () {
+      c.querySelectorAll('.fm-b button').forEach(function (x) { x.setAttribute('aria-pressed', String(x === b)); });
+      c.setAttribute('data-pick', b.getAttribute('data-v')); c.classList.remove('ok', 'no'); c.querySelector('.fm-f').textContent = '';
+    }); }); });
+    document.getElementById('fmcheck').addEventListener('click', function () {
+      var n = 0, picked = 0, L = { f: 'Fair', g: 'Grey zone', m: 'Manipulative' };
+      cs.forEach(function (c) {
+        var p = c.getAttribute('data-pick'); if (!p) return; picked++;
+        var k = c.getAttribute('data-k'), ok = p === k; if (ok) n++;
+        c.classList.toggle('ok', ok); c.classList.toggle('no', !ok);
+        c.querySelector('.fm-f').innerHTML = '<b>' + (ok ? '✓ ' : '✗ ' + L[k] + ': ') + esc(c.getAttribute('data-p')) + '.</b> ' + esc(c.getAttribute('data-why'));
+      });
+      document.getElementById('fmscore').textContent = picked < cs.length ? 'Judge all ' + cs.length + ' first (' + picked + '/' + cs.length + ').' : n + ' of ' + cs.length + ' correct.' + (n === cs.length ? ' You’d spot a dark pattern anywhere.' : '');
+    });
+  })();
+
   /* ---------- project pages ---------- */
   function route() {
     var id = location.hash.slice(1);
@@ -2042,3 +2840,5 @@ nav.top .mono-mark { font-family: var(--f-display); font-style: italic; font-wei
 
 </body>
 </html>
+
+</body></html>
